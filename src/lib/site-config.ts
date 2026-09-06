@@ -1,19 +1,24 @@
 /**
- * 本番ドメインは、コード内・環境変数・READMEのいずれにも現時点で存在しないため、
- * URLを創作しない。NEXT_PUBLIC_SITE_URL が設定されている場合のみ本番ドメインとして使う。
+ * 本番ドメインは https://erabu-axis.jp に確定している。
+ * NEXT_PUBLIC_SITE_URL が設定されている場合はそちらを優先する（ステージング等で別ドメインを
+ * 使いたい場合のための上書き用）。未設定時は、sitemap.xml・robots.txt・canonical・OpenGraphが
+ * localhostのまま生成されてSearch Console等で「許可されていないURL」になる事故を防ぐため、
+ * この確定済み本番ドメインをデフォルト値として使う。
  *
  * 使用箇所：
- * - src/app/layout.tsx（metadataBase。未設定時はmetadataBaseを省略し、Next.jsのデフォルト解決に委ねる）
- * - src/app/sitemap.ts（絶対URLが必須のため、未設定時のみビルド用の仮値 http://localhost:3000 を使う。
- *   本番公開前に必ずNEXT_PUBLIC_SITE_URLを設定すること）
- * - src/app/robots.ts（同上）
+ * - src/app/layout.tsx（metadataBase。ここが正しく設定されることで、各ページのcanonical・
+ *   og:url・og:image等もすべて https://erabu-axis.jp/... で解決される）
+ * - src/app/sitemap.ts（sitemap.xml内の全URLの絶対パスの組み立てに使用）
+ * - src/app/robots.ts（sitemap指定URLの組み立てに使用）
  */
 import type { Metadata } from "next";
 
-export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || null;
+const PRODUCTION_SITE_URL = "https://erabu-axis.jp";
 
-/** sitemap.ts・robots.ts専用。絶対URLを組み立てるための仮のベースURL（本番では必ずSITE_URLを設定して上書きする）。 */
-export const SITE_URL_FOR_BUILD = SITE_URL ?? "http://localhost:3000";
+export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || PRODUCTION_SITE_URL;
+
+/** sitemap.ts・robots.ts専用。絶対URLを組み立てるためのベースURL。 */
+export const SITE_URL_FOR_BUILD = SITE_URL;
 
 export const SITE_NAME = "えらぶ。";
 

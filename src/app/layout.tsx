@@ -20,13 +20,13 @@ const zenKaku = Zen_Kaku_Gothic_New({
   display: "swap",
 });
 
-// 本番ドメインが未確定のため、NEXT_PUBLIC_SITE_URL未設定時はmetadataBase自体を省略する
-// （URLを創作しない）。設定方法はsrc/lib/site-config.tsを参照。
+// metadataBaseは本番ドメイン（https://erabu-axis.jp）に解決される。
+// 設定方法・上書き方法はsrc/lib/site-config.tsを参照。
 const SITE_DESCRIPTION =
   "くらべて、自分の軸でえらぶ。「えらぶ。」は、独自指標AXIS SCORE™で「結局どっちを選べばいいか」に結論を出す比較サイトです。";
 
 export const metadata: Metadata = {
-  ...(SITE_URL ? { metadataBase: new URL(SITE_URL) } : {}),
+  metadataBase: new URL(SITE_URL),
   title: SITE_NAME,
   description: SITE_DESCRIPTION,
   openGraph: {
