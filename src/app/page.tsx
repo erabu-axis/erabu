@@ -9,7 +9,9 @@ import { AxisScoreMethodologyTeaser } from "@/components/product-detail/AxisScor
 export const metadata: Metadata = { alternates: { canonical: "/" } };
 
 export default function HomePage() {
-  const articles = getPublishedComparisons();
+  // 「比較記事で選ぶ」の説明文は「AXIS SCORE™で商品を比較した記事」と明言しているため、
+  // ranking記事のみを対象にする（guide記事はランキングを持たないため、この文言と矛盾してしまう）。
+  const articles = getPublishedComparisons().filter((c) => c.articleType === "ranking");
 
   return (
     <div className="space-y-16">

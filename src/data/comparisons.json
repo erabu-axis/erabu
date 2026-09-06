@@ -4,6 +4,7 @@
     "slug": "robot-vacuum-narrow-room",
     "title": "狭い家・マンション向けロボット掃除機5選｜置きやすさまで比較",
     "cluster": "robot_vacuum",
+    "articleType": "ranking",
     "personaProfileId": "narrow-home",
     "productIds": [
       "irobot-roomba-plus-515-combo",
@@ -13,7 +14,7 @@
       "eufy-robot-vacuum-omni-e25"
     ],
     "selectionCriteria": "実データ（dataType===\"real\"）としてAXIS SCORE™を採点済みの商品を対象とする。productIdsは本記事公開時点の対象商品の記録であり、実際の表示・ランキングはproducts.json（dataType===\"real\"）から動的に取得するため、対象商品が増えた場合も本文の手直しなしで反映される。",
-    "relatedSlugs": ["robot-vacuum-low-maintenance", "robot-vacuum-cleaning-performance"],
+    "relatedSlugs": ["robot-vacuum-low-maintenance", "robot-vacuum-cleaning-performance", "robot-vacuum-how-to-choose"],
     "status": "published",
     "updatedAt": "2026-09-03"
   },
@@ -22,6 +23,7 @@
     "slug": "robot-vacuum-low-maintenance",
     "title": "手入れが楽なロボット掃除機5選｜ゴミ収集・モップ洗浄まで比較",
     "cluster": "robot_vacuum",
+    "articleType": "ranking",
     "personaProfileId": "low-maintenance",
     "productIds": [
       "irobot-roomba-plus-515-combo",
@@ -31,7 +33,7 @@
       "eufy-robot-vacuum-omni-e25"
     ],
     "selectionCriteria": "実データ（dataType===\"real\"）としてAXIS SCORE™を採点済みの商品を対象とする。productIdsは本記事公開時点の対象商品の記録であり、実際の表示・ランキングはproducts.json（dataType===\"real\"）から動的に取得するため、対象商品が増えた場合も本文の手直しなしで反映される。",
-    "relatedSlugs": ["robot-vacuum-narrow-room", "robot-vacuum-cleaning-performance"],
+    "relatedSlugs": ["robot-vacuum-narrow-room", "robot-vacuum-cleaning-performance", "robot-vacuum-how-to-choose"],
     "status": "published",
     "updatedAt": "2026-09-03"
   },
@@ -40,6 +42,7 @@
     "slug": "robot-vacuum-cleaning-performance",
     "title": "清掃性能で選ぶロボット掃除機5選｜吸引・水拭き・絡まり対策まで比較",
     "cluster": "robot_vacuum",
+    "articleType": "ranking",
     "personaProfileId": "performance-first",
     "productIds": [
       "irobot-roomba-plus-515-combo",
@@ -49,8 +52,18 @@
       "eufy-robot-vacuum-omni-e25"
     ],
     "selectionCriteria": "実データ（dataType===\"real\"）としてAXIS SCORE™を採点済みの商品を対象とする。productIdsは本記事公開時点の対象商品の記録であり、実際の表示・ランキングはproducts.json（dataType===\"real\"）から動的に取得するため、対象商品が増えた場合も本文の手直しなしで反映される。",
-    "relatedSlugs": ["robot-vacuum-narrow-room", "robot-vacuum-low-maintenance"],
+    "relatedSlugs": ["robot-vacuum-narrow-room", "robot-vacuum-low-maintenance", "robot-vacuum-how-to-choose"],
     "status": "published",
     "updatedAt": "2026-09-03"
+  },
+  {
+    "id": "robot-vacuum-how-to-choose",
+    "slug": "robot-vacuum-how-to-choose",
+    "title": "ロボット掃除機で後悔しない選び方｜買う前に確認したい5つのポイント",
+    "cluster": "robot_vacuum",
+    "articleType": "guide",
+    "relatedSlugs": ["robot-vacuum-narrow-room", "robot-vacuum-low-maintenance", "robot-vacuum-cleaning-performance"],
+    "status": "published",
+    "updatedAt": "2026-09-06"
   }
 ]
