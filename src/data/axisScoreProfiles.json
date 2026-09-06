@@ -70,5 +70,17 @@
       "maintainability": 0.125,
       "space_fit": 0.125
     }
+  },
+  {
+    "id": "pet-household",
+    "name": "ペットがいる家庭で使いたい",
+    "description": "清掃性能とメンテナンス性の重みを高くし、毛絡み対策や自動ゴミ収集など、ペットがいる家庭で気になりやすいポイントを優先的に評価する。",
+    "weights": {
+      "cleaning_power": 0.35,
+      "maintainability": 0.3,
+      "space_fit": 0.2,
+      "quietness": 0.1,
+      "price_value": 0.05
+    }
   }
 ]

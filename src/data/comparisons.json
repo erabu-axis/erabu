@@ -33,7 +33,7 @@
       "eufy-robot-vacuum-omni-e25"
     ],
     "selectionCriteria": "実データ（dataType===\"real\"）としてAXIS SCORE™を採点済みの商品を対象とする。productIdsは本記事公開時点の対象商品の記録であり、実際の表示・ランキングはproducts.json（dataType===\"real\"）から動的に取得するため、対象商品が増えた場合も本文の手直しなしで反映される。",
-    "relatedSlugs": ["robot-vacuum-narrow-room", "robot-vacuum-cleaning-performance", "robot-vacuum-how-to-choose"],
+    "relatedSlugs": ["robot-vacuum-narrow-room", "robot-vacuum-cleaning-performance", "robot-vacuum-how-to-choose", "robot-vacuum-for-pets"],
     "status": "published",
     "updatedAt": "2026-09-03"
   },
@@ -52,7 +52,7 @@
       "eufy-robot-vacuum-omni-e25"
     ],
     "selectionCriteria": "実データ（dataType===\"real\"）としてAXIS SCORE™を採点済みの商品を対象とする。productIdsは本記事公開時点の対象商品の記録であり、実際の表示・ランキングはproducts.json（dataType===\"real\"）から動的に取得するため、対象商品が増えた場合も本文の手直しなしで反映される。",
-    "relatedSlugs": ["robot-vacuum-narrow-room", "robot-vacuum-low-maintenance", "robot-vacuum-how-to-choose"],
+    "relatedSlugs": ["robot-vacuum-narrow-room", "robot-vacuum-low-maintenance", "robot-vacuum-how-to-choose", "robot-vacuum-for-pets"],
     "status": "published",
     "updatedAt": "2026-09-03"
   },
@@ -62,7 +62,26 @@
     "title": "ロボット掃除機で後悔しない選び方｜買う前に確認したい5つのポイント",
     "cluster": "robot_vacuum",
     "articleType": "guide",
-    "relatedSlugs": ["robot-vacuum-narrow-room", "robot-vacuum-low-maintenance", "robot-vacuum-cleaning-performance"],
+    "relatedSlugs": ["robot-vacuum-narrow-room", "robot-vacuum-low-maintenance", "robot-vacuum-cleaning-performance", "robot-vacuum-for-pets"],
+    "status": "published",
+    "updatedAt": "2026-09-06"
+  },
+  {
+    "id": "robot-vacuum-for-pets",
+    "slug": "robot-vacuum-for-pets",
+    "title": "ペットがいる家庭向けロボット掃除機5選｜毛絡み・吸引・手入れで比較",
+    "cluster": "robot_vacuum",
+    "articleType": "ranking",
+    "personaProfileId": "pet-household",
+    "productIds": [
+      "irobot-roomba-plus-515-combo",
+      "roborock-saros-20-sonic",
+      "ecovacs-deebot-t80s-omni",
+      "switchbot-s20",
+      "eufy-robot-vacuum-omni-e25"
+    ],
+    "selectionCriteria": "実データ（dataType===\"real\"）としてAXIS SCORE™を採点済みの商品を対象とする。productIdsは本記事公開時点の対象商品の記録であり、実際の表示・ランキングはproducts.json（dataType===\"real\"）から動的に取得するため、対象商品が増えた場合も本文の手直しなしで反映される。",
+    "relatedSlugs": ["robot-vacuum-cleaning-performance", "robot-vacuum-low-maintenance", "robot-vacuum-how-to-choose"],
     "status": "published",
     "updatedAt": "2026-09-06"
   }
