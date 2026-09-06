@@ -1,0 +1,469 @@
+[
+  {
+    "id": "axis-cleaning-power",
+    "axisKey": "cleaning_power",
+    "category": "robot_vacuum",
+    "label": "清掃性能",
+    "description": "吸引力・ブラシ性能・隅の清掃力など、実際にどれだけゴミを取り切れるか",
+    "scoreDirection": "higher_is_better",
+    "dataSourceFields": ["suctionPowerPa"],
+    "rubricVersion": "1.0",
+    "criteria": [
+      {
+        "id": "suction_performance",
+        "label": "吸引性能",
+        "weight": 25,
+        "description": "評価経路をA（絶対値）／B（技術・機構）／C（相対訴求のみ）の3つに分離する。Pa等の絶対値と『従来比◯倍』等の相対値は測定条件が異なるため直接換算しない。絶対値の非公表そのものは低評価の理由にしない。",
+        "scoringGuide": {
+          "method": "経路A：絶対値経路＝Pa等の比較可能な絶対値が公式情報で確認できる場合、その数値の帯でtierを判定する。経路B：技術・機構経路＝絶対値は非公表だが、吸引経路・ブラシ構成・吸引制御・カーペット時の出力制御等、清掃性能向上のための具体的な機構説明が公式情報で確認できる場合、standardとする。経路C：相対訴求のみ＝『従来比◯倍』等の相対的な訴求は確認できるが、絶対値も経路Bに足る機構説明もない場合、lowとする。経路CのlowはA経路の『確認された低い絶対値』によるlowとは意味が異なる（情報が少ないための保守的な位置づけであり、性能が低いと確認されたわけではない）ため、rationaleにどちらの理由か必ず明記する。PaとX倍のような異なる尺度の数値を直接換算・比較することは禁止する。",
+          "tiers": [
+            { "tier": "full", "points": 25, "condition": "【経路A】絶対値（Pa等）が20,000以上であることが公式情報で確認できる" },
+            { "tier": "high", "points": 20, "condition": "【経路A】絶対値（Pa等）が10,000〜19,999であることが公式情報で確認できる" },
+            { "tier": "standard", "points": 15, "condition": "【経路A】絶対値（Pa等）が3,000〜9,999であることが公式情報で確認できる。または【経路B】絶対値は非公表だが、吸引経路・ブラシ構成・吸引制御等、清掃性能向上のための具体的な機構説明が公式情報で確認できる" },
+            { "tier": "low", "points": 8, "condition": "【経路A】絶対値（Pa等）が3,000未満であることが公式情報で確認できる（＝確認された性能として低い）。または【経路C】『従来比◯倍』等の相対的な訴求のみが確認でき、絶対値も経路Bに足る機構説明もない（＝情報不足による保守的な位置づけであり、性能が低いと確認されたわけではない）" },
+            { "tier": "zero", "points": 0, "condition": "【経路A】家庭用ロボット掃除機として明らかに低い絶対値（実用上の最低水準を下回る）であることが公式情報で確認できる" }
+          ],
+          "unpublishedCondition": "絶対値・機構説明・相対訴求のいずれについても、吸引/清掃性能に関する情報が公式情報から一切確認できない",
+          "caveat": "経路A（絶対値）と経路C（相対訴求）の数値を直接換算・比較することは禁止する（測定条件が異なる可能性があるため）。相対訴求（経路C）だけを理由にfull・highへ引き上げてはならない。一方、絶対値が非公表というだけの理由でlow・zeroに置くことも禁止する（経路Bの機構説明が十分あればstandardに到達できる）。rationaleには経路A/B/Cのどれで判定したかを必ず明記する。"
+        }
+      },
+      {
+        "id": "mopping_performance",
+        "label": "水拭き性能",
+        "weight": 25,
+        "description": "水拭きの方式（ローラー式／回転式／振動式／パッド式等）は問わず、加圧機構と連続洗浄機構の有無という技術中立な2要素で評価する。",
+        "scoringGuide": {
+          "method": "水拭きの方式（ローラー/回転/振動/パッド等）そのものでtierを決めない。代わりに次の2つの確認可能な要素で判定する：(1)加圧＝モップに圧力をかける機構の有無（方式は問わない）、(2)連続洗浄＝走行中または高頻度（一定時間ごと等）の自動洗浄機構の有無。該当する要素数（0〜2個）でtierを判定する。",
+          "tiers": [
+            { "tier": "full", "points": 25, "condition": "「加圧」「連続洗浄」の両方が公式情報で確認できる" },
+            { "tier": "high", "points": 20, "condition": "「加圧」「連続洗浄」のいずれか一方のみが公式情報で確認できる" },
+            { "tier": "standard", "points": 15, "condition": "「加圧」「連続洗浄」のどちらも確認できないが、モップ自動リフト機能、または水拭き方式（ローラー式/振動式等）の詳細が公式情報で確認できる" },
+            { "tier": "low", "points": 8, "condition": "水拭き機能自体はあるが、方式・機構の詳細が公式情報で確認できない" },
+            { "tier": "zero", "points": 0, "condition": "水拭き機能を搭載していないことが公式情報で確認できる" }
+          ],
+          "unpublishedCondition": "水拭き機能の有無自体が公式情報で確認できない",
+          "caveat": "ローラー式・振動式・パッド式などの方式そのものは優劣の判定材料にしない。「加圧」「連続洗浄」という機能面の有無のみで技術中立に評価する。"
+        }
+      },
+      {
+        "id": "edge_corner_cleaning",
+        "label": "壁際・隅清掃",
+        "weight": 15,
+        "description": "壁際・隅の清掃性能に関する公表情報をもとに評価する。可動式サイドブラシに限らず、メーカーが公表する壁際・隅清掃のための専用機構を技術中立に評価する。",
+        "scoringGuide": {
+          "method": "壁際・隅清掃のための専用機構を、方式を限定せず評価する。次のいずれかに該当する機構（例示。方式は問わない）が確認できればfull：(a)伸縮/可動式サイドブラシ、(b)壁際専用清掃機構（エッジクリーニング機構・伸長ローラー等）、(c)形状による隅清掃（エアクッション構造等の本体・部品形状）、(d)壁際検知に応じて走行や清掃動作を調整する専用アルゴリズム。これらに該当しないが隅清掃を意識した本体形状のみの場合はhigh、通常のサイドブラシのみの場合はstandardとする。",
+          "tiers": [
+            { "tier": "full", "points": 15, "condition": "伸縮/可動式サイドブラシ、壁際専用清掃機構、形状による隅清掃、専用アルゴリズムのいずれか1つ以上が公式情報で確認できる（方式は問わない）" },
+            { "tier": "high", "points": 12, "condition": "full条件のいずれにも該当しないが、隅・壁際清掃を意識した本体形状（角形本体・拡張アーム等）が公式情報で確認できる" },
+            { "tier": "standard", "points": 9, "condition": "通常の（固定式・単純な）サイドブラシのみが公式情報で確認できる" },
+            { "tier": "low", "points": 4, "condition": "隅・壁際清掃に関する言及が公式情報に乏しい" },
+            { "tier": "zero", "points": 0, "condition": "サイドブラシを搭載していないことが公式情報で確認できる" }
+          ],
+          "unpublishedCondition": "サイドブラシ・隅清掃機構の有無が公式情報で確認できない",
+          "caveat": "「可動式サイドブラシ」は満点条件の一例に過ぎない。固定式サイドブラシであっても、別の壁際専用清掃機構（伸長ローラー等）が確認できればfullとする。"
+        }
+      },
+      {
+        "id": "carpet_performance",
+        "label": "カーペット対応",
+        "weight": 15,
+        "description": "カーペット・ラグ上での対応機構に関する公表情報をもとに評価する。次の3要素の該当数でtierを判定する（AND/ORを自然言語で曖昧に扱わず、個数で判定する）。",
+        "scoringGuide": {
+          "method": "次の3つの確認可能な要素についてそれぞれ有無を確認する：(1)検知＝カーペット自動検知機能の有無、(2)吸引アップ＝カーペット検知に連動した吸引力自動アップの有無、(3)モップリフト＝カーペット上でのモップ自動リフト機能の有無。この3要素のうち公式情報で確認できた個数（0〜3）でtierを判定する。",
+          "tiers": [
+            { "tier": "full", "points": 15, "condition": "「検知」「吸引アップ」「モップリフト」の3要素すべてが公式情報で確認できる" },
+            { "tier": "high", "points": 12, "condition": "3要素のうち2つが公式情報で確認できる" },
+            { "tier": "standard", "points": 9, "condition": "3要素のうち1つのみが公式情報で確認できる（カーペットモード等、対応機能の存在のみが確認できる場合を含む）" },
+            { "tier": "low", "points": 4, "condition": "3要素はいずれも確認できないが、カーペット対応に関する言及は公式情報にある" },
+            { "tier": "zero", "points": 0, "condition": "カーペット非対応であることが公式情報で確認できる" }
+          ],
+          "unpublishedCondition": "カーペット対応に関する情報が公式情報で確認できない"
+        }
+      },
+      {
+        "id": "brush_tangle_prevention",
+        "label": "ブラシ・毛絡み対策",
+        "weight": 20,
+        "description": "清掃「中」に髪・毛がブラシへ絡むことをどの程度構造的に防止できるかを評価する。絡んだ毛をユーザーが処理する手間の低減はtangle_maintenanceで別途評価するため、本項目は清掃中の絡み防止性能のみを対象とする。特定メーカー名・技術名・素材（ゴム製、気流/サイクロン設計、コーム歯、スパイラル構造等）そのものは判定材料にしない。",
+        "scoringGuide": {
+          "method": "以下の評価経路A〜Fで判定する。経路A：毛絡み防止を目的とした専用機構（方式は問わない）が公式情報で確認でき、かつ(a)具体的な数値効果（絡み率0%、除去率100%等）、(b)動作原理の具体的説明（毛をどう誘導・除去するかの仕組み）、(c)複数機構の連動（各機構の役割・連携の明記。機構を2つ列挙しているだけで役割や連動関係の説明がない場合は該当しない）のいずれかを満たす場合→full。経路B：専用機構の技術的詳細がAほど明確でなくても、ユーザーが実際に得る効果が無条件・具体的（程度や条件が特定できる）に訴求されている場合（例：『毛を切り取る必要がない』『絡みを大幅に防ぐ』等）→full。ただし『絡みにくい』『毛絡みを軽減』等、程度が不明な一般的表現のみではfull不可。経路C：毛絡み防止を目的とした専用機構は確認できるが、効果の記述がAの水準に届かない一般的な表現（『絡みにくい』等）にとどまる場合→high。同様に、ユーザー効果の訴求はあるがfull水準の無条件性・具体性に届かない場合もhigh。経路D：専用技術・専用機構とまでは言えないが、ブラシの形状・素材等に毛絡み軽減の意図が確認できる場合→standard。経路E：通常のブラシ構成で、毛絡みへの言及がごく限定的（存在の言及のみ等）な場合→low。経路F：ブラシ構造・毛絡み対策について判断できる情報が公式情報にない場合→unpublished。数値の有無そのものではなく、その数値が毛絡み防止効果を具体的に示しているかどうかで判断する。",
+          "tiers": [
+            { "tier": "full", "points": 20, "condition": "【経路A】毛絡み防止を目的とした専用機構が確認でき、かつ(a)具体的な数値効果、(b)動作原理の具体的説明、(c)複数機構の連動、のいずれかが明記されている。または【経路B】専用機構の技術詳細は薄くても、『毛を切り取る必要がない』等、無条件・具体的にユーザー効果が訴求されている（『絡みにくい』等の程度不明な一般表現のみは含まない）" },
+            { "tier": "high", "points": 16, "condition": "【経路C】毛絡み防止のための専用機構は確認できるが、効果の記述が『絡みにくい』等の一般的な表現にとどまる。またはユーザー効果の訴求はあるが、full水準の無条件性・具体性に届かない" },
+            { "tier": "standard", "points": 12, "condition": "【経路D】専用技術・専用機構とまでは言えないが、ブラシの形状・素材等に毛絡み軽減の意図が確認できる（効果への言及が乏しい、または一般的な形容にとどまる）" },
+            { "tier": "low", "points": 6, "condition": "【経路E】通常のブラシ構成で、毛絡みへの言及がごく限定的（存在の言及のみ等）" },
+            { "tier": "zero", "points": 0, "condition": "ブラシに関する情報自体は公式情報で確認できるが、毛絡み対策への言及・工夫が一切見られない（通常ブラシとして説明されるのみ）" }
+          ],
+          "unpublishedCondition": "【経路F】ブラシ構造・毛絡み対策のいずれについても情報が公式情報で確認できない",
+          "caveat": "メーカー名・製品固有の技術名（例：ZeroTangle、DuoSpiral等）や素材（ゴム等）そのものを判定根拠にしない。名称の背後にある機構の説明・効果の記述のみを根拠とする。数値の有無自体ではなく、その数値が毛絡み防止効果を具体的に示すかで判断する。tangle_maintenance（絡んだ毛の除去負担）とは役割が異なる。『切り取る必要がない』等の表現が両方に関係する場合でも、それぞれの意味（清掃中の防止 or 除去負担の軽減）を個別に満たす理由を説明できる場合に限り、両criterionの根拠として使用できる（同一の説明文でも、防止に関する部分と除去負担に関する部分が読み分けられる場合は、それぞれ対応するcriterionにのみ割り当てる）。"
+        }
+      }
+    ]
+  },
+  {
+    "id": "axis-quietness",
+    "axisKey": "quietness",
+    "category": "robot_vacuum",
+    "label": "静音性",
+    "description": "稼働音の小ささ。夜間運転や在宅ワーク中の運転のしやすさ",
+    "scoreDirection": "lower_is_better",
+    "dataSourceFields": ["noiseLevels"],
+    "rubricVersion": "1.0",
+    "criticalCriteria": ["body_noise"],
+    "criteria": [
+      {
+        "id": "body_noise",
+        "label": "本体清掃音",
+        "weight": 60,
+        "description": "公表されているdB値をもとに評価する。公表値がない場合は推測禁止。",
+        "scoringGuide": {
+          "method": "標準／自動運転モードの公称騒音値（dB）を採用する。複数モードが公表されている場合は「標準／自動」に相当するモードの値を使う。単一モードのみの場合はその値を使う。",
+          "tiers": [
+            { "tier": "full", "points": 60, "condition": "標準／自動運転モードの公称騒音値が50dB未満" },
+            { "tier": "high", "points": 48, "condition": "50〜54dB" },
+            { "tier": "standard", "points": 36, "condition": "55〜59dB" },
+            { "tier": "low", "points": 18, "condition": "60dB以上" },
+            { "tier": "zero", "points": 0, "condition": "原則使用しない。極端に大きい騒音値が公式に明記された場合のみの予備区分" }
+          ],
+          "unpublishedCondition": "稼働音（dB）が公式情報で一切公表されていない。dB未公表の場合は推測せず、この区分とする。",
+          "caveat": "メーカー間で測定規格・測定距離が異なる可能性があるため、帯をまたぐ場合のみ差をつけ、帯内の僅差では区別しない。"
+        }
+      },
+      {
+        "id": "quiet_mode_control",
+        "label": "静音モード・騒音制御",
+        "weight": 20,
+        "description": "メーカーが選択可能な専用モードとして明示している静音関連機能に関する公表情報をもとに評価する。仕様表等に「静音」という語が形容表現として付随しているだけでは専用モードとは判定しない。",
+        "scoringGuide": {
+          "method": "メーカーが『静音モード』『騒音低減モード』『夜間運転モード』等の名称で選択可能な専用モードとして明示している場合のみ、専用モードの存在を認める。稼働時間の測定条件表記など、他の仕様に『静音』という語が形容表現として付随しているだけの場合は、独立した静音モード搭載とは判定しない。",
+          "tiers": [
+            { "tier": "full", "points": 20, "condition": "メーカーが選択可能な専用モード（静音モード・騒音低減モード・夜間運転モード等の名称で明示）を搭載していると明記しており、かつそのモードのdB値が公式情報で確認できる" },
+            { "tier": "high", "points": 16, "condition": "メーカーが選択可能な専用モード（同上の名称で明示）を搭載していると明記しているが、そのモードのdB値は公式情報で確認できない" },
+            { "tier": "standard", "points": 12, "condition": "吸引力等の複数段階調整があることは公式情報で確認できるが、「静音」等を明確に謳う専用モードとしては明示されていない" },
+            { "tier": "low", "points": 6, "condition": "運転モードが単一であることが公式情報で確認できる（吸引力調整等の複数段階も確認できない）" },
+            { "tier": "zero", "points": 0, "condition": "原則使用しない" }
+          ],
+          "unpublishedCondition": "運転モード構成に関する情報が公式情報で一切確認できない",
+          "caveat": "仕様表の稼働時間条件等に『静音』という語が形容表現として付随しているだけの場合（例：『最大稼働時間◯分（静音、吸引＆水拭き）』）は、独立した静音モードの搭載を意味するとは限らない。このような曖昧な記載のみで専用モードの有無を推測してはならない。専用モードとして明示されているか判断できない場合はpending-review、モード構成自体の情報が皆無の場合はunpublishedとする。"
+        }
+      },
+      {
+        "id": "station_noise_consideration",
+        "label": "ステーション動作への配慮",
+        "weight": 20,
+        "description": "自動ゴミ収集・モップ洗浄乾燥時のステーション動作音への配慮に関する公表情報をもとに評価する。",
+        "scoringGuide": {
+          "method": "ステーションを持たない機種は、そもそもステーション動作音が発生しないため満点方向で扱う。ステーションを持つ機種は、静音設計に関する公式情報の具体性で評価する。",
+          "tiers": [
+            { "tier": "full", "points": 20, "condition": "ステーションを持たない（動作音自体が発生しない）、またはステーションの静音設計（防音構造・静音時間帯設定等）が公式情報で具体的に確認できる" },
+            { "tier": "high", "points": 16, "condition": "ステーションについて「静音」等の言及はあるが、具体的な機構の記載がない" },
+            { "tier": "standard", "points": 12, "condition": "ステーション動作音について公式情報に特段の言及がない（標準仕様として扱う）" },
+            { "tier": "low", "points": 6, "condition": "ステーション動作音が大きい旨が公式情報や注意書きで示唆されている" },
+            { "tier": "zero", "points": 0, "condition": "原則使用しない" }
+          ],
+          "unpublishedCondition": "ステーションの有無・仕様そのものが公式情報で確認できない",
+          "caveat": "「ステーションを持たない」ことが確認できた場合はverified・満点として扱い、ステーションはあるが静音仕様が単に未公表なだけの場合はunpublishedとして除外する。両者を混同しない。"
+        }
+      }
+    ]
+  },
+  {
+    "id": "axis-maintainability",
+    "axisKey": "maintainability",
+    "category": "robot_vacuum",
+    "label": "メンテナンス性",
+    "description": "自動ゴミ収集・モップ自動洗浄の有無など、手入れの手間の少なさ",
+    "scoreDirection": "higher_is_better",
+    "dataSourceFields": ["autoEmptying", "autoMopWashing", "autoMopDrying", "moppingType"],
+    "rubricVersion": "1.0",
+    "criteria": [
+      {
+        "id": "auto_dust_collection",
+        "label": "自動ゴミ収集",
+        "weight": 20,
+        "description": "自動ゴミ収集ステーションの有無に関する公表情報をもとに評価する。",
+        "scoringGuide": {
+          "method": "自動ゴミ収集ステーションの有無を中心に評価する。ステーションを持たない機種は、手動でのダストボックス排出が必須になるため0点とする。",
+          "tiers": [
+            { "tier": "full", "points": 20, "condition": "自動ゴミ収集ステーションを搭載していることが公式情報で確認できる" },
+            { "tier": "high", "points": 16, "condition": "予備区分：大容量集塵パック等で長期間の手入れ不要を具体的にうたっている場合" },
+            { "tier": "standard", "points": 9, "condition": "予備区分（本項目は基本的に有無の二値で判定する）" },
+            { "tier": "low", "points": 4, "condition": "予備区分（本項目は基本的に有無の二値で判定する）" },
+            { "tier": "zero", "points": 0, "condition": "自動ゴミ収集ステーションを搭載していないことが公式情報で確認できる" }
+          ],
+          "unpublishedCondition": "自動ゴミ収集機能の有無が公式情報で確認できない"
+        }
+      },
+      {
+        "id": "auto_mop_washing",
+        "label": "モップ自動洗浄",
+        "weight": 25,
+        "description": "モップ自動洗浄機能の有無・方式に関する公表情報をもとに評価する。",
+        "scoringGuide": {
+          "method": "モップ自動洗浄機能の有無と、加温洗浄かどうかで評価する。ステーションを持たない機種、または自動洗浄機能がない機種は0点とする。",
+          "tiers": [
+            { "tier": "full", "points": 25, "condition": "モップ自動洗浄機能を搭載し、加温洗浄（温水洗浄等）であることが公式情報で確認できる" },
+            { "tier": "high", "points": 20, "condition": "モップ自動洗浄機能を搭載しているが、加温洗浄かどうかは公式情報で確認できない（常温洗浄を含む）" },
+            { "tier": "standard", "points": 12, "condition": "予備区分（本項目は基本的に有無・加温有無で判定する）" },
+            { "tier": "low", "points": 6, "condition": "予備区分（本項目は基本的に有無・加温有無で判定する）" },
+            { "tier": "zero", "points": 0, "condition": "モップ自動洗浄機能を搭載していない、またはステーションなし機種であることが公式情報で確認できる" }
+          ],
+          "unpublishedCondition": "モップ自動洗浄機能の有無が公式情報で確認できない"
+        }
+      },
+      {
+        "id": "auto_mop_drying",
+        "label": "モップ自動乾燥",
+        "weight": 20,
+        "description": "モップ自動乾燥機能の有無・方式に関する公表情報をもとに評価する。",
+        "scoringGuide": {
+          "method": "モップ自動乾燥機能の有無と、温風乾燥かどうかで評価する。ステーションを持たない機種、または自動乾燥機能がない機種は0点とする。",
+          "tiers": [
+            { "tier": "full", "points": 20, "condition": "モップ自動乾燥機能を搭載し、温風乾燥（熱風乾燥等）であることが公式情報で確認できる" },
+            { "tier": "high", "points": 16, "condition": "モップ自動乾燥機能を搭載しているが、乾燥方式の詳細は公式情報で確認できない" },
+            { "tier": "standard", "points": 9, "condition": "予備区分（本項目は基本的に有無・方式有無で判定する）" },
+            { "tier": "low", "points": 4, "condition": "予備区分（本項目は基本的に有無・方式有無で判定する）" },
+            { "tier": "zero", "points": 0, "condition": "モップ自動乾燥機能を搭載していない、またはステーションなし機種であることが公式情報で確認できる" }
+          ],
+          "unpublishedCondition": "モップ自動乾燥機能の有無が公式情報で確認できない"
+        }
+      },
+      {
+        "id": "tangle_maintenance",
+        "label": "毛絡み対策",
+        "weight": 20,
+        "description": "対象範囲：ブラシ等に絡んだ髪・毛をユーザーが除去する手間の低減。清掃中の毛絡み防止そのもの（brush_tangle_prevention）や、ステーション・モップ洗浄部・トレイの清掃負担（station_self_clean）とは対象を分ける。",
+        "scoringGuide": {
+          "method": "次の5パターンで判定する。(1)自動除去・自動カット等、ユーザー作業を直接削減する機構がある→full。(2)工具不要等、ユーザーが簡単に処理できる具体的構造がある（自動除去ではない）→high。(3)『毎回切り取る必要がない』等、具体的な負担軽減効果は訴求されているが、それを実現する機構・方法（工具要否・自動化の有無等）の説明がない→standard。(4)単に『毛が絡みにくい』等、清掃中の絡みにくさへの言及のみで、除去・手入れの負担軽減について具体的な言及がない（brush_tangle_prevention側の訴求の域を出ない）→low。(5)毛絡み・ブラシの手入れに関する情報自体が確認できない→unpublished。対象は常に『ブラシ』であり、ステーション・モップ洗浄部・トレイの清掃・分解洗浄に関する記述はこの項目の根拠にしない（station_self_clean側で評価する）。素材・方式は判定材料にしない。",
+          "tiers": [
+            { "tier": "full", "points": 20, "condition": "ブラシに絡んだ毛を自動的に切断・除去する自動カット機構など、ユーザーの手作業を直接削減する仕組みが公式情報で確認できる" },
+            { "tier": "high", "points": 16, "condition": "工具不要でのブラシ着脱等、ユーザーが簡単に処理できる具体的な構造が公式情報で確認できる（自動除去機構ではない）" },
+            { "tier": "standard", "points": 12, "condition": "『毎回切り取る必要がない』等、具体的な負担軽減効果は公式情報で訴求されているが、それを実現する機構・方法（工具要否・自動化の有無等）の説明がない" },
+            { "tier": "low", "points": 6, "condition": "『毛が絡みにくい』等、清掃中の絡みにくさへの言及のみで、除去・手入れの負担軽減について具体的な言及がない" },
+            { "tier": "zero", "points": 0, "condition": "手作業でのブラシ清掃が前提であることが公式情報で明記されている、または分解・清掃が困難である旨が示唆されている" }
+          ],
+          "unpublishedCondition": "毛絡み・ブラシの手入れに関する情報自体が公式情報で確認できない",
+          "caveat": "brush_tangle_prevention（清掃中の毛絡み防止性能）、station_self_clean（ステーション・モップ洗浄部・トレイの清掃負担）とは別の観点。同一の説明文を根拠にする場合でも、記述が『除去・手入れの手間』について具体的に述べているか（standard以上）、単に『絡みにくさ』を述べているだけか（low）を区別すること。ステーション・トレイに関する記述はこの項目の根拠にしない。特定素材・特定方式は条件にしない。同一の説明文がbrush_tangle_preventionの根拠にも使われる場合、それぞれの意味（清掃中の防止 or 除去負担の軽減）を個別に満たす理由を説明できる場合に限り、両criterionの根拠として使用できる。"
+        }
+      },
+      {
+        "id": "station_self_clean",
+        "label": "ステーション自己清掃・省メンテナンス",
+        "weight": 15,
+        "description": "対象範囲：ステーション・モップ洗浄部・トレイ等をユーザーが清掃する手間の低減。ブラシに絡んだ髪・毛の除去負担（tangle_maintenance）とは対象を分ける。",
+        "scoringGuide": {
+          "method": "ステーション・モップ洗浄部・トレイ自身の手入れ負担（タンク洗浄・フィルター交換通知・分解清掃の頻度等）を評価する。対象は常に『ステーション側』であり、ブラシの毛絡み除去に関する記述はこの項目の根拠にしない（tangle_maintenance側で評価する）。ステーションを持たない機種は、そもそも手入れをすべて手動で行う必要があるため0点とする（自動ゴミ収集等と同じ扱い）。",
+          "tiers": [
+            { "tier": "full", "points": 15, "condition": "ステーション自身の自己洗浄・自動メンテナンス機構（タンク自動洗浄・フィルター清掃通知・自動UV除菌等）が公式情報で確認できる" },
+            { "tier": "high", "points": 12, "condition": "ステーションの手入れのしやすさに関する言及はあるが、自己洗浄・自動通知等の具体的機構は公式情報で確認できない" },
+            { "tier": "standard", "points": 9, "condition": "ステーションはあるが、自己清掃・省メンテナンスに関する言及が公式情報にない（標準仕様として扱う）" },
+            { "tier": "low", "points": 4, "condition": "ステーションの手入れ頻度が高い旨が公式情報や注意書きで示唆されている" },
+            { "tier": "zero", "points": 0, "condition": "自動ゴミ収集・モップ洗浄乾燥ステーションを搭載していないことが公式情報で確認できる（手入れをすべて手動で行う必要がある）" }
+          ],
+          "unpublishedCondition": "ステーションの有無・自己清掃機構に関する情報が公式情報で確認できない",
+          "caveat": "tangle_maintenance（ブラシに絡んだ毛の除去負担）とは別の観点。ここでは『ステーション・モップ洗浄部・トレイ側』の清掃・分解洗浄の手間のみを評価する。同一の説明文（例：『お手入れが簡単』という一文）を根拠にする場合でも、記述の対象が明確に『ステーション側』であることを確認できる場合のみ加点し、ブラシに関する記述を流用しない。"
+        }
+      }
+    ]
+  },
+  {
+    "id": "axis-space-fit",
+    "axisKey": "space_fit",
+    "category": "robot_vacuum",
+    "label": "住宅適合性",
+    "description": "狭小住宅・賃貸・段差への対応力",
+    "scoreDirection": "higher_is_better",
+    "dataSourceFields": ["stepClimbingMm", "bodyWidthMm", "bodyDepthMm", "stationWidthMm", "stationDepthMm"],
+    "rubricVersion": "1.0",
+    "criteria": [
+      {
+        "id": "body_height",
+        "label": "本体高さ",
+        "weight": 25,
+        "description": "家具下への入り込みやすさに関わる本体高さの実寸をもとに評価する。",
+        "scoringGuide": {
+          "method": "本体高さ（bodyHeightMm）の実寸mm値で判定する。",
+          "tiers": [
+            { "tier": "full", "points": 25, "condition": "本体高さが85mm以下" },
+            { "tier": "high", "points": 20, "condition": "86〜95mm" },
+            { "tier": "standard", "points": 15, "condition": "96〜105mm" },
+            { "tier": "low", "points": 8, "condition": "106〜115mm" },
+            { "tier": "zero", "points": 0, "condition": "116mm超" }
+          ],
+          "unpublishedCondition": "本体高さの実寸が公式情報で確認できない"
+        }
+      },
+      {
+        "id": "body_footprint",
+        "label": "本体サイズ",
+        "weight": 15,
+        "description": "本体の幅・奥行きの実寸をもとに評価する。",
+        "scoringGuide": {
+          "method": "本体の幅・奥行き（円形本体の場合は直径を幅・奥行き双方として扱う）の実寸mm値で判定する。",
+          "tiers": [
+            { "tier": "full", "points": 15, "condition": "本体の幅・奥行き（円形の場合は直径）がいずれも320mm以下" },
+            { "tier": "high", "points": 12, "condition": "321〜340mm" },
+            { "tier": "standard", "points": 9, "condition": "341〜360mm" },
+            { "tier": "low", "points": 4, "condition": "361〜380mm" },
+            { "tier": "zero", "points": 0, "condition": "380mm超" }
+          ],
+          "unpublishedCondition": "本体幅・奥行きの実寸が公式情報で確認できない"
+        }
+      },
+      {
+        "id": "station_footprint",
+        "label": "ステーションサイズ",
+        "weight": 15,
+        "description": "ステーションの設置面積（幅・奥行き・高さ）の実寸をもとに評価する。",
+        "scoringGuide": {
+          "method": "ステーション設置面積（幅mm×奥行きmm）で判定する。ステーションを持たない機種は、設置スペースを一切取らないため満点として扱う（自動ゴミ収集等の機能面の評価とは意味が逆になる点に注意）。",
+          "tiers": [
+            { "tier": "full", "points": 15, "condition": "ステーションを持たない、またはステーション設置面積（幅×奥行き）が80,000mm²以下" },
+            { "tier": "high", "points": 12, "condition": "80,001〜115,000mm²" },
+            { "tier": "standard", "points": 9, "condition": "115,001〜150,000mm²" },
+            { "tier": "low", "points": 4, "condition": "150,001〜190,000mm²" },
+            { "tier": "zero", "points": 0, "condition": "190,000mm²超" }
+          ],
+          "unpublishedCondition": "ステーションの有無、または設置面積の実寸が公式情報で確認できない",
+          "caveat": "「ステーションを持たない」ことが確認できた場合はverified・満点として扱い、ステーションはあるが寸法が単に未公表なだけの場合はunpublishedとして除外する。両者を混同しない。"
+        }
+      },
+      {
+        "id": "step_climbing",
+        "label": "段差性能",
+        "weight": 15,
+        "description": "公表されている段差乗り越え性能（mm）をもとに評価する。",
+        "scoringGuide": {
+          "method": "公称段差乗り越え高さ（stepClimbingMm）のmm値で判定する。",
+          "tiers": [
+            { "tier": "full", "points": 15, "condition": "22mm以上" },
+            { "tier": "high", "points": 12, "condition": "18〜21mm" },
+            { "tier": "standard", "points": 9, "condition": "14〜17mm" },
+            { "tier": "low", "points": 4, "condition": "10〜13mm" },
+            { "tier": "zero", "points": 0, "condition": "10mm未満" }
+          ],
+          "unpublishedCondition": "段差乗り越え性能の実測・公称値が公式情報で確認できない"
+        }
+      },
+      {
+        "id": "obstacle_avoidance",
+        "label": "障害物回避",
+        "weight": 20,
+        "description": "A（測距・空間認識）とB（障害物・物体認識）を独立した確認事項として分離評価する。『測距技術がある＝物体認識もある』という推定は行わない。センサー名称が確認できなくても、メーカーが障害物の検知・回避という機能を具体的に説明している場合（C：回避行動の明示）は、技術中立な経路で評価できる。「日本向き」等の主観評価のみでの加点は行わない。",
+        "scoringGuide": {
+          "method": "次の2要素をそれぞれ独立に確認する。A（測距・空間認識）＝LiDAR・ToF・3D構造光・ミリ波レーダー等、障害物検知・距離測定用としてメーカーが明示するセンサー技術の有無。B（障害物・物体認識）＝カメラ・AI認識・Vision-Language Model等、物体の種類や形状を認識する仕組みの有無。AがあるからといってBも搭載していると推定してはならない（逆も同様）。A・Bいずれの技術名称も確認できない場合でも、メーカーが『障害物を検知して回避する』という具体的な動作を説明している場合（C：回避行動の明示。単なる形容ではなく動作としての説明）は、high相当として評価する。特定のセンサー方式を採用していないことだけを理由に不利に評価しない。",
+          "tiers": [
+            { "tier": "full", "points": 20, "condition": "A（測距・空間認識）とB（障害物・物体認識）の両方が、それぞれ独立した記述として公式情報で確認できる" },
+            { "tier": "high", "points": 16, "condition": "A・Bのいずれか一方のみが公式情報で確認できる。または、A・Bの技術名称は確認できないが、メーカーが『障害物を検知して回避する』という具体的な動作（C）を説明している" },
+            { "tier": "standard", "points": 9, "condition": "赤外線・超音波センサー等の簡易な障害物検知方式のみが公式情報で確認できる" },
+            { "tier": "low", "points": 4, "condition": "障害物回避に関する言及はあるが、方式・機能の説明がほとんどない" },
+            { "tier": "zero", "points": 0, "condition": "障害物回避機能を搭載していないことが公式情報で確認できる" }
+          ],
+          "unpublishedCondition": "障害物回避方式・機能の有無が公式情報で確認できない",
+          "caveat": "A（測距技術）の搭載をもってB（物体認識）の搭載を推定してはならない（逆も同様）。特定のセンサー方式（LiDAR等）を採用していないことだけを理由に不利に評価しない。センサーの種類の多さそのものは加点材料にしない。同じセンサーが障害物回避と無関係な文脈（本体の薄型化等）でのみ言及されている場合は、この項目の根拠にしない。"
+        }
+      },
+      {
+        "id": "mapping_narrow_space",
+        "label": "マッピング・狭所対応",
+        "weight": 10,
+        "description": "マッピング方式・狭所での取り回しに関する公表情報をもとに評価する。",
+        "scoringGuide": {
+          "method": "マッピング方式（LiDAR/vSLAM等）の有無と精度、狭所対応への言及の具体性で評価する。",
+          "tiers": [
+            { "tier": "full", "points": 10, "condition": "LiDARまたはvSLAM等の高精度マッピング方式に加え、狭所での取り回し（家具間ナビゲーション等）に関する具体的な公式情報がある" },
+            { "tier": "high", "points": 8, "condition": "LiDARまたはvSLAM等の高精度マッピング方式が公式情報で確認できる" },
+            { "tier": "standard", "points": 6, "condition": "マッピング機能は確認できるが、方式の詳細（LiDAR/vSLAM等の区別）が不明" },
+            { "tier": "low", "points": 3, "condition": "マッピング機能に関する言及が乏しい（ランダム走行方式に近い）" },
+            { "tier": "zero", "points": 0, "condition": "マッピング機能を搭載していない（ランダム走行のみ）ことが公式情報で確認できる" }
+          ],
+          "unpublishedCondition": "マッピング方式に関する情報が公式情報で確認できない"
+        }
+      }
+    ]
+  },
+  {
+    "id": "axis-price-value",
+    "axisKey": "price_value",
+    "category": "robot_vacuum",
+    "label": "価格対効果",
+    "description": "「安い商品ほど高得点」ではなく、支払う価格に対してどれだけ価値ある性能・自動化・利便性を得られるかを評価する。cleaning_value／automation_value／fit_convenience_valueの3criterionは、full〜zeroの意味を共通化している：full＝価格に対して得られる価値が非常に高い、high＝高い、standard＝概ね妥当、low＝低い、zero＝明確に割高。",
+    "scoreDirection": "higher_is_better",
+    "dataSourceFields": ["referencePrice"],
+    "rubricVersion": "1.0",
+    "criteria": [
+      {
+        "id": "product_price",
+        "label": "製品価格",
+        "weight": 30,
+        "description": "対象：絶対的な購入価格負担そのもの（価格対効果ではない）。referencePriceを基準に評価する。currentPrice（セール価格）は採点基準には直接使用しない。",
+        "scoringGuide": {
+          "method": "referencePriceの価格帯で判定する。currentPrice（セール等の実勢価格）は本項目の採点には使用しない。",
+          "tiers": [
+            { "tier": "full", "points": 30, "condition": "referencePriceが60,000円以下" },
+            { "tier": "high", "points": 24, "condition": "60,001〜90,000円" },
+            { "tier": "standard", "points": 18, "condition": "90,001〜120,000円" },
+            { "tier": "low", "points": 9, "condition": "120,001〜150,000円" },
+            { "tier": "zero", "points": 0, "condition": "150,000円超" }
+          ],
+          "unpublishedCondition": "referencePriceが公式情報で確認できない",
+          "caveat": "currentPrice（セール等の実勢価格）は本項目の採点には使用しない。ロボット掃除機カテゴリ全体の価格分布を踏まえた閾値であり、分布の変化に応じて改訂しうる。絶対的な購入負担を測る項目であるため、固定価格帯によるtier境界を用いることは許容する（cleaning_value等の相対価値criterionとは性質が異なる）。"
+        }
+      },
+      {
+        "id": "cleaning_value",
+        "label": "清掃性能に対する価値",
+        "weight": 25,
+        "description": "対象：referencePriceに対して、cleaning_powerで得られる清掃性能がどれだけ価値ある内容かを評価する。cleaning_power自体の絶対性能の再評価ではない。",
+        "scoringGuide": {
+          "method": "B方式（構造化された人間レビュー）で判定する。①referencePriceを確認する。②60,000円/90,000円/120,000円/150,000円を価格アンカーとし、隣接アンカー間の連続的な位置(%)を算出する（内部参考値であり、tierを自動決定しない。150,000円超は『価格が高くなるほど、より強い価値根拠を要求する』という自然言語ルールで扱い、数値的な外挿係数は用いない）。③アンカー位置に応じて『この価格で何を確認できれば価値を上げる要素として扱うか』というv1.0のレビュー方針を参照する（市場一般の事実の断定ではなく、レビュー基準として設定した仮説である）。④cleaning_power側のverified済み内訳（吸引・水拭き・壁際・カーペット・毛絡み対策）を確認する。cleaning_powerの既存criterion weight（suction25/mopping25/edge15/carpet15/tangle20）は、どの過不足をより重要視するかの参考情報として用いる（重み付きスコアの再計算ではない）。⑤各項目が③の期待水準を『明確に上回る／概ね一致／明確に下回る』のいずれかを判断し、重要度の高い項目（suction・mopping）の状況を中心にtierを決定する。cleaning_powerのnormalizedScoreをそのままtier閾値として使うことは禁止する。同一のabsolute tierでも価格帯によって評価が変わりうることを踏まえ、absolute tierを機械的にfalls-short/meetsへ転記しない。",
+          "tiers": [
+            { "tier": "full", "points": 25, "condition": "価格に対して得られる清掃性能の価値が非常に高い。重要度の高い項目（suction/mopping）を含む複数項目で、価格アンカーの期待水準を明確に上回る" },
+            { "tier": "high", "points": 20, "condition": "価格に対して得られる清掃性能の価値が高い。重要度の高い項目が期待水準を満たし、複数項目で明確な上振れが確認できる" },
+            { "tier": "standard", "points": 15, "condition": "価格に対して清掃性能の価値が概ね妥当。期待を上回る点と不足する点が拮抗する、または大半が期待水準どおり" },
+            { "tier": "low", "points": 8, "condition": "価格に対して清掃性能の価値が低い。重要度の高い項目を含む複数項目で期待水準を下回る" },
+            { "tier": "zero", "points": 0, "condition": "価格に対して清掃性能の価値が明確に割高" }
+          ],
+          "unpublishedCondition": "referencePriceが未確認、またはcleaning_power側の確認情報が著しく不足しておりレビューできない",
+          "caveat": "netScore等の集計値でtierを自動決定しない。cleaning_powerのnormalizedScoreを直接の閾値にしない。同一のabsolute tier（例：standard）でも、低価格商品と高価格商品では価値判断が異なりうる。absolute lowは通常価格帯の寛容度を踏まえてもfalls-short寄りに判断してよいが、absolute standard以上は価格アンカー位置次第でmeets/exceedsいずれにもなりうるため、必ず個別に判断する。"
+        }
+      },
+      {
+        "id": "automation_value",
+        "label": "自動化機能に対する価値",
+        "weight": 25,
+        "description": "対象：referencePriceに対して、自動化機能がどれだけ人の作業を減らせるかという価値を評価する。maintainabilityが測る『メンテナンスのしやすさそのもの』とは目的が異なるため、maintainabilityの評価をそのまま流用しない。",
+        "scoringGuide": {
+          "method": "B方式（構造化された人間レビュー）で判定する。①〜③はcleaning_valueと同様（referencePrice確認→価格アンカー位置の算出→レビュー方針の参照）。④maintainability側のverified済み内訳（自動ゴミ収集・モップ自動洗浄・モップ自動乾燥・給水関連自動化・ステーション自己清掃・毛絡み処理の自動化）を確認する。maintainabilityの既存criterion weightは目的が異なるため直接流用せず、自動化価値専用の優先度（主要：自動ゴミ収集・モップ自動洗浄／副次：モップ自動乾燥・毛絡み処理の自動化・ステーション自己清掃・給水関連自動化）を重要度の参考として用いる。⑤機能数の多さだけでtierを決定せず、『この価格でどこまで人の作業を減らせるか』という観点で、③の期待水準との差を判断する。maintainabilityのnormalizedScoreをそのままtier閾値として使うことは禁止する。",
+          "tiers": [
+            { "tier": "full", "points": 25, "condition": "価格に対して得られる自動化価値が非常に高い。主要項目（自動ゴミ収集・モップ自動洗浄）が明確に期待を上回り、副次項目も複数で高水準" },
+            { "tier": "high", "points": 20, "condition": "価格に対して得られる自動化価値が高い。主要項目が期待を満たし、副次項目の多くで期待を上回るか高水準" },
+            { "tier": "standard", "points": 15, "condition": "価格に対して自動化価値が概ね妥当。上回る点と不足する点が拮抗する" },
+            { "tier": "low", "points": 8, "condition": "価格に対して自動化価値が低い。主要項目や複数の副次項目で明確に不足する" },
+            { "tier": "zero", "points": 0, "condition": "価格に対して自動化価値が明確に割高" }
+          ],
+          "unpublishedCondition": "referencePriceが未確認、またはmaintainability側の確認情報が著しく不足しておりレビューできない",
+          "caveat": "機能の有無・数だけでtierを決めない。netScore等の集計値でtierを自動決定しない。maintainabilityのnormalizedScoreを直接の閾値にしない。"
+        }
+      },
+      {
+        "id": "fit_convenience_value",
+        "label": "住宅適合性・利便性",
+        "weight": 20,
+        "description": "対象：referencePriceに対して得られる住宅適合性・利便性の価値。『住宅適合性能そのもの』（space_fit）の再評価ではない。",
+        "scoringGuide": {
+          "method": "B方式（構造化された人間レビュー）で判定する。①〜③はcleaning_valueと同様。④space_fit側のverified済み内訳（本体高さ・本体サイズ・ステーションサイズ・段差性能・障害物回避・マッピング/狭所対応）を確認する。space_fitの既存criterion weight（body_height25/body_size15/station_size15/step15/obstacle_avoidance20/mapping10）を、どの過不足をより重要視するかの参考情報として用いる。⑤各項目のabsolute tier（space_fit本体でのfull〜zero）を確認したうえで、それを機械的にfalls-short/meets/exceedsへ転記しない。absolute lowは通常価格帯の寛容度を踏まえてもfalls-short寄りに判断してよいが、absolute standard以上は、価格アンカー位置（その価格でどこまでの水準が妥当とされるか）次第でmeetsにもfalls-shortにもなりうるため、必ずアンカー位置と重要度を踏まえて個別に判断する。同じabsolute standardでも、低価格商品と非常に高価格な商品では価値判断が異なりうることを常に意識する。space_fitのnormalizedScoreをそのままtier閾値として使うことは禁止する。",
+          "tiers": [
+            { "tier": "full", "points": 20, "condition": "価格に対して得られる住宅適合性・利便性の価値が非常に高い。重要度の高い項目（body_height等）を含む複数項目で、価格アンカーの期待水準を明確に上回る" },
+            { "tier": "high", "points": 16, "condition": "価格に対して得られる住宅適合性・利便性の価値が高い。複数項目で期待水準を明確に上回る" },
+            { "tier": "standard", "points": 12, "condition": "価格に対して住宅適合性・利便性の価値が概ね妥当。期待を上回る点と不足する点が拮抗する、または大半が期待水準どおり" },
+            { "tier": "low", "points": 6, "condition": "価格に対して住宅適合性・利便性の価値が低い。特に重要度の高い項目（body_height等）を含む複数項目で期待水準を下回る" },
+            { "tier": "zero", "points": 0, "condition": "価格に対して住宅適合性・利便性の価値が明確に割高" }
+          ],
+          "unpublishedCondition": "referencePriceが未確認、またはspace_fit側の確認情報が著しく不足しておりレビューできない",
+          "caveat": "『絶対low→falls-short』『絶対standard以上→少なくともmeets』という対応関係を、普遍的な機械判定ルールとして固定しない。absolute tier・referencePrice・価格アンカー位置・criterionの重要度・verifiedされた具体的仕様を総合して、そのつど人間が判断する。netScore（上回る/概ね一致/下回るの項目数集計）は補助情報として記録してよいが、tierを自動決定する式としては使わない。"
+        }
+      }
+    ]
+  }
+]

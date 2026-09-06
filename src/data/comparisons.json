@@ -1,0 +1,56 @@
+[
+  {
+    "id": "robot-vacuum-narrow-room",
+    "slug": "robot-vacuum-narrow-room",
+    "title": "狭い家・マンション向けロボット掃除機5選｜置きやすさまで比較",
+    "cluster": "robot_vacuum",
+    "personaProfileId": "narrow-home",
+    "productIds": [
+      "irobot-roomba-plus-515-combo",
+      "roborock-saros-20-sonic",
+      "ecovacs-deebot-t80s-omni",
+      "switchbot-s20",
+      "eufy-robot-vacuum-omni-e25"
+    ],
+    "selectionCriteria": "実データ（dataType===\"real\"）としてAXIS SCORE™を採点済みの商品を対象とする。productIdsは本記事公開時点の対象商品の記録であり、実際の表示・ランキングはproducts.json（dataType===\"real\"）から動的に取得するため、対象商品が増えた場合も本文の手直しなしで反映される。",
+    "relatedSlugs": ["robot-vacuum-low-maintenance", "robot-vacuum-cleaning-performance"],
+    "status": "published",
+    "updatedAt": "2026-09-03"
+  },
+  {
+    "id": "robot-vacuum-low-maintenance",
+    "slug": "robot-vacuum-low-maintenance",
+    "title": "手入れが楽なロボット掃除機5選｜ゴミ収集・モップ洗浄まで比較",
+    "cluster": "robot_vacuum",
+    "personaProfileId": "low-maintenance",
+    "productIds": [
+      "irobot-roomba-plus-515-combo",
+      "roborock-saros-20-sonic",
+      "ecovacs-deebot-t80s-omni",
+      "switchbot-s20",
+      "eufy-robot-vacuum-omni-e25"
+    ],
+    "selectionCriteria": "実データ（dataType===\"real\"）としてAXIS SCORE™を採点済みの商品を対象とする。productIdsは本記事公開時点の対象商品の記録であり、実際の表示・ランキングはproducts.json（dataType===\"real\"）から動的に取得するため、対象商品が増えた場合も本文の手直しなしで反映される。",
+    "relatedSlugs": ["robot-vacuum-narrow-room", "robot-vacuum-cleaning-performance"],
+    "status": "published",
+    "updatedAt": "2026-09-03"
+  },
+  {
+    "id": "robot-vacuum-cleaning-performance",
+    "slug": "robot-vacuum-cleaning-performance",
+    "title": "清掃性能で選ぶロボット掃除機5選｜吸引・水拭き・絡まり対策まで比較",
+    "cluster": "robot_vacuum",
+    "personaProfileId": "performance-first",
+    "productIds": [
+      "irobot-roomba-plus-515-combo",
+      "roborock-saros-20-sonic",
+      "ecovacs-deebot-t80s-omni",
+      "switchbot-s20",
+      "eufy-robot-vacuum-omni-e25"
+    ],
+    "selectionCriteria": "実データ（dataType===\"real\"）としてAXIS SCORE™を採点済みの商品を対象とする。productIdsは本記事公開時点の対象商品の記録であり、実際の表示・ランキングはproducts.json（dataType===\"real\"）から動的に取得するため、対象商品が増えた場合も本文の手直しなしで反映される。",
+    "relatedSlugs": ["robot-vacuum-narrow-room", "robot-vacuum-low-maintenance"],
+    "status": "published",
+    "updatedAt": "2026-09-03"
+  }
+]

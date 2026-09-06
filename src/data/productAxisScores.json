@@ -1,0 +1,1837 @@
+[
+  {
+    "productId": "cleanbot-mini-s1",
+    "scores": [
+      {
+        "axisKey": "cleaning_power",
+        "normalizedScore": 62,
+        "rationale": "吸引力950Paで一般的な床のゴミ・粉塵は問題なく除去できるが、カーペットの奥のホコリ除去はやや弱い",
+        "scorerType": "カタログ値換算",
+        "scoredAt": "2026-09-02",
+        "criteria": []
+      },
+      {
+        "axisKey": "quietness",
+        "normalizedScore": 70,
+        "rationale": "標準モード58dB。日常会話程度の音量で気になりにくいが、最強モードでは68dBまで上昇する",
+        "scorerType": "カタログ値換算",
+        "scoredAt": "2026-09-02",
+        "criteria": []
+      },
+      {
+        "axisKey": "maintainability",
+        "normalizedScore": 45,
+        "rationale": "自動ゴミ収集を搭載しておらずダストボックスの手動排出が必要。水拭き機能もない",
+        "scorerType": "編集部評価",
+        "scoredAt": "2026-09-02",
+        "criteria": []
+      },
+      {
+        "axisKey": "space_fit",
+        "normalizedScore": 85,
+        "rationale": "本体直径28cm・高さ7.8cmとクラス最小級で、段差18mmまで乗り越え可能。ワンルームでの取り回しに向く",
+        "scorerType": "カタログ値換算",
+        "scoredAt": "2026-09-02",
+        "criteria": []
+      },
+      {
+        "axisKey": "price_value",
+        "normalizedScore": 74,
+        "rationale": "3万円台前半でコンパクト機として基本性能は十分にそろっており、価格対効果は良好",
+        "scorerType": "編集部評価",
+        "scoredAt": "2026-09-02",
+        "criteria": []
+      }
+    ]
+  },
+  {
+    "productId": "quietrun-q2",
+    "scores": [
+      {
+        "axisKey": "cleaning_power",
+        "normalizedScore": 65,
+        "rationale": "吸引力1800Paでフローリング・薄手のラグには十分な清掃力。カーペットの深い毛足はやや残りやすい",
+        "scorerType": "カタログ値換算",
+        "scoredAt": "2026-09-02",
+        "criteria": []
+      },
+      {
+        "axisKey": "quietness",
+        "normalizedScore": 92,
+        "rationale": "静音モード42dB、標準モードでも51dBに抑えられており、在宅ワーク中・夜間運転でも気になりにくい水準",
+        "scorerType": "カタログ値換算",
+        "scoredAt": "2026-09-02",
+        "criteria": []
+      },
+      {
+        "axisKey": "maintainability",
+        "normalizedScore": 55,
+        "rationale": "簡易水拭き機能を搭載するが自動ゴミ収集はなく、ダストボックスの手動排出は必要",
+        "scorerType": "編集部評価",
+        "scoredAt": "2026-09-02",
+        "criteria": []
+      },
+      {
+        "axisKey": "space_fit",
+        "normalizedScore": 60,
+        "rationale": "本体厚みがあり家具下に入りにくい場合があるが、複数フロアのマッピングに対応",
+        "scorerType": "編集部評価",
+        "scoredAt": "2026-09-02",
+        "criteria": []
+      },
+      {
+        "axisKey": "price_value",
+        "normalizedScore": 55,
+        "rationale": "静音性能に対しては妥当な価格だが、ミドルレンジのため価格対効果は中程度",
+        "scorerType": "編集部評価",
+        "scoredAt": "2026-09-02",
+        "criteria": []
+      }
+    ]
+  },
+  {
+    "productId": "familyguard-f3",
+    "scores": [
+      {
+        "axisKey": "cleaning_power",
+        "normalizedScore": 88,
+        "rationale": "吸引力2600Paでカーペットの奥のゴミやペットの毛にも強く、比較対象の中で最も清掃力が高い",
+        "scorerType": "カタログ値換算",
+        "scoredAt": "2026-09-02",
+        "criteria": []
+      },
+      {
+        "axisKey": "quietness",
+        "normalizedScore": 63,
+        "rationale": "標準モード57dBで平均的な静音性。自動ゴミ収集ステーションの動作音は別途発生する",
+        "scorerType": "カタログ値換算",
+        "scoredAt": "2026-09-02",
+        "criteria": []
+      },
+      {
+        "axisKey": "maintainability",
+        "normalizedScore": 90,
+        "rationale": "自動ゴミ収集とモップ自動洗浄・乾燥を搭載しており、比較対象の中で最も手入れの手間が少ない",
+        "scorerType": "編集部評価",
+        "scoredAt": "2026-09-02",
+        "criteria": []
+      },
+      {
+        "axisKey": "space_fit",
+        "normalizedScore": 68,
+        "rationale": "段差乗越えは20mmと高いが、自動ゴミ収集ステーションの設置スペースが必要で賃貸には不向き",
+        "scorerType": "編集部評価",
+        "scoredAt": "2026-09-02",
+        "criteria": []
+      },
+      {
+        "axisKey": "price_value",
+        "normalizedScore": 58,
+        "rationale": "高機能な分価格も高いが、メンテナンス性・清掃性能を考慮すると妥当な範囲",
+        "scorerType": "編集部評価",
+        "scoredAt": "2026-09-02",
+        "criteria": []
+      }
+    ]
+  },
+  {
+    "productId": "valuepro-v4",
+    "scores": [
+      {
+        "axisKey": "cleaning_power",
+        "normalizedScore": 55,
+        "rationale": "吸引力800Paで基本的な清掃はこなせるが、比較対象の中では最も控えめな数値",
+        "scorerType": "カタログ値換算",
+        "scoredAt": "2026-09-02",
+        "criteria": []
+      },
+      {
+        "axisKey": "quietness",
+        "normalizedScore": 50,
+        "rationale": "標準モード62dBで比較対象の中ではやや音が大きい部類",
+        "scorerType": "カタログ値換算",
+        "scoredAt": "2026-09-02",
+        "criteria": []
+      },
+      {
+        "axisKey": "maintainability",
+        "normalizedScore": 40,
+        "rationale": "自動ゴミ収集・水拭き機能ともになく、日常的な手入れの手間は比較対象の中で最も多い",
+        "scorerType": "編集部評価",
+        "scoredAt": "2026-09-02",
+        "criteria": []
+      },
+      {
+        "axisKey": "space_fit",
+        "normalizedScore": 58,
+        "rationale": "段差乗越えは14mmとやや低めだが、軽量で持ち運びやすい",
+        "scorerType": "編集部評価",
+        "scoredAt": "2026-09-02",
+        "criteria": []
+      },
+      {
+        "axisKey": "price_value",
+        "normalizedScore": 90,
+        "rationale": "2万円台と比較対象の中で最も導入しやすく、価格に対する基本性能のバランスが良い",
+        "scorerType": "編集部評価",
+        "scoredAt": "2026-09-02",
+        "criteria": []
+      }
+    ]
+  },
+  {
+    "productId": "irobot-roomba-plus-515-combo",
+    "scores": [
+      {
+        "axisKey": "cleaning_power",
+        "normalizedScore": 85,
+        "rationale": "公式サイトで確認できた5項目中5項目がverified。壁際・カーペット・毛絡み対策は満点、吸引性能はPa非公表のため機構説明ベースでstandard、水拭き性能は加圧確認・連続洗浄未確認でhigh。合計85/100（evaluationCoverage 100%）。brush_tangle_preventionはルーブリック改訂（Route A〜F）によりRoute B（無条件・具体的なユーザー効果訴求）でfullと判定。",
+        "publicRationale": "壁際清掃・カーペット対応・毛絡み対策については、具体的な機構の説明が確認でき高評価です。吸引力は具体的なPa値が公表されておらず、水拭きも常時洗浄式かどうかまでは確認できませんでした。",
+        "scorerType": "カタログ値換算",
+        "scoredAt": "2026-09-03",
+        "criteria": [
+          {
+            "id": "suction_performance",
+            "label": "吸引性能",
+            "weight": 25,
+            "score": 15,
+            "status": "verified",
+            "rationale": "公式ページに『吸引力は従来比3倍』とあるのみで、絶対値としてのPa値は非公表。経路Bの代替パス『Pa非公表だが清掃機構の詳細が具体的に確認できる』に該当（毛とゴム製ブラシ・PerfectEdge・カーペットブースト等の機構詳細は確認できる）。相対倍率（3倍）から絶対Pa値を推測することはしていない。",
+            "value": "吸引力：従来比3倍（絶対Pa値は非公表）",
+            "sourceUrl": "https://store.irobot-jp.com/item/N285060.html",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          },
+          {
+            "id": "mopping_performance",
+            "label": "水拭き性能",
+            "weight": 25,
+            "score": 20,
+            "status": "verified",
+            "rationale": "『SmartScrub™...人の手でこするように前後に動きながら圧をかけて、しつこい汚れをしっかり落とす』で加圧機構を確認。一方、モップパッドの洗浄は『清掃が完了すると...充電ステーションへ戻り...75℃の温水でモップパッドを洗浄』とあり、清掃走行中ではなくステーション復帰後の洗浄（セッション後洗浄）。走行中・常時洗浄の記載はない。加圧のみ確認、連続洗浄は確認できずhigh(20/25)。",
+            "value": "SmartScrub加圧洗浄。モップ洗浄はステーション復帰後（75℃温水）",
+            "sourceUrl": "https://store.irobot-jp.com/item/N285060.html",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          },
+          {
+            "id": "edge_corner_cleaning",
+            "label": "壁際・隅清掃",
+            "weight": 15,
+            "score": 15,
+            "status": "verified",
+            "rationale": "『可動式のエッジクリーニングブラシとDualClean™モップパッド with PerfectEdge®テクノロジーを搭載。部屋の角や壁際の奥まで届き、従来比18％清掃範囲が向上』と明記。可動式サイドブラシ・壁際専用清掃機構の両方に該当するためfull(15/15)。",
+            "value": "可動式エッジクリーニングブラシ＋PerfectEdge（清掃範囲18%向上）",
+            "sourceUrl": "https://store.irobot-jp.com/item/N285060.html",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          },
+          {
+            "id": "carpet_performance",
+            "label": "カーペット対応",
+            "weight": 15,
+            "score": 15,
+            "status": "verified",
+            "rationale": "『カーペットブースト機能により、カーペットまで徹底的に汚れを吸い取ります』で吸引力自動アップを確認。『ラグを自動検知し、ラグの上ではモップパッドを約10mm持ち上げます』で検知＋モップリフトを確認。3要素（検知／吸引アップ／モップリフト）すべて確認できるためfull(15/15)。",
+            "value": "カーペットブースト（吸引力アップ）＋自動検知＋モップ10mmリフト",
+            "sourceUrl": "https://store.irobot-jp.com/item/N285060.html",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          },
+          {
+            "id": "brush_tangle_prevention",
+            "label": "ブラシ・毛絡み対策",
+            "weight": 20,
+            "score": 20,
+            "status": "verified",
+            "rationale": "【ルーブリック改訂（経路A〜F）により再評価】『絡まりにくい毛とゴム製のブラシを採用...ブラシに絡まりにくいため、毎回ブラシの毛を切り取る必要がありません』。専用機構の技術的詳細（数値・動作原理）はAほど明確ではないが、『毎回切り取る必要がありません』という無条件（毎回＝常に）かつ具体的（切り取り作業という結果が明確に特定できる）なユーザー効果訴求があり、経路B（明確な効果の訴求）を満たす。『絡まりにくい』という程度不明な一般的表現のみではなく、無条件・具体的な結果の訴求を根拠として採用し、full(20/20)と判定。",
+            "value": "『毎回切り取る必要なし』の無条件・具体的訴求（経路B）でfull",
+            "sourceUrl": "https://store.irobot-jp.com/item/N285060.html",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-03"
+          }
+        ]
+      },
+      {
+        "axisKey": "quietness",
+        "normalizedScore": 60,
+        "rationale": "body_noise（清掃音dB）が未公表のためunpublished。quiet_mode_control・station_noise_considerationのみverified。normalizedScore=60はcriteria確定値として保持するが、evaluationCoverage=40%かつcritical criterion（body_noise）未検証のため、scoreDisplayStatusはinsufficientとなる。",
+        "publicRationale": "運転音の公式な数値を確認できていないため、静音性は総合評価に含めていません。吸引力の段階調整機能はありますが、静音専用モードとしての明示はありませんでした。",
+        "scorerType": "カタログ値換算",
+        "scoredAt": "2026-09-03",
+        "criteria": [
+          {
+            "id": "body_noise",
+            "label": "本体清掃音",
+            "weight": 60,
+            "score": null,
+            "status": "unpublished",
+            "rationale": "公式ページ内を『dB』『騒音』等で検索したが、稼働音の数値は一切確認できなかった。unpublishedとする。",
+            "value": null,
+            "sourceUrl": null,
+            "sourceType": null,
+            "verifiedAt": null
+          },
+          {
+            "id": "quiet_mode_control",
+            "label": "静音モード・騒音制御",
+            "weight": 20,
+            "score": 12,
+            "status": "verified",
+            "rationale": "『4段階の吸引力調整...に対応します』と複数段階の吸引力調整は確認できるが、『静音モード』『騒音低減モード』等の名称での専用モード搭載の明示はない。standard条件（複数段階調整はあるが静音等の専用モードとしては明示されていない）に該当し12/20。",
+            "value": "4段階の吸引力調整（静音モードとしての明示なし）",
+            "sourceUrl": "https://store.irobot-jp.com/item/N285060.html",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          },
+          {
+            "id": "station_noise_consideration",
+            "label": "ステーション動作への配慮",
+            "weight": 20,
+            "score": 12,
+            "status": "verified",
+            "rationale": "AutoWash充電ステーションの搭載は確認できるが、ステーション動作音・静音設計に関する言及は見当たらない。standard条件（特段の言及がない場合は標準仕様として扱う）に該当し12/20。",
+            "value": "ステーション搭載を確認。静音設計への言及なし。",
+            "sourceUrl": "https://store.irobot-jp.com/item/N285060.html",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          }
+        ]
+      },
+      {
+        "axisKey": "maintainability",
+        "normalizedScore": 92,
+        "rationale": "5項目すべてverified。自動ゴミ収集・モップ自動洗浄（75℃）・モップ自動乾燥（45℃）・ステーション自己清掃はfull、毛絡み対策のみ具体的な機構説明がなくstandard。合計92/100（evaluationCoverage 100%）。",
+        "publicRationale": "自動ゴミ収集、75℃温水でのモップ自動洗浄、45℃温風での自動乾燥、ステーション内部の自己洗浄機構など、手入れの手間を減らす機能が幅広く確認できました。ブラシの毛絡みについては『切り取る必要がない』という効果は明記されていますが、具体的な仕組みまでは確認できていません。",
+        "scorerType": "カタログ値換算",
+        "scoredAt": "2026-09-03",
+        "criteria": [
+          {
+            "id": "auto_dust_collection",
+            "label": "自動ゴミ収集",
+            "weight": 20,
+            "score": 20,
+            "status": "verified",
+            "rationale": "『自動ゴミ収集機能：◯（最大3か月分）』と明記。full(20/20)。",
+            "value": "自動ゴミ収集機能：あり（最大3か月分）",
+            "sourceUrl": "https://store.irobot-jp.com/item/N285060.html",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          },
+          {
+            "id": "auto_mop_washing",
+            "label": "モップ自動洗浄",
+            "weight": 25,
+            "score": 25,
+            "status": "verified",
+            "rationale": "『75℃の温水でモップパッドを自動洗浄』と加温洗浄が明記。full(25/25)。",
+            "value": "75℃温水自動洗浄",
+            "sourceUrl": "https://store.irobot-jp.com/item/N285060.html",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          },
+          {
+            "id": "auto_mop_drying",
+            "label": "モップ自動乾燥",
+            "weight": 20,
+            "score": 20,
+            "status": "verified",
+            "rationale": "『45℃の温風で乾燥』と温風乾燥が明記。full(20/20)。",
+            "value": "45℃温風乾燥",
+            "sourceUrl": "https://store.irobot-jp.com/item/N285060.html",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          },
+          {
+            "id": "tangle_maintenance",
+            "label": "毛絡み対策",
+            "weight": 20,
+            "score": 12,
+            "status": "verified",
+            "rationale": "『絡まりにくい毛とゴム製のブラシを採用...ブラシに絡まりにくいため、毎回ブラシの毛を切り取る必要がありません』は、除去・手入れの負担軽減について具体的な効果（『切り取る必要がない』）を訴求しているが、それを実現する機構・方法（自動カット機構の有無、工具要否等）の説明はない。tier定義の『具体的な負担軽減効果は訴求されているが機構・方法の説明がない』（standard）に該当し12/20。",
+            "value": "『毎回切り取る必要なし』の具体的訴求（機構・方法の説明なし）",
+            "sourceUrl": "https://store.irobot-jp.com/item/N285060.html",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          },
+          {
+            "id": "station_self_clean",
+            "label": "ステーション自己清掃・省メンテナンス",
+            "weight": 15,
+            "score": 15,
+            "status": "verified",
+            "rationale": "『セルフクリーニングにより、充電ステーション内部にも水を循環させ、蓄積した汚れやゴミを洗い流します』とステーション自身の自己洗浄機構が明記。full(15/15)。",
+            "value": "ステーション内部の自己洗浄（水循環）機構あり",
+            "sourceUrl": "https://store.irobot-jp.com/item/N285060.html",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          }
+        ]
+      },
+      {
+        "axisKey": "space_fit",
+        "normalizedScore": 91.8,
+        "rationale": "6項目中5項目がverified、step_climbingのみ公式情報がなくunpublished。本体高さ・本体サイズ・マッピングはfull。合計91.8/100（evaluationCoverage 85%）。",
+        "publicRationale": "本体の高さ・サイズは今回確認した中でも特にコンパクトで、家具下への入り込みやすさに優れています。段差乗り越え性能については公式情報が見つかりませんでした。",
+        "scorerType": "カタログ値換算",
+        "scoredAt": "2026-09-03",
+        "criteria": [
+          {
+            "id": "body_height",
+            "label": "本体高さ",
+            "weight": 25,
+            "score": 25,
+            "status": "verified",
+            "rationale": "本体高さ8.4cm＝84mm。full条件（85mm以下）に該当し25/25。",
+            "value": "84mm",
+            "sourceUrl": "https://store.irobot-jp.com/item/N285060.html",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          },
+          {
+            "id": "body_footprint",
+            "label": "本体サイズ",
+            "weight": 15,
+            "score": 15,
+            "status": "verified",
+            "rationale": "本体29.8cm(幅)×30.3cm(奥行き)＝298mm×303mm。いずれも320mm以下でfull条件に該当し15/15。",
+            "value": "298mm×303mm",
+            "sourceUrl": "https://store.irobot-jp.com/item/N285060.html",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          },
+          {
+            "id": "station_footprint",
+            "label": "ステーションサイズ",
+            "weight": 15,
+            "score": 12,
+            "status": "verified",
+            "rationale": "ステーション33.0cm(幅)×34.0cm(奥行き)＝330mm×340mm。設置面積約112,200mm²。high条件（80,001〜115,000mm²）に該当し12/15。",
+            "value": "330mm×340mm（面積約112,200mm²）",
+            "sourceUrl": "https://store.irobot-jp.com/item/N285060.html",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          },
+          {
+            "id": "step_climbing",
+            "label": "段差性能",
+            "weight": 15,
+            "score": null,
+            "status": "unpublished",
+            "rationale": "公式ページ内を『段差』で検索したが、段差乗り越え性能に関する記載は見当たらなかった。unpublishedとする。",
+            "value": null,
+            "sourceUrl": null,
+            "sourceType": null,
+            "verifiedAt": null
+          },
+          {
+            "id": "obstacle_avoidance",
+            "label": "障害物回避",
+            "weight": 20,
+            "score": 16,
+            "status": "verified",
+            "rationale": "『ClearView™LiDARによる正確なマッピングと障害物認識』とLiDAR（測距技術）による障害物認識は明確に確認できる。AIカメラ・Vision-Language Model等のAI物体認識機能がLiDARとは別に搭載されているという記載は見当たらない。測距技術のみ確認・AI物体認識機能は別途確認できずhigh(16/20)。",
+            "value": "ClearView LiDAR（測距技術による障害物認識）。AI物体認識機能の別途明記なし。",
+            "sourceUrl": "https://store.irobot-jp.com/item/N285060.html",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          },
+          {
+            "id": "mapping_narrow_space",
+            "label": "マッピング・狭所対応",
+            "weight": 10,
+            "score": 10,
+            "status": "verified",
+            "rationale": "『ClearView™LiDARが、約10分で家全体をマッピング』『高精度で賢いマッピング&ナビゲーション』で高精度マッピング方式を確認。『狭いスペースや家具の下にも入り込み、これまで届かなかった場所まで清掃』と狭所での取り回しに関する具体的な言及もあるためfull(10/10)。",
+            "value": "ClearView LiDAR高精度マッピング＋『狭いスペース・家具の下にも入り込み』の明記",
+            "sourceUrl": "https://store.irobot-jp.com/item/N285060.html",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          }
+        ]
+      },
+      {
+        "axisKey": "price_value",
+        "normalizedScore": 60,
+        "rationale": "price_value rubricVersion 1.0（B方式）による正式採点。product_price=9/30（129,800円、low帯）、cleaning_value=15/25（standard、最重要のsuction/moppingが価値を上げる決め手を欠く）、automation_value=20/25（high、主要項目・乾燥・自己清掃が万全、毛絡み処理のみ物足りない）、fit_convenience_value=16/20（high、body_height等3項目がfull）。合計60/100、evaluationCoverage100%。",
+        "publicRationale": "参考価格129,800円に対し、自動化機能・住宅適合性の面では価格に見合う内容が確認できました。一方、清掃性能については、吸引力の具体的な数値が非公表であることなどから、価格ほどの強みを明確には確認できませんでした。",
+        "scorerType": "編集部評価",
+        "scoredAt": "2026-09-03",
+        "criteria": [
+          {
+            "id": "product_price",
+            "label": "製品価格",
+            "weight": 30,
+            "score": 9,
+            "status": "verified",
+            "rationale": "referencePrice＝129,800円。low帯（120,001〜150,000円）に該当し9/30。currentPriceは採点に使用していない。",
+            "value": "129,800円",
+            "sourceUrl": "https://store.irobot-jp.com/item/N285060.html",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          },
+          {
+            "id": "cleaning_value",
+            "label": "清掃性能に対する価値",
+            "weight": 25,
+            "score": 15,
+            "status": "verified",
+            "rationale": "①referencePrice129,800円。②価格アンカー：120,000円〜150,000円間の32.7%（120kアンカー寄り）。③この位置では、水拭きの加圧・連続洗浄両立、壁際・カーペット・毛絡み対策での専用機構、絶対Pa値の公表のいずれかが価値を上げる要素となる。④cleaning_power内訳：suction=standard(15,Pa非公表・経路B)、mopping=high(20,加圧確認・連続洗浄未確認)、edge=full(15)、carpet=full(15)、tangle=full(20)。⑤重要度の高いsuction・mopping（合計weight50）がいずれも『価値を上げる』水準に届かず、edge・carpet・tangleは手堅いが期待どおりの水準にとどまる。standardと判定。なぜhighでないか：最重要2項目が価値を上げる決め手を欠くため。なぜlowでないか：edge・carpet・tangleの3項目がこの価格帯として十分手堅いため。",
+            "value": "アンカー位置32.7%、suction/moppingが決め手不足でstandard",
+            "sourceUrl": "https://store.irobot-jp.com/item/N285060.html",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-03"
+          },
+          {
+            "id": "automation_value",
+            "label": "自動化機能に対する価値",
+            "weight": 25,
+            "score": 20,
+            "status": "verified",
+            "rationale": "①129,800円②アンカー位置32.7%③主要項目（自動ゴミ収集・モップ自動洗浄）に加え、乾燥・自己清掃・毛絡み処理自動化の複数が確認できれば価値を上げる要素。④主要項目=自動ゴミ収集full(3か月分)・モップ自動洗浄full(75℃温水)。副次：モップ自動乾燥full(45℃)、ステーション自己清掃full(水循環洗浄)、毛絡み処理自動化standard(『切り取る必要がない』の訴求のみ、自動除去機構ではない)。⑤主要2項目が万全、副次4項目中3項目もfullで、毛絡み処理のみ一段低い。highと判定。なぜfullでないか：毛絡み処理が自動除去機構でなく質的に一段低いため。なぜstandardでないか：主要項目・乾燥・自己清掃が万全のため。",
+            "value": "主要項目full、毛絡み処理のみstandardでhigh",
+            "sourceUrl": "https://store.irobot-jp.com/item/N285060.html",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-03"
+          },
+          {
+            "id": "fit_convenience_value",
+            "label": "住宅適合性・利便性",
+            "weight": 20,
+            "score": 16,
+            "status": "verified",
+            "rationale": "①129,800円②アンカー位置32.7%③本体・ステーションのコンパクトさ、段差性能、複数センサーを組み合わせた障害物回避、狭所対応まで踏み込んだマッピングのいずれかが価値を上げる要素。④space_fit内訳：body_height=full(84mm)、body_footprint=full(298×303mm)、station_footprint=high(112,200mm²)、step_climbing=unpublished、obstacle_avoidance=high(LiDAR測距のみ)、mapping=full(高精度+狭所言及)。⑤最重要のbody_heightがfullで明確に価値を上げる要素。body_footprint・mappingもfull。station・obstacleは妥当水準。段差は情報なし。highと判定。なぜfullでないか：obstacle_avoidance（重要度2位）が測距技術のみにとどまり、段差性能も未公表で判断材料が一部欠けるため。なぜstandardでないか：最重要のbody_heightに加えbody_footprint・mappingもfullで、複数の重要項目が明確に価値を上げる内容のため。",
+            "value": "body_height等3項目がfullでhigh",
+            "sourceUrl": "https://store.irobot-jp.com/item/N285060.html",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-03"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "productId": "ecovacs-deebot-t80s-omni",
+    "scores": [
+      {
+        "axisKey": "cleaning_power",
+        "normalizedScore": 97,
+        "rationale": "公式サイト（ECOVACS Japan公式）で確認できた5項目中5項目がverified。吸引性能・水拭き性能・壁際隅清掃・毛絡み対策は満点、カーペット対応はhigh評価。合計97/100（evaluationCoverage 100%）。brush_tangle_preventionはルーブリック改訂（Route A〜F）後も、数値・動作原理・機構連動の3点がすべて明記されておりfullを維持。",
+        "publicRationale": "吸引力24,800Pa、常時洗浄式の水拭き、壁際専用のクリーニング機構、毛絡み防止機構など、清掃に関わる主要な機能を公式情報で幅広く確認できました。カーペット対応のみ、一部確認できていない要素があります。",
+        "scorerType": "カタログ値換算",
+        "scoredAt": "2026-09-03",
+        "criteria": [
+          {
+            "id": "suction_performance",
+            "label": "吸引性能",
+            "weight": 25,
+            "score": 25,
+            "status": "verified",
+            "rationale": "公式サイトに「最大24,800Paの高吸引力で、フローリングはもちろん、カーペットの奥に入り込んだホコリやゴミ、細かな汚れまでしっかり吸引します」と明記。full条件の閾値（20,000Pa以上）を満たすため満点(25/25)。",
+            "value": "24,800Pa",
+            "sourceUrl": "https://www.ecovacs.com/jp/shop/deebot-robotic-vacuum-cleaner/t80s-omni-black",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          },
+          {
+            "id": "mopping_performance",
+            "label": "水拭き性能",
+            "weight": 25,
+            "score": 25,
+            "status": "verified",
+            "rationale": "「OZMOローラー定圧式常時洗浄モップシステム2.0」として、（1）加圧＝3,800Paの高圧清掃力、（2）連続洗浄＝『毎分220回転で床をこすりながら同時にすすぎを行い』という走行中（常時）の自動洗浄、の両方が明記されている。full条件（加圧・連続洗浄の2要素とも確認できる）を満たすため満点(25/25)。",
+            "value": "OZMOローラー定圧式常時洗浄モップシステム2.0（3,800Pa加圧・毎分220回転・走行中洗浄）",
+            "sourceUrl": "https://www.ecovacs.com/jp/shop/deebot-robotic-vacuum-cleaner/t80s-omni-black",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          },
+          {
+            "id": "edge_corner_cleaning",
+            "label": "壁際・隅清掃",
+            "weight": 15,
+            "score": 15,
+            "status": "verified",
+            "rationale": "「TruEdge 3.0 エクストリーム・エッジクリーニング」として、1.5cmまで伸長するローラーによる壁際専用清掃機構が明記されている。専用機構の確認をもって満点(15/15)。",
+            "value": "TruEdge 3.0（1.5cm伸長ローラー＋固定式サイドブラシ）",
+            "sourceUrl": "https://www.ecovacs.com/jp/shop/deebot-robotic-vacuum-cleaner/t80s-omni-black",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          },
+          {
+            "id": "carpet_performance",
+            "label": "カーペット対応",
+            "weight": 15,
+            "score": 12,
+            "status": "verified",
+            "rationale": "「トリプルリフト機構」により『カーペット上では、モップローラーを自動でリフトアップし...カーペットを清掃』と、3要素中（1）検知＝カーペット自動検知、（3）モップリフト＝モップ自動リフトの2つが明記されている。（2）吸引アップ＝カーペット検知に連動した吸引力自動アップは明記されていない。3要素中2/3該当のためhigh評価(12/15)。",
+            "value": "トリプルリフト機構（カーペット自動検知＋モップ自動リフト）",
+            "sourceUrl": "https://www.ecovacs.com/jp/shop/deebot-robotic-vacuum-cleaner/t80s-omni-black",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          },
+          {
+            "id": "brush_tangle_prevention",
+            "label": "ブラシ・毛絡み対策",
+            "weight": 20,
+            "score": 20,
+            "status": "verified",
+            "rationale": "「スパイラル構造のアンチタングル・サイドブラシと、サイクロン気流設計のメインブラシが連動し、髪の毛を効率よく吸引経路へ誘導。絡まりを未然に防ぎ、ほぼ0％の毛絡み率を実現」と明記。経路A：(a)具体的な低減効果＝数値『ほぼ0%』と動作原理『吸引経路へ誘導』の両方、(c)複数機構の連動＝『連動し』という語で2機構が役割を持って協調動作することの明記、の両方を満たすため満点(20/20)。",
+            "value": "スパイラル構造アンチタングルサイドブラシ＋サイクロン気流設計メインブラシ（毛絡み率ほぼ0%、連動あり）",
+            "sourceUrl": "https://www.ecovacs.com/jp/shop/deebot-robotic-vacuum-cleaner/t80s-omni-black",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          }
+        ]
+      },
+      {
+        "axisKey": "quietness",
+        "normalizedScore": 37.5,
+        "rationale": "body_noise（清掃音dB）が公式「仕様」タブに明記されておりverified。quiet_mode_controlのみ専用モードとしての明示が判断できずpending-review。evaluationCoverage=80%かつcritical criterion（body_noise）がverifiedのため、scoreDisplayStatusはconfirmedとなる。",
+        "publicRationale": "本体清掃音は65dBと公式に公表されており、確認した情報の範囲では静音性は高くありません。静音専用モードの有無については、記載が曖昧なため確認できていません。",
+        "scorerType": "カタログ値換算",
+        "scoredAt": "2026-09-03",
+        "criteria": [
+          {
+            "id": "body_noise",
+            "label": "本体清掃音",
+            "weight": 60,
+            "score": 18,
+            "status": "verified",
+            "rationale": "公式「仕様」タブに『清掃音(dB): 65』と明記。low条件『60dB以上』に該当するため18/60。",
+            "value": "65dB",
+            "sourceUrl": "https://www.ecovacs.com/jp/shop/deebot-robotic-vacuum-cleaner/t80s-omni-black",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          },
+          {
+            "id": "quiet_mode_control",
+            "label": "静音モード・騒音制御",
+            "weight": 20,
+            "score": null,
+            "status": "pending-review",
+            "rationale": "公式「仕様」タブに『最大稼働時間 187min(静音、吸引＆水拭き)』という記載があり、『静音』が稼働条件の1つとして挙げられている。これが独立して選択可能な『静音モード』の存在を意味するのか、単に運転全体の特性を形容しているだけなのかを、この記載のみから確実に判定できない。full/high/standard/lowいずれの条件に断定してよいか判断保留とし、pending-reviewとした。",
+            "value": "「最大稼働時間187min(静音、吸引＆水拭き)」の記載のみ。専用モードとしての名称・独立したdB値の記載なし。",
+            "sourceUrl": "https://www.ecovacs.com/jp/shop/deebot-robotic-vacuum-cleaner/t80s-omni-black",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          },
+          {
+            "id": "station_noise_consideration",
+            "label": "ステーション動作への配慮",
+            "weight": 20,
+            "score": 12,
+            "status": "verified",
+            "rationale": "ステーション搭載（自動ゴミ収集・モップ洗浄乾燥あり）は確認できるが、ステーション動作音・静音設計に関する具体的な言及は公式情報に見当たらない。standard条件に該当。",
+            "value": "ステーション搭載を確認。静音設計への言及なし。",
+            "sourceUrl": "https://www.ecovacs.com/jp/shop/deebot-robotic-vacuum-cleaner/t80s-omni-black",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          }
+        ]
+      },
+      {
+        "axisKey": "maintainability",
+        "normalizedScore": 86,
+        "rationale": "5項目すべてverified。自動ゴミ収集・モップ自動洗浄（75℃）・モップ自動乾燥（63℃）・ステーション自己清掃はfull、毛絡み対策は清掃中の絡みにくさへの言及のみで除去負担軽減への言及がなくlow。合計86/100（evaluationCoverage 100%）。",
+        "publicRationale": "自動ゴミ収集、75℃の温水によるモップ自動洗浄、63℃の温風によるモップ自動乾燥、150日間メンテナンスフリーのステーション自己洗浄など、手入れの手間を減らす機能が幅広く確認できました。ブラシに絡まった毛の除去のしやすさについては、具体的な説明が見つかりませんでした。",
+        "scorerType": "カタログ値換算",
+        "scoredAt": "2026-09-03",
+        "criteria": [
+          {
+            "id": "auto_dust_collection",
+            "label": "自動ゴミ収集",
+            "weight": 20,
+            "score": 20,
+            "status": "verified",
+            "rationale": "公式「仕様」タブに『自動ゴミ収集機：あり』と明記。full条件を満たす。",
+            "value": "自動ゴミ収集機：あり",
+            "sourceUrl": "https://www.ecovacs.com/jp/shop/deebot-robotic-vacuum-cleaner/t80s-omni-black",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          },
+          {
+            "id": "auto_mop_washing",
+            "label": "モップ自動洗浄",
+            "weight": 25,
+            "score": 25,
+            "status": "verified",
+            "rationale": "「自動給水・モップ洗浄・乾燥：あり」に加え、製品詳細に『フローティングタンクが回転するモップを最大75℃の熱水に浸して洗浄』と加温洗浄が明記されている。full条件を満たす。",
+            "value": "熱水浸け洗い（最大75℃）",
+            "sourceUrl": "https://www.ecovacs.com/jp/shop/deebot-robotic-vacuum-cleaner/t80s-omni-black",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          },
+          {
+            "id": "auto_mop_drying",
+            "label": "モップ自動乾燥",
+            "weight": 20,
+            "score": 20,
+            "status": "verified",
+            "rationale": "製品詳細に『63°C熱風ローリング乾燥...わずか2時間で完全乾燥』と温風乾燥が明記されている。full条件を満たす。",
+            "value": "63℃熱風乾燥（2時間で完全乾燥）",
+            "sourceUrl": "https://www.ecovacs.com/jp/shop/deebot-robotic-vacuum-cleaner/t80s-omni-black",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          },
+          {
+            "id": "tangle_maintenance",
+            "label": "毛絡み対策（手入れ負担軽減）",
+            "weight": 20,
+            "score": 6,
+            "status": "verified",
+            "rationale": "『絡まりを未然に防ぎ、ほぼ0％の毛絡み率を実現』という記述は、清掃中の絡みにくさ（brush_tangle_prevention領域）への言及であり、除去・手入れの負担軽減について具体的な言及（工具要否・自動化の有無等）はない。tier定義の『単に毛が絡みにくいとだけ記載』（low）に該当するため6/20。『最長150日間メンテナンスフリーのモップ洗浄トレイ』はステーション側の話であり、この項目には適用しない（station_self_clean側で評価済み）。",
+            "value": "『毛絡み率ほぼ0%』（清掃中の絡みにくさへの言及のみ。除去・手入れの負担軽減への具体的言及なし）",
+            "sourceUrl": "https://www.ecovacs.com/jp/shop/deebot-robotic-vacuum-cleaner/t80s-omni-black",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          },
+          {
+            "id": "station_self_clean",
+            "label": "ステーション自己清掃・省メンテナンス",
+            "weight": 15,
+            "score": 15,
+            "status": "verified",
+            "rationale": "『熱水浸け洗い』『63℃熱風ローリング乾燥』というステーション自身の自動洗浄・自動乾燥機構に加え、『最長150日間メンテナンスフリーのモップ洗浄トレイにより、お手入れは年に1～2回の分解清掃のみで完了』と具体的な頻度が明記されている。full条件を満たす。",
+            "value": "熱水浸け洗い＋63℃熱風乾燥、モップ洗浄トレイは150日間メンテナンスフリー（年1〜2回の分解清掃のみ）",
+            "sourceUrl": "https://www.ecovacs.com/jp/shop/deebot-robotic-vacuum-cleaner/t80s-omni-black",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          }
+        ]
+      },
+      {
+        "axisKey": "space_fit",
+        "normalizedScore": 64,
+        "rationale": "6項目すべてverified。段差性能はhigh、その他は標準〜低評価が混在。合計64/100（evaluationCoverage 100%）。",
+        "publicRationale": "本体の高さ・サイズは標準的な水準で、特別にコンパクトではありません。ステーションの設置面積はやや大きめです。段差乗り越え性能（20mm）や障害物回避、マッピング機能は確認できています。",
+        "scorerType": "カタログ値換算",
+        "scoredAt": "2026-09-03",
+        "criteria": [
+          {
+            "id": "body_height",
+            "label": "本体高さ",
+            "weight": 25,
+            "score": 15,
+            "status": "verified",
+            "rationale": "本体高さ98mm。standard条件『96〜105mm』に該当するため15/25。",
+            "value": "98mm",
+            "sourceUrl": "https://www.ecovacs.com/jp/shop/deebot-robotic-vacuum-cleaner/t80s-omni-black",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          },
+          {
+            "id": "body_footprint",
+            "label": "本体サイズ",
+            "weight": 15,
+            "score": 9,
+            "status": "verified",
+            "rationale": "本体幅353mm×奥行き351mm。standard条件『341〜360mm』に該当するため9/15。",
+            "value": "353mm×351mm",
+            "sourceUrl": "https://www.ecovacs.com/jp/shop/deebot-robotic-vacuum-cleaner/t80s-omni-black",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          },
+          {
+            "id": "station_footprint",
+            "label": "ステーションサイズ",
+            "weight": 15,
+            "score": 4,
+            "status": "verified",
+            "rationale": "ステーション幅338mm×奥行き459mm＝設置面積約155,142mm²。low条件『150,001〜190,000mm²』に該当するため4/15。",
+            "value": "338mm×459mm（面積約155,142mm²）",
+            "sourceUrl": "https://www.ecovacs.com/jp/shop/deebot-robotic-vacuum-cleaner/t80s-omni-black",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          },
+          {
+            "id": "step_climbing",
+            "label": "段差性能",
+            "weight": 15,
+            "score": 12,
+            "status": "verified",
+            "rationale": "『最大20mmの段差乗り越え性能...乾いた床でも濡れた床でも、最大20mmの段差をスムーズに乗り越えます』と明記。high条件『18〜21mm』に該当するため12/15。",
+            "value": "20mm",
+            "sourceUrl": "https://www.ecovacs.com/jp/shop/deebot-robotic-vacuum-cleaner/t80s-omni-black",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          },
+          {
+            "id": "obstacle_avoidance",
+            "label": "障害物回避",
+            "weight": 20,
+            "score": 16,
+            "status": "verified",
+            "rationale": "『障害物検知・回避システム：AIVI 3D 3.0 Omni-Approachテクノロジー...Vision-Language Modelを活用...障害物の形状を高精度に把握』でAI物体認識機能は明確に確認できる。『内蔵レーダー』は『高さわずか98mmの超薄型設計』の文脈でのみ言及されており、障害物回避システムの構成要素として明示されていないため根拠に採用しない。AI物体認識機能のみ確認できるためhigh条件に該当し16/20。",
+            "value": "AIVI 3D 3.0（Vision-Language Modelによる物体認識）。内蔵レーダーは薄型設計の文脈でのみ言及。",
+            "sourceUrl": "https://www.ecovacs.com/jp/shop/deebot-robotic-vacuum-cleaner/t80s-omni-black",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          },
+          {
+            "id": "mapping_narrow_space",
+            "label": "マッピング・狭所対応",
+            "weight": 10,
+            "score": 8,
+            "status": "verified",
+            "rationale": "『マッピングシステム：AINA 2.0インテリジェントナビゲーションモデル』『高性能マップ機能(Advanced Map Function)：あり』を確認。高精度マッピング方式は確認できるが、狭所での取り回しに関する具体的な言及はないためhigh条件（高精度マッピング方式のみ）に該当し8/10。",
+            "value": "AINA 2.0インテリジェントナビゲーションモデル",
+            "sourceUrl": "https://www.ecovacs.com/jp/shop/deebot-robotic-vacuum-cleaner/t80s-omni-black",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          }
+        ]
+      },
+      {
+        "axisKey": "price_value",
+        "normalizedScore": 61,
+        "rationale": "price_value rubricVersion 1.0（B方式）による正式採点。product_price=9/30（139,800円、low帯）、cleaning_value=20/25（high、suction/mopping万全、carpetのみ2/3で物足りない）、automation_value=20/25（high、主要項目・乾燥・自己清掃が万全、毛絡み処理自動化のみ弱い）、fit_convenience_value=12/20（standard。当初low判定を最終監査で訂正。station_footprintのみ絶対low、他5項目は価格アンカーの寛容度を踏まえればstandard以上＝概ね一致と判断）。合計61/100、evaluationCoverage100%。",
+        "publicRationale": "参考価格139,800円に対し、清掃性能・自動化機能の面では価格に見合う、あるいはそれを上回る内容が確認できました。一方、住宅適合性・利便性の面では、価格の割に本体・ステーションのコンパクトさがやや物足りない結果です。",
+        "scorerType": "編集部評価",
+        "scoredAt": "2026-09-03",
+        "criteria": [
+          {
+            "id": "product_price",
+            "label": "製品価格",
+            "weight": 30,
+            "score": 9,
+            "status": "verified",
+            "rationale": "referencePrice＝139,800円。low帯（120,001〜150,000円）に該当し9/30。公式サイト内でcurrentPriceの表示に変動が見られたため、currentPriceは採点に使用していない（referencePrice自体は確定済み）。",
+            "value": "139,800円",
+            "sourceUrl": "https://www.ecovacs.com/jp/shop/deebot-robotic-vacuum-cleaner/t80s-omni-black",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          },
+          {
+            "id": "cleaning_value",
+            "label": "清掃性能に対する価値",
+            "weight": 25,
+            "score": 20,
+            "status": "verified",
+            "rationale": "①139,800円②アンカー位置66.0%（120k-150k間、150k寄り）③この位置では複数項目で具体的な数値根拠（Pa値・清掃率等）が揃っていることがより明確に価値を上げる要素④cleaning_power内訳：suction=full(25,24,800Pa)、mopping=full(25,加圧+連続洗浄)、edge=full(15)、carpet=high(12,3要素中2)、tangle=full(20,数値+動作原理+連動)。⑤重要度最大のsuction・moppingが両方とも明確に価値を上げる内容。edge・tangleもfull。carpetのみ3要素中2でわずかに物足りない。5項目中4項目がfull相当で、highと判定。なぜfullでないか：carpetが3要素中2にとどまり、全項目での徹底性にわずかに欠けるため。なぜstandardでないか：最重要のsuction・moppingが万全で、5項目中4項目がfullのため。",
+            "value": "アンカー位置66%、suction/mopping万全でhigh",
+            "sourceUrl": "https://www.ecovacs.com/jp/shop/deebot-robotic-vacuum-cleaner/t80s-omni-black",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-03"
+          },
+          {
+            "id": "automation_value",
+            "label": "自動化機能に対する価値",
+            "weight": 25,
+            "score": 20,
+            "status": "verified",
+            "rationale": "①139,800円②アンカー位置66.0%③副次項目の充実度（特に毛絡み処理の自動化）が明確に価値を上げる要素④主要項目=自動ゴミ収集full・モップ自動洗浄full(75℃)。副次：モップ自動乾燥full(63℃・2時間)、ステーション自己清掃full(150日メンテナンスフリーと具体的頻度明記)、毛絡み処理自動化low(防止効果の言及のみ、除去負担軽減への言及なし)。⑤主要2項目・乾燥・自己清掃の4項目がfullで、自己清掃は特に具体的。毛絡み処理のみ明確な弱点。highと判定。なぜfullでないか：毛絡み処理自動化がlow水準で、副次項目の充実という150kアンカー寄りの期待を満たしきれないため。なぜstandardでないか：主要2項目・乾燥・自己清掃という4項目がfullのため。",
+            "value": "主要項目+乾燥+自己清掃がfull、毛絡み処理のみlowでhigh",
+            "sourceUrl": "https://www.ecovacs.com/jp/shop/deebot-robotic-vacuum-cleaner/t80s-omni-black",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-03"
+          },
+          {
+            "id": "fit_convenience_value",
+            "label": "住宅適合性・利便性",
+            "weight": 20,
+            "score": 12,
+            "status": "verified",
+            "rationale": "①139,800円②アンカー位置66.0%③本体・ステーションのコンパクトさに加え、段差・障害物回避・マッピングの複数項目での具体性が価値を上げる要素④space_fit内訳：body_height=standard(98mm,絶対中位)、body_footprint=standard(353×351mm,絶対中位)、station_footprint=low(155,142mm²,絶対下位)、step_climbing=high(20mm)、obstacle_avoidance=high(AI認識のみ)、mapping=high(高精度のみ)。⑤【最終監査で訂正】body_height・body_footprintは絶対standard（中位）のため、価格アンカーの寛容度を踏まえれば『概ね一致』と判断（絶対lowの場合のみfalls-shortとする）。station_footprintのみ絶対lowで明確な不足。step・obstacle・mappingも概ね一致。6項目中5項目が概ね一致、station_footprint（size系3項目の中で最軽量）のみ不足。standardと判定。なぜhighでないか：明確に上回る項目が1つもなく、station_footprintという明確な弱点があるため。なぜlowでないか：下回る項目は最も軽いstation_footprintのみで、最重要のbody_height(weight25)を含む5項目が価格相応の内容を満たしているため。",
+            "value": "6項目中5項目が概ね一致、station_footprintのみ不足でstandard",
+            "sourceUrl": "https://www.ecovacs.com/jp/shop/deebot-robotic-vacuum-cleaner/t80s-omni-black",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-03"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "productId": "switchbot-s20",
+    "scores": [
+      {
+        "axisKey": "cleaning_power",
+        "normalizedScore": 89,
+        "rationale": "公式サイトで確認できた5項目中5項目がverified。水拭き性能・カーペット対応・毛絡み対策は満点、吸引性能はhigh、壁際清掃はstandard。合計89/100（evaluationCoverage 100%）。",
+        "publicRationale": "吸引力10,000Pa、加圧・常時洗浄式の水拭き、カーペット対応、毛絡み防止機構など、清掃に関わる主要な機能が確認できました。壁際・隅の清掃については、専用の伸縮機構までは確認できていません。",
+        "scorerType": "カタログ値換算",
+        "scoredAt": "2026-09-03",
+        "criteria": [
+          {
+            "id": "suction_performance",
+            "label": "吸引性能",
+            "weight": 25,
+            "score": 20,
+            "status": "verified",
+            "rationale": "経路A：『10,000Paの吸引力』と絶対値が明記。10,000〜19,999Pa帯でhigh。",
+            "value": "10,000Pa",
+            "sourceUrl": "https://www.switchbot.jp/products/switchbot-robot-vacuum-cleaner-s20",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          },
+          {
+            "id": "mopping_performance",
+            "label": "水拭き性能",
+            "weight": 25,
+            "score": 25,
+            "status": "verified",
+            "rationale": "『1kgの加圧で...RevoRoll™技術』で加圧確認。『モップを常に洗浄しながら走行し...1分間に300回のスピードで繰り返し』で走行中の連続洗浄が明記。両要素確認でfull。",
+            "value": "RevoRoll（1kg加圧・1分間300回の走行中連続洗浄）",
+            "sourceUrl": "https://www.switchbot.jp/products/switchbot-robot-vacuum-cleaner-s20",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          },
+          {
+            "id": "edge_corner_cleaning",
+            "label": "壁際・隅清掃",
+            "weight": 15,
+            "score": 9,
+            "status": "verified",
+            "rationale": "サイドブラシの存在は確認できる（絡み防止構造）が、壁際・隅への到達性・伸縮性についての言及は見当たらない。通常のサイドブラシとして扱いstandard。",
+            "value": "純ゴム製メインブラシ＋絡み防止サイドブラシ（伸縮性の言及なし）",
+            "sourceUrl": "https://www.switchbot.jp/products/switchbot-robot-vacuum-cleaner-s20",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          },
+          {
+            "id": "carpet_performance",
+            "label": "カーペット対応",
+            "weight": 15,
+            "score": 15,
+            "status": "verified",
+            "rationale": "『カーペットを検知するとモップを自動でリフトアップ...吸引力を自動で10,000Paに』で検知・吸引アップ・モップリフトの3要素すべてが確認できる。",
+            "value": "自動検知＋吸引力アップ＋モップリフト（3要素すべて確認）",
+            "sourceUrl": "https://www.switchbot.jp/products/switchbot-robot-vacuum-cleaner-s20",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          },
+          {
+            "id": "brush_tangle_prevention",
+            "label": "ブラシ・毛絡み対策",
+            "weight": 20,
+            "score": 20,
+            "status": "verified",
+            "rationale": "『爪のような2本のロングブラシが毛髪を櫛のようにほぐし、高速回転の遠心力で振り落とす』と動作原理を伴う説明があり、経路A(b)動作原理の具体的説明を満たすためfull。",
+            "value": "爪状ロングブラシ×2（櫛状にほぐし遠心力で振り落とす動作原理）",
+            "sourceUrl": "https://www.switchbot.jp/products/switchbot-robot-vacuum-cleaner-s20",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          }
+        ]
+      },
+      {
+        "axisKey": "quietness",
+        "normalizedScore": 100,
+        "rationale": "body_noise・quiet_mode_controlともに公式情報から確認できずunpublished。station_noise_considerationのみverified（full）。evaluationCoverage=20%かつcritical criterion（body_noise）未検証のため、normalizedScore=100は内部値として保持するが、scoreDisplayStatusはinsufficientとなり総合スコアには混入しない。",
+        "publicRationale": "運転音の公式な数値を確認できていないため、静音性は総合評価に含めていません。ステーション動作音については、40dB以下という具体的な数値が公表されています。",
+        "scorerType": "カタログ値換算",
+        "scoredAt": "2026-09-03",
+        "criteria": [
+          {
+            "id": "body_noise",
+            "label": "本体清掃音",
+            "weight": 60,
+            "score": null,
+            "status": "unpublished",
+            "rationale": "本体清掃音のdB値は確認できなかった（唯一見つかったdB値はモップ乾燥時の騒音）。",
+            "value": null,
+            "sourceUrl": null,
+            "sourceType": null,
+            "verifiedAt": null
+          },
+          {
+            "id": "quiet_mode_control",
+            "label": "静音モード・騒音制御",
+            "weight": 20,
+            "score": null,
+            "status": "unpublished",
+            "rationale": "運転モード・吸引力段階調整に関する情報が確認できない。",
+            "value": null,
+            "sourceUrl": null,
+            "sourceType": null,
+            "verifiedAt": null
+          },
+          {
+            "id": "station_noise_consideration",
+            "label": "ステーション動作への配慮",
+            "weight": 20,
+            "score": 20,
+            "status": "verified",
+            "rationale": "『洗浄後は50℃の熱風で自動乾燥（乾燥時間は1～8時間で設定可能。騒音は40dB以下）』とステーション動作音が具体的な数値で明記されている。full条件を満たす。",
+            "value": "乾燥時騒音40dB以下（数値明記）",
+            "sourceUrl": "https://www.switchbot.jp/products/switchbot-robot-vacuum-cleaner-s20",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          }
+        ]
+      },
+      {
+        "axisKey": "maintainability",
+        "normalizedScore": 80,
+        "rationale": "5項目すべてverified。自動ゴミ収集・モップ自動乾燥はfull、モップ自動洗浄・毛絡み対策はhigh、ステーション自己清掃は週次手動管理でlow。合計80/100（evaluationCoverage 100%）。",
+        "publicRationale": "自動ゴミ収集（ゴミ捨ては年4回）、50℃の温風によるモップ自動乾燥、工具不要でのブラシお手入れなど、手入れの手間を減らす機能が確認できました。一方、ステーションの給水・排水タンクは週に一度の手動管理が必要です。",
+        "scorerType": "カタログ値換算",
+        "scoredAt": "2026-09-03",
+        "criteria": [
+          {
+            "id": "auto_dust_collection",
+            "label": "自動ゴミ収集",
+            "weight": 20,
+            "score": 20,
+            "status": "verified",
+            "rationale": "『ゴミ捨ては年に4回でOK』『ゴミ自動収集』と明記。",
+            "value": "自動ゴミ収集（ゴミ捨ては年4回）",
+            "sourceUrl": "https://www.switchbot.jp/products/switchbot-robot-vacuum-cleaner-s20",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          },
+          {
+            "id": "auto_mop_washing",
+            "label": "モップ自動洗浄",
+            "weight": 25,
+            "score": 20,
+            "status": "verified",
+            "rationale": "『モップのディープクリーニング』実行は明記されるが、洗浄水が温水かどうかの温度表記が見当たらない（乾燥は50℃と明記あり）。加温洗浄の確認ができずhigh。",
+            "value": "モップディープクリーニング（加温有無は未確認）",
+            "sourceUrl": "https://www.switchbot.jp/products/switchbot-robot-vacuum-cleaner-s20",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          },
+          {
+            "id": "auto_mop_drying",
+            "label": "モップ自動乾燥",
+            "weight": 20,
+            "score": 20,
+            "status": "verified",
+            "rationale": "『50℃の熱風で自動乾燥』と温風乾燥が明記。",
+            "value": "50℃熱風乾燥",
+            "sourceUrl": "https://www.switchbot.jp/products/switchbot-robot-vacuum-cleaner-s20",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          },
+          {
+            "id": "tangle_maintenance",
+            "label": "毛絡み対策",
+            "weight": 20,
+            "score": 16,
+            "status": "verified",
+            "rationale": "『ブラシに付着した毛髪やゴミも、ブラシの端からスッと引っ張るだけで取れて、お手入れも簡単です』と工具不要の具体的な着脱方法が明記。自動除去機構ではないためhigh。",
+            "value": "工具不要でのブラシ着脱（自動除去機構ではない）",
+            "sourceUrl": "https://www.switchbot.jp/products/switchbot-robot-vacuum-cleaner-s20",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          },
+          {
+            "id": "station_self_clean",
+            "label": "ステーション自己清掃・省メンテナンス",
+            "weight": 15,
+            "score": 4,
+            "status": "verified",
+            "rationale": "『2.7Lの水タンクと2.5Lの汚水タンクを備え、一週間に一度水を補給して汚水を捨てるだけ』と明記。週次の手動タンク管理が明示されており、他社の『150日メンテフリー』等と比べ頻度が高いことが示唆されるためlow。",
+            "value": "週次の手動タンク管理（給水・汚水捨て）",
+            "sourceUrl": "https://www.switchbot.jp/products/switchbot-robot-vacuum-cleaner-s20",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          }
+        ]
+      },
+      {
+        "axisKey": "space_fit",
+        "normalizedScore": 64,
+        "rationale": "6項目すべてverified。障害物回避はfull（測距+物体認識両方）、本体高さ・本体サイズはlow。合計64/100（evaluationCoverage 100%）。",
+        "publicRationale": "本体の高さ・サイズは今回確認した中ではやや大きめです。一方、障害物回避は距離センサーと画像認識の両方を備えており、今回確認した中でも充実した内容でした。",
+        "scorerType": "カタログ値換算",
+        "scoredAt": "2026-09-03",
+        "criteria": [
+          {
+            "id": "body_height",
+            "label": "本体高さ",
+            "weight": 25,
+            "score": 8,
+            "status": "verified",
+            "rationale": "本体高さ115mm。106〜115mm帯でlow。",
+            "value": "115mm",
+            "sourceUrl": "https://www.switchbot.jp/products/switchbot-robot-vacuum-cleaner-s20",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          },
+          {
+            "id": "body_footprint",
+            "label": "本体サイズ",
+            "weight": 15,
+            "score": 4,
+            "status": "verified",
+            "rationale": "本体365×365mm。361〜380mm帯でlow。",
+            "value": "365mm×365mm",
+            "sourceUrl": "https://www.switchbot.jp/products/switchbot-robot-vacuum-cleaner-s20",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          },
+          {
+            "id": "station_footprint",
+            "label": "ステーションサイズ",
+            "weight": 15,
+            "score": 12,
+            "status": "verified",
+            "rationale": "デュアル集塵ステーション380×223mm＝面積約84,740mm²。80,001〜115,000mm²帯でhigh。",
+            "value": "380mm×223mm（面積約84,740mm²）",
+            "sourceUrl": "https://www.switchbot.jp/products/switchbot-robot-vacuum-cleaner-s20",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          },
+          {
+            "id": "step_climbing",
+            "label": "段差性能",
+            "weight": 15,
+            "score": 12,
+            "status": "verified",
+            "rationale": "『2cm乗り越え』と明記。18〜21mm帯でhigh。",
+            "value": "20mm",
+            "sourceUrl": "https://www.switchbot.jp/products/switchbot-robot-vacuum-cleaner-s20",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          },
+          {
+            "id": "obstacle_avoidance",
+            "label": "障害物回避",
+            "weight": 20,
+            "score": 20,
+            "status": "verified",
+            "rationale": "『PSD距離センサー搭載で障害物との距離を把握』（測距）と『AIの「目」が障害物を認識...100種類以上の障害物を認識』（物体認識）が独立して明記されている。両方確認できるためfull。",
+            "value": "PSD距離センサー＋AI画像認識（100種類以上の障害物）",
+            "sourceUrl": "https://www.switchbot.jp/products/switchbot-robot-vacuum-cleaner-s20",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          },
+          {
+            "id": "mapping_narrow_space",
+            "label": "マッピング・狭所対応",
+            "weight": 10,
+            "score": 8,
+            "status": "verified",
+            "rationale": "『LDSレーザーで間取りも家具も素早くマッピング』と高精度マッピングは確認できるが、狭所での取り回しに関する具体的な言及はない。",
+            "value": "LDSレーザーマッピング（狭所言及なし）",
+            "sourceUrl": "https://www.switchbot.jp/products/switchbot-robot-vacuum-cleaner-s20",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          }
+        ]
+      },
+      {
+        "axisKey": "price_value",
+        "normalizedScore": 65,
+        "rationale": "price_value rubricVersion 1.0（B方式）による正式採点。product_price=18/30（91,800円、standard帯）、cleaning_value=20/25（high、mopping/carpet/tangleが90k帯として上振れ）、automation_value=15/25（standard、ステーション自己清掃が週次手動管理で明確な弱点）、fit_convenience_value=12/20（standard、body_height/footprintの不足とobstacle_avoidanceの上振れが拮抗）。合計65/100、evaluationCoverage100%。",
+        "publicRationale": "参考価格91,800円という価格帯に対し、水拭き・カーペット対応・毛絡み対策や障害物回避の面で、価格を上回る充実した内容が確認できました。一方、ステーションの手入れ頻度がやや高いなど、一部に価格相応とは言えない点もあります。",
+        "scorerType": "編集部評価",
+        "scoredAt": "2026-09-03",
+        "criteria": [
+          {
+            "id": "product_price",
+            "label": "製品価格",
+            "weight": 30,
+            "score": 18,
+            "status": "verified",
+            "rationale": "referencePrice＝91,800円。standard帯（90,001〜120,000円）に該当し18/30。currentPriceは採点に使用していない。",
+            "value": "91,800円",
+            "sourceUrl": "https://www.switchbot.jp/products/switchbot-robot-vacuum-cleaner-s20",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          },
+          {
+            "id": "cleaning_value",
+            "label": "清掃性能に対する価値",
+            "weight": 25,
+            "score": 20,
+            "status": "verified",
+            "rationale": "①91,800円②アンカー位置6.0%（90k-120k間、90kアンカーにほぼ一致）③加圧・連続洗浄のいずれかが確認できれば妥当、両方揃えば価値を上げる要素。カーペット・毛絡み対策で専用機構が確認できればこの価格帯としては上振れ要素④cleaning_power内訳：suction=high(20,10,000Pa)、mopping=full(25,加圧+連続洗浄両方)、edge=standard(9,通常サイドブラシ)、carpet=full(15,3要素すべて)、tangle=full(20,動作原理を伴う具体説明)。⑤moppingは90kアンカー水準として明確な上振れ。carpet・tangleも3要素/専用機構が揃い、この価格帯としては明確な上振れ（12〜15万円帯商品と同水準を9万円台で実現）。suctionは妥当水準、edgeのみ物足りない。highと判定。なぜfullでないか：suction・edgeの2項目が90kアンカー水準を明確に上回るとまでは言えないため。なぜstandardでないか：mopping・carpet・tangleの3項目で、この価格帯として期待しにくい内容が確認できるため。",
+            "value": "mopping/carpet/tangleが90k帯として上振れでhigh",
+            "sourceUrl": "https://www.switchbot.jp/products/switchbot-robot-vacuum-cleaner-s20",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-03"
+          },
+          {
+            "id": "automation_value",
+            "label": "自動化機能に対する価値",
+            "weight": 25,
+            "score": 15,
+            "status": "verified",
+            "rationale": "①91,800円②アンカー位置6.0%③主要項目が確認できれば妥当、副次項目のいずれかで充実した内容が確認できれば上振れ要素④主要項目=自動ゴミ収集full。モップ自動洗浄high(加温不明)。副次：モップ自動乾燥full(50℃)、ステーション自己清掃low(週次手動タンク管理)、毛絡み処理自動化high(工具不要着脱)。⑤自動ゴミ収集・乾燥はfull、毛絡み処理も工具不要という配慮がありこの価格帯としては上振れ。ただしステーション自己清掃は週次手動管理が明記されており、この価格帯でも明確な弱点。standardと判定。なぜhighでないか：ステーション自己清掃が明確な弱点であり、全体として価格に対して価値が高いとまでは言えないため。なぜlowでないか：自動ゴミ収集・乾燥がfullで毛絡み処理にも一定の配慮があるため。",
+            "value": "自己清掃が明確な弱点でstandard",
+            "sourceUrl": "https://www.switchbot.jp/products/switchbot-robot-vacuum-cleaner-s20",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-03"
+          },
+          {
+            "id": "fit_convenience_value",
+            "label": "住宅適合性・利便性",
+            "weight": 20,
+            "score": 12,
+            "status": "verified",
+            "rationale": "①91,800円②アンカー位置6.0%③複数センサーを組み合わせた障害物回避、20mm前後の段差性能のいずれかが確認できれば上振れ要素。本体・ステーションのコンパクトさは必須ではないが確認できれば価値を上げる④space_fit内訳：body_height=low(115mm,絶対下位)、body_footprint=low(365×365mm,絶対下位)、station_footprint=high(84,740mm²)、step_climbing=high(20mm)、obstacle_avoidance=full(PSD測距+AIカメラ両方)、mapping=high(高精度のみ)。⑤body_height・body_footprintは絶対lowであり、90kアンカーの寛容度を踏まえても明確な不足と判断。一方obstacle_avoidance（weight20、DEEBOT・Eufyのいずれも持たない測距+物体認識の両立）は9万円台として明確な上振れ。station・stepは妥当水準。上回る項目と下回る項目が拮抗し、standardと判定。なぜhighでないか：最重要のbody_heightおよびbody_footprintという2項目で明確な不足があり、obstacle_avoidanceの上振れだけでは価格に対して価値が高いと言い切れないため。なぜlowでないか：obstacle_avoidance（weight20）という重い項目での明確な上振れに加え、station_footprint・step_climbingも妥当以上のため。",
+            "value": "body_height/footprintの不足とobstacle_avoidanceの上振れが拮抗しstandard",
+            "sourceUrl": "https://www.switchbot.jp/products/switchbot-robot-vacuum-cleaner-s20",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-03"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "productId": "eufy-robot-vacuum-omni-e25",
+    "scores": [
+      {
+        "axisKey": "cleaning_power",
+        "normalizedScore": 94,
+        "rationale": "公式サイトで確認できた5項目中5項目がverified。吸引性能・水拭き性能・壁際隅清掃・毛絡み対策は満点、カーペット対応はstandard（スペック値のみで検知・吸引アップの文章記述なし）。合計94/100（evaluationCoverage 100%）。",
+        "publicRationale": "吸引力20,000Pa、加圧・常時洗浄式の水拭き、検知連動の伸縮式サイドブラシ、毛絡み自動除去機構など、清掃に関わる主要な機能が幅広く確認できました。カーペット対応については、数値の記載はありますが、検知・吸引力アップに関する説明までは確認できていません。",
+        "scorerType": "カタログ値換算",
+        "scoredAt": "2026-09-03",
+        "criteria": [
+          {
+            "id": "suction_performance",
+            "label": "吸引性能",
+            "weight": 25,
+            "score": 25,
+            "status": "verified",
+            "rationale": "経路A：『吸引力 20000Pa』と絶対値が明記。20,000Pa以上でfull。",
+            "value": "20,000Pa",
+            "sourceUrl": "https://www.ankerjapan.com/products/t2353",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          },
+          {
+            "id": "mopping_performance",
+            "label": "水拭き性能",
+            "weight": 25,
+            "score": 25,
+            "status": "verified",
+            "rationale": "『約1.5kgの圧力で「押して拭く」』で加圧確認。『水拭きしながらモップ洗浄するHydroJetシステム』＋比較表『走行中のモップ洗浄:○』で連続洗浄を確認。両要素確認でfull。",
+            "value": "HydroJetシステム（1.5kg加圧・走行中モップ洗浄）",
+            "sourceUrl": "https://www.ankerjapan.com/products/t2353",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          },
+          {
+            "id": "edge_corner_cleaning",
+            "label": "壁際・隅清掃",
+            "weight": 15,
+            "score": 15,
+            "status": "verified",
+            "rationale": "『部屋の角を感知すると伸縮するサイドブラシ』と検知連動の伸縮式サイドブラシが明記されている。",
+            "value": "角検知連動の伸縮式サイドブラシ",
+            "sourceUrl": "https://www.ankerjapan.com/products/t2353",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          },
+          {
+            "id": "carpet_performance",
+            "label": "カーペット対応",
+            "weight": 15,
+            "score": 9,
+            "status": "verified",
+            "rationale": "比較表に『モップリフト：10.5mm』という数値はあるが、カーペット自動検知や吸引力自動アップに関する明示的な文章記述が見当たらない。3要素中1つの確認にとどまりstandard。",
+            "value": "モップリフト10.5mmのスペック値のみ確認",
+            "sourceUrl": "https://www.ankerjapan.com/products/t2353",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          },
+          {
+            "id": "brush_tangle_prevention",
+            "label": "ブラシ・毛絡み対策",
+            "weight": 20,
+            "score": 20,
+            "status": "verified",
+            "rationale": "『ブラシに絡まった毛を自動で除去するDuoSpiralブラシ...ブラシを逆回転させ毛を中央に集め、分割されたブラシの隙間から毛を吸い込む』と動作原理を伴う具体的な説明があり、経路A(b)動作原理の具体的説明を満たすためfull。",
+            "value": "DuoSpiralブラシ（逆回転で毛を集め隙間から吸引する動作原理）",
+            "sourceUrl": "https://www.ankerjapan.com/products/t2353",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          }
+        ]
+      },
+      {
+        "axisKey": "quietness",
+        "normalizedScore": 60,
+        "rationale": "body_noise・quiet_mode_controlともに公式情報から確認できずunpublished。station_noise_considerationのみverified（standard）。evaluationCoverage=20%かつcritical criterion（body_noise）未検証のため、normalizedScore=60は内部値として保持するが、scoreDisplayStatusはinsufficientとなる。",
+        "publicRationale": "運転音の公式な数値を確認できていないため、静音性は総合評価に含めていません。静音モードなど運転音を調整する機能についても、情報が見つかりませんでした。",
+        "scorerType": "カタログ値換算",
+        "scoredAt": "2026-09-03",
+        "criteria": [
+          {
+            "id": "body_noise",
+            "label": "本体清掃音",
+            "weight": 60,
+            "score": null,
+            "status": "unpublished",
+            "rationale": "dB値は確認できなかった。",
+            "value": null,
+            "sourceUrl": null,
+            "sourceType": null,
+            "verifiedAt": null
+          },
+          {
+            "id": "quiet_mode_control",
+            "label": "静音モード・騒音制御",
+            "weight": 20,
+            "score": null,
+            "status": "unpublished",
+            "rationale": "運転モード・吸引力段階調整に関する情報が確認できない。",
+            "value": null,
+            "sourceUrl": null,
+            "sourceType": null,
+            "verifiedAt": null
+          },
+          {
+            "id": "station_noise_consideration",
+            "label": "ステーション動作への配慮",
+            "weight": 20,
+            "score": 12,
+            "status": "verified",
+            "rationale": "ステーション搭載は確認できるが、動作音・静音設計への言及はない。standard条件に該当。",
+            "value": "ステーション搭載を確認。静音設計への言及なし。",
+            "sourceUrl": "https://www.ankerjapan.com/products/t2353",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          }
+        ]
+      },
+      {
+        "axisKey": "maintainability",
+        "normalizedScore": 89,
+        "rationale": "5項目すべてverified。自動ゴミ収集・モップ自動乾燥・毛絡み対策はfull、モップ自動洗浄はhigh、ステーション自己清掃はstandard。合計89/100（evaluationCoverage 100%）。",
+        "publicRationale": "自動ゴミ収集、温風によるモップ自動乾燥に加え、ブラシに絡まった毛を自動で除去する機構まで確認でき、手入れの手間を減らす機能が充実しています。ステーション自体の自己洗浄については、洗剤の自動投入以外の詳しい説明は見つかりませんでした。",
+        "scorerType": "カタログ値換算",
+        "scoredAt": "2026-09-03",
+        "criteria": [
+          {
+            "id": "auto_dust_collection",
+            "label": "自動ゴミ収集",
+            "weight": 20,
+            "score": 20,
+            "status": "verified",
+            "rationale": "比較表『自動ゴミ収集システム：○』と明記。",
+            "value": "自動ゴミ収集システム：あり",
+            "sourceUrl": "https://www.ankerjapan.com/products/t2353",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          },
+          {
+            "id": "auto_mop_washing",
+            "label": "モップ自動洗浄",
+            "weight": 25,
+            "score": 20,
+            "status": "verified",
+            "rationale": "『HydroJetシステム』で洗浄は確認できるが、加温（温水）洗浄かどうかの温度表記が見当たらない。high。",
+            "value": "HydroJetシステムによる洗浄（加温有無は未確認）",
+            "sourceUrl": "https://www.ankerjapan.com/products/t2353",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          },
+          {
+            "id": "auto_mop_drying",
+            "label": "モップ自動乾燥",
+            "weight": 20,
+            "score": 20,
+            "status": "verified",
+            "rationale": "比較表『モップ自動洗浄乾燥システム：◯（温風）』と温風乾燥の方式が明記されている。",
+            "value": "モップ自動洗浄乾燥システム（温風）",
+            "sourceUrl": "https://www.ankerjapan.com/products/t2353",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          },
+          {
+            "id": "tangle_maintenance",
+            "label": "毛絡み対策",
+            "weight": 20,
+            "score": 20,
+            "status": "verified",
+            "rationale": "『ブラシに絡まった毛を自動で除去するDuoSpiralブラシ...メンテナンスの負担を軽減』と、ユーザーの手作業を直接削減する自動除去機構が明記されている。full。",
+            "value": "DuoSpiralブラシ（自動除去・逆回転で毛を集めて吸引）",
+            "sourceUrl": "https://www.ankerjapan.com/products/t2353",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          },
+          {
+            "id": "station_self_clean",
+            "label": "ステーション自己清掃・省メンテナンス",
+            "weight": 15,
+            "score": 9,
+            "status": "verified",
+            "rationale": "『洗剤の自動投入』はあるが、ステーション自体の自己洗浄（タンク内部洗浄等）に関する明示的な記述は見当たらない。standard条件に該当。",
+            "value": "洗剤自動投入（タンク自己洗浄の明記なし）",
+            "sourceUrl": "https://www.ankerjapan.com/products/t2353",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          }
+        ]
+      },
+      {
+        "axisKey": "space_fit",
+        "normalizedScore": 52.9,
+        "rationale": "6項目中5項目がverified、step_climbingのみ公式情報がなくunpublished。本体高さ・ステーションサイズはlow。合計52.9/100（evaluationCoverage 85%）。",
+        "publicRationale": "本体の高さ・ステーションの設置面積は今回確認した中ではやや大きめです。障害物回避・マッピング機能は確認できていますが、段差乗り越え性能については公式情報が見つかりませんでした。",
+        "scorerType": "カタログ値換算",
+        "scoredAt": "2026-09-03",
+        "criteria": [
+          {
+            "id": "body_height",
+            "label": "本体高さ",
+            "weight": 25,
+            "score": 8,
+            "status": "verified",
+            "rationale": "本体高さ111mm。106〜115mm帯でlow。",
+            "value": "111mm",
+            "sourceUrl": "https://www.ankerjapan.com/products/t2353",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          },
+          {
+            "id": "body_footprint",
+            "label": "本体サイズ",
+            "weight": 15,
+            "score": 9,
+            "status": "verified",
+            "rationale": "本体327×346mm。幅と奥行きが異なる帯にまたがるため、より不利な方（346mm、341〜360mm帯）を採用しstandard。",
+            "value": "327mm(幅)×346mm(奥行き)",
+            "sourceUrl": "https://www.ankerjapan.com/products/t2353",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          },
+          {
+            "id": "station_footprint",
+            "label": "ステーションサイズ",
+            "weight": 15,
+            "score": 4,
+            "status": "verified",
+            "rationale": "ステーション370×462mm＝面積約170,940mm²。150,001〜190,000mm²帯でlow。",
+            "value": "370mm×462mm（面積約170,940mm²）",
+            "sourceUrl": "https://www.ankerjapan.com/products/t2353",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          },
+          {
+            "id": "step_climbing",
+            "label": "段差性能",
+            "weight": 15,
+            "score": null,
+            "status": "unpublished",
+            "rationale": "段差乗り越え性能に関する記載が見当たらなかった。",
+            "value": null,
+            "sourceUrl": null,
+            "sourceType": null,
+            "verifiedAt": null
+          },
+          {
+            "id": "obstacle_avoidance",
+            "label": "障害物回避",
+            "weight": 20,
+            "score": 16,
+            "status": "verified",
+            "rationale": "『AI.Seeシステムを搭載。200種類以上の障害物を認識』（物体認識）は明確に確認できる。『iPathレーザー・ナビゲーション』（測距技術）はマッピング文脈でのみ言及され、障害物回避との関連が明示されていないため根拠に採用しない。物体認識のみでhigh。",
+            "value": "AI.Seeシステム（200種類以上の障害物を認識）。iPathは測距根拠として不採用。",
+            "sourceUrl": "https://www.ankerjapan.com/products/t2353",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          },
+          {
+            "id": "mapping_narrow_space",
+            "label": "マッピング・狭所対応",
+            "weight": 10,
+            "score": 8,
+            "status": "verified",
+            "rationale": "『iPathレーザー・ナビゲーションによりリアルタイムでマップを作成し、複雑な間取りでも漏れなく掃除可能』と高精度マッピングは確認できるが、狭所での取り回しに関する具体的な言及はない。",
+            "value": "iPathレーザーナビゲーション（狭所言及なし）",
+            "sourceUrl": "https://www.ankerjapan.com/products/t2353",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          }
+        ]
+      },
+      {
+        "axisKey": "price_value",
+        "normalizedScore": 55,
+        "rationale": "price_value rubricVersion 1.0（B方式）による正式採点。product_price=9/30（149,900円、low帯）、cleaning_value=20/25（high、suction/mopping万全、carpetは3要素中1のみでDEEBOTより物足りない）、automation_value=20/25（high、毛絡み処理自動化が他社より明確に優れる）、fit_convenience_value=6/20（low。body_height・station_footprintが絶対lowかつ150kアンカーにほぼ到達し価格の寛容度がほぼ残っていないため、独立判定として明確な不足と判断）。合計55/100、evaluationCoverage100%。",
+        "publicRationale": "参考価格149,900円に対し、清掃性能・自動化機能の面では価格に見合う内容が確認できました。一方、住宅適合性・利便性の面では、本体・ステーションのコンパクトさが価格に対してやや物足りない結果です。",
+        "scorerType": "編集部評価",
+        "scoredAt": "2026-09-03",
+        "criteria": [
+          {
+            "id": "product_price",
+            "label": "製品価格",
+            "weight": 30,
+            "score": 9,
+            "status": "verified",
+            "rationale": "referencePrice＝149,900円。low帯（120,001〜150,000円）に該当し9/30。currentPriceは採点に使用していない。",
+            "value": "149,900円",
+            "sourceUrl": "https://www.ankerjapan.com/products/t2353",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          },
+          {
+            "id": "cleaning_value",
+            "label": "清掃性能に対する価値",
+            "weight": 25,
+            "score": 20,
+            "status": "verified",
+            "rationale": "①149,900円②アンカー位置99.7%（120k-150k間、150kアンカーにほぼ到達）③DEEBOTと同様、複数項目での具体的な数値根拠が明確に価値を上げる要素④cleaning_power内訳：suction=full(25,20,000Pa)、mopping=full(25,加圧+連続洗浄)、edge=full(15,検知連動の伸縮式)、carpet=standard(9,3要素中1のみ)、tangle=full(20,自動除去+動作原理)。⑤最重要のsuction・moppingが両方とも明確に価値を上げる内容。edge・tangleもfull。carpetのみ3要素中1とDEEBOT(2/3)よりも物足りない。highと判定。なぜfullでないか：carpetの不足がDEEBOTより顕著（3要素中1のみ）であり、全項目での徹底性に欠けるため。なぜstandardでないか：最重要のsuction・moppingが明確に満たされ、edge・tangleを含め5項目中4項目がfullのため。",
+            "value": "アンカー位置99.7%、suction/mopping万全でhigh",
+            "sourceUrl": "https://www.ankerjapan.com/products/t2353",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-03"
+          },
+          {
+            "id": "automation_value",
+            "label": "自動化機能に対する価値",
+            "weight": 25,
+            "score": 20,
+            "status": "verified",
+            "rationale": "①149,900円②アンカー位置99.7%③副次項目の充実度が明確に価値を上げる要素④主要項目=自動ゴミ収集full。モップ自動洗浄high(加温不明)。副次：モップ自動乾燥full(温風)、ステーション自己清掃standard(洗剤自動投入のみ)、毛絡み処理自動化full(DuoSpiral自動除去、メンテ負担軽減の明記、Roomba・DEEBOTより明確に優れる)。⑤自動ゴミ収集・乾燥・毛絡み処理自動化の3項目がfullで、特に毛絡み処理は他3商品より優れた内容。自己清掃はやや物足りない。highと判定。なぜfullでないか：モップ洗浄の加温有無が未確認、自己清掃も洗剤自動投入止まりで全項目が質的に高水準とまでは言えないため。なぜstandardでないか：自動ゴミ収集・乾燥・毛絡み処理自動化がfullで、特に毛絡み処理は他社より明確に優れているため。",
+            "value": "毛絡み処理自動化が他社優位でhigh",
+            "sourceUrl": "https://www.ankerjapan.com/products/t2353",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-03"
+          },
+          {
+            "id": "fit_convenience_value",
+            "label": "住宅適合性・利便性",
+            "weight": 20,
+            "score": 6,
+            "status": "verified",
+            "rationale": "①149,900円②アンカー位置99.7%（150kアンカーにほぼ到達、価格の寛容度がほぼ残っていない）③本体・ステーションのコンパクトさに加え段差・障害物回避・マッピングの複数項目での具体性が価値を上げる要素④space_fit内訳：body_height=low(111mm,絶対下位、DEEBOTのstandardより厚みがある)、body_footprint=standard(327×346mm,絶対中位)、station_footprint=low(170,940mm²,絶対下位、対象4商品中最大)、step_climbing=unpublished、obstacle_avoidance=high(AI.Seeのみ)、mapping=high(高精度のみ)。⑤重要度最大のbody_height(weight25)が絶対lowであり、150kアンカーにほぼ到達した価格帯としては寛容度を踏まえても明確な不足。station_footprint(weight15)も絶対lowで明確な不足。body_footprintは概ね一致、obstacle・mappingも概ね一致にとどまる。重要度合計40（body_height+station_footprint）を占める2項目が明確に不足し、上回る項目が1つもない。lowと判定。なぜstandardでないか：最重要のbody_heightと次点に近い重要度のstation_footprintという2項目が絶対基準でも明確に不足しており、価格に対して明確に価値を上げると言える項目が1つもないため。なぜzeroでないか：body_footprint・obstacle_avoidance・mappingの3項目は概ね一致の水準を満たしており、全項目が見劣りするわけではないため。",
+            "value": "body_height/station_footprintが明確に不足しlow",
+            "sourceUrl": "https://www.ankerjapan.com/products/t2353",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-03"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "productId": "roborock-saros-20-sonic",
+    "scores": [
+      {
+        "axisKey": "cleaning_power",
+        "normalizedScore": 100,
+        "rationale": "公式サイトで確認できた5項目すべてがverified、いずれもfull。合計100/100（evaluationCoverage 100%）。",
+        "publicRationale": "吸引力36,000Pa、加圧・周期洗浄式の水拭き、自動で伸びる壁際清掃ブラシ、カーペット対応、毛絡み防止機構まで、清掃に関わる主要な機能をすべて公式情報で具体的に確認できました。",
+        "scorerType": "カタログ値換算",
+        "scoredAt": "2026-09-03",
+        "criteria": [
+          {
+            "id": "suction_performance",
+            "label": "吸引性能",
+            "weight": 25,
+            "score": 25,
+            "status": "verified",
+            "rationale": "経路A：『36,000Pa HyperForce®モーター』と絶対値が明記。20,000Pa以上でfull。",
+            "value": "36,000Pa",
+            "sourceUrl": "https://jp.roborock.com/pages/roborock-saros-20-sonic",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          },
+          {
+            "id": "mopping_performance",
+            "label": "水拭き性能",
+            "weight": 25,
+            "score": 25,
+            "status": "verified",
+            "rationale": "『14Nの加圧と毎分4,000回の振動』で加圧確認。New RockDock®が『吸引のみ運転中に取り外したモップパッドを自動洗浄...サイクルごとに短縮』で走行中・周期的な自動洗浄を確認。両要素とも確認できfull。",
+            "value": "VibraRise 5.0（14N加圧・4,000回/分振動）＋周期的ドック洗浄",
+            "sourceUrl": "https://jp.roborock.com/pages/roborock-saros-20-sonic",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          },
+          {
+            "id": "edge_corner_cleaning",
+            "label": "壁際・隅清掃",
+            "weight": 15,
+            "score": 15,
+            "status": "verified",
+            "rationale": "『FlexiArm®アークサイドブラシ...壁際や角に沿って自動で伸び』と明記。伸縮式サイドブラシとしてfull条件を満たす。",
+            "value": "FlexiArmアークサイドブラシ（自動伸縮）",
+            "sourceUrl": "https://jp.roborock.com/pages/roborock-saros-20-sonic",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          },
+          {
+            "id": "carpet_performance",
+            "label": "カーペット対応",
+            "weight": 15,
+            "score": 15,
+            "status": "verified",
+            "rationale": "『本体が状況に応じて自動で動作を調整し、カーペットではモップを持ち上げて吸引力を強化』で検知＋吸引アップ＋モップリフトの3要素すべてが1文で明記されている。",
+            "value": "自動検知＋吸引力強化＋モップ持ち上げ（3cm対応ダイナミッククリーニング）",
+            "sourceUrl": "https://jp.roborock.com/pages/roborock-saros-20-sonic",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          },
+          {
+            "id": "brush_tangle_prevention",
+            "label": "ブラシ・毛絡み対策",
+            "weight": 20,
+            "score": 20,
+            "status": "verified",
+            "rationale": "『デュアル毛絡み防止システム』としてDuoDivide®メインブラシ（毛の絡まり率0%・除去率100%）とFlexiArm®サイドブラシ（絡まり率0%）が連動する仕組みが数値付きで明記。経路A：(a)数値、(c)複数機構の連動、双方を満たす。",
+            "value": "デュアル毛絡み防止システム（0%×2、除去率100%、連動あり）",
+            "sourceUrl": "https://jp.roborock.com/pages/roborock-saros-20-sonic",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          }
+        ]
+      },
+      {
+        "axisKey": "quietness",
+        "normalizedScore": 60,
+        "rationale": "body_noiseが未公表のためunpublished、quiet_mode_controlは専用モードとしての明示が判断できずpending-review。station_noise_considerationのみverified。normalizedScore=60は内部値として保持するが、evaluationCoverage=20%かつcritical criterion（body_noise）未検証のため、scoreDisplayStatusはinsufficientとなる。",
+        "publicRationale": "運転音の公式な数値を確認できていないため、静音性は総合評価に含めていません。夜間に出力を抑える機能への言及はありますが、独立した静音モードとして明示されているかは確認できませんでした。",
+        "scorerType": "カタログ値換算",
+        "scoredAt": "2026-09-03",
+        "criteria": [
+          {
+            "id": "body_noise",
+            "label": "本体清掃音",
+            "weight": 60,
+            "score": null,
+            "status": "unpublished",
+            "rationale": "『dB』『騒音』で検索したが本体清掃音の数値は確認できなかった。",
+            "value": null,
+            "sourceUrl": null,
+            "sourceType": null,
+            "verifiedAt": null
+          },
+          {
+            "id": "quiet_mode_control",
+            "label": "静音モード・騒音制御",
+            "weight": 20,
+            "score": null,
+            "status": "pending-review",
+            "rationale": "SmartPlan 3.0の説明に『おやすみ時間帯はパワーを抑えて、静かに掃除します』とあるが、これがユーザーが選択する独立した名称付きモードなのか、AIが自動判断する一般的な学習behaviorの一部なのか、記載だけでは判別できない。専用モードとして明示されているか確信が持てずpending-review。運転モードとしては『吸引のみ／水拭きのみ／カーペット優先／Max+』等5種が明示されているが、いずれも静音を主目的として名付けられてはいない。",
+            "value": "『おやすみ時間帯はパワーを抑えて静かに掃除』の記載のみ。専用モードとしての明示は不確実。",
+            "sourceUrl": "https://jp.roborock.com/pages/roborock-saros-20-sonic",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          },
+          {
+            "id": "station_noise_consideration",
+            "label": "ステーション動作への配慮",
+            "weight": 20,
+            "score": 12,
+            "status": "verified",
+            "rationale": "New RockDock®の搭載は確認できるが、ドック動作音・静音設計への言及は見当たらない。標準仕様として扱う。",
+            "value": "New RockDock搭載を確認。静音設計への言及なし。",
+            "sourceUrl": "https://jp.roborock.com/pages/roborock-saros-20-sonic",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          }
+        ]
+      },
+      {
+        "axisKey": "maintainability",
+        "normalizedScore": 86,
+        "rationale": "5項目すべてverified。自動ゴミ収集・モップ自動洗浄（100℃）・モップ自動乾燥（55℃）・ステーション自己清掃はfull、毛絡み対策は清掃中の絡みにくさへの言及のみでlow。合計86/100（evaluationCoverage 100%）。",
+        "publicRationale": "自動ゴミ収集（最大65日間）、100℃の温水によるモップ自動洗浄、55℃の温風による自動乾燥、ステーションの温水セルフクリーニングなど、手入れの手間を減らす機能が幅広く確認できました。ブラシに絡まった毛の除去のしやすさについては、具体的な説明が見つかりませんでした。",
+        "scorerType": "カタログ値換算",
+        "scoredAt": "2026-09-03",
+        "criteria": [
+          {
+            "id": "auto_dust_collection",
+            "label": "自動ゴミ収集",
+            "weight": 20,
+            "score": 20,
+            "status": "verified",
+            "rationale": "『自動ゴミ収集 最大65日間、手動でのゴミ捨てが不要』と明記。",
+            "value": "自動ゴミ収集（最大65日間）",
+            "sourceUrl": "https://jp.roborock.com/pages/roborock-saros-20-sonic",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          },
+          {
+            "id": "auto_mop_washing",
+            "label": "モップ自動洗浄",
+            "weight": 25,
+            "score": 25,
+            "status": "verified",
+            "rationale": "『100℃温水モップ洗浄』と加温洗浄が明記。",
+            "value": "100℃温水モップ洗浄",
+            "sourceUrl": "https://jp.roborock.com/pages/roborock-saros-20-sonic",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          },
+          {
+            "id": "auto_mop_drying",
+            "label": "モップ自動乾燥",
+            "weight": 20,
+            "score": 20,
+            "status": "verified",
+            "rationale": "『55℃の温風でモップを乾燥』と温風乾燥が明記。",
+            "value": "55℃温風乾燥",
+            "sourceUrl": "https://jp.roborock.com/pages/roborock-saros-20-sonic",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          },
+          {
+            "id": "tangle_maintenance",
+            "label": "毛絡み対策",
+            "weight": 20,
+            "score": 6,
+            "status": "verified",
+            "rationale": "DuoDivide/FlexiArmの『毛の絡まり率0%』は清掃中の絡みにくさへの言及であり、除去・手入れの負担軽減について具体的な言及（工具要否・自動化等）はない。lowに該当。",
+            "value": "『絡まり率0%』（清掃中の防止効果への言及のみ、除去負担軽減への具体的言及なし）",
+            "sourceUrl": "https://jp.roborock.com/pages/roborock-saros-20-sonic",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          },
+          {
+            "id": "station_self_clean",
+            "label": "ステーション自己清掃・省メンテナンス",
+            "weight": 15,
+            "score": 15,
+            "status": "verified",
+            "rationale": "『100℃温水充電ドックセルフクリーニング...手動でのメンテナンスを最小限に抑える』とステーション自己洗浄機構が明記。",
+            "value": "100℃温水ドックセルフクリーニング",
+            "sourceUrl": "https://jp.roborock.com/pages/roborock-saros-20-sonic",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          }
+        ]
+      },
+      {
+        "axisKey": "space_fit",
+        "normalizedScore": 80,
+        "rationale": "6項目中5項目がverified、step_climbingのみ二重段差という特殊な測定条件のためpending-review。本体高さ・障害物回避・マッピングはfull。合計80/100（evaluationCoverage 85%）。",
+        "publicRationale": "本体の高さは79.8mmと、今回確認した中でも特にコンパクトです。障害物回避・マッピング機能も高精度な方式が確認できました。ステーションの設置面積はやや大きめです。段差乗り越え性能は公式の測定条件が他社と異なり単純に比較できないため、今回は評価に含めていません。",
+        "scorerType": "カタログ値換算",
+        "scoredAt": "2026-09-03",
+        "criteria": [
+          {
+            "id": "body_height",
+            "label": "本体高さ",
+            "weight": 25,
+            "score": 25,
+            "status": "verified",
+            "rationale": "本体高さ79.8mm。85mm以下でfull。",
+            "value": "79.8mm",
+            "sourceUrl": "https://jp.roborock.com/pages/roborock-saros-20-sonic",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          },
+          {
+            "id": "body_footprint",
+            "label": "本体サイズ",
+            "weight": 15,
+            "score": 9,
+            "status": "verified",
+            "rationale": "本体350×353mm。341〜360mm帯でstandard。",
+            "value": "350mm×353mm",
+            "sourceUrl": "https://jp.roborock.com/pages/roborock-saros-20-sonic",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          },
+          {
+            "id": "station_footprint",
+            "label": "ステーションサイズ",
+            "weight": 15,
+            "score": 4,
+            "status": "verified",
+            "rationale": "ドック440×409mm＝面積約179,960mm²。150,001〜190,000mm²帯でlow。",
+            "value": "440mm×409mm（面積約179,960mm²）",
+            "sourceUrl": "https://jp.roborock.com/pages/roborock-saros-20-sonic",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          },
+          {
+            "id": "step_climbing",
+            "label": "段差性能",
+            "weight": 15,
+            "score": null,
+            "status": "pending-review",
+            "rationale": "『1段目4.5cm以下＋2段目4.3cm以下＝合計最大8.8cm』という二重段差の特殊な試験条件のみが公表されており、他社が公表する単一段差のmm値と測定方法が異なる。ルーブリックのmm帯（単一段差前提）に単純換算すると誤った比較になるため、勝手な換算はせずpending-reviewとした。",
+            "value": "二重段差条件で合計最大8.8cm（単一段差との単純比較不可）",
+            "sourceUrl": "https://jp.roborock.com/pages/roborock-saros-20-sonic",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          },
+          {
+            "id": "obstacle_avoidance",
+            "label": "障害物回避",
+            "weight": 20,
+            "score": 20,
+            "status": "verified",
+            "rationale": "『Reactive AI 3.0...トリプルストラクチャードライト、RGBカメラ、VertiBeam™側面ストラクチャードライトにより...障害物を検知...300+ 認識可能な物体の種類』と測距（構造光）とB（RGBカメラによる300種類以上の物体認識）が独立して明記されている。",
+            "value": "Reactive AI 3.0（構造光による測距＋RGBカメラで300種類以上の物体認識）",
+            "sourceUrl": "https://jp.roborock.com/pages/roborock-saros-20-sonic",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          },
+          {
+            "id": "mapping_narrow_space",
+            "label": "マッピング・狭所対応",
+            "weight": 10,
+            "score": 10,
+            "status": "verified",
+            "rationale": "『可動式LDS...低い空間でもスムーズに移動...100°の後方視界によって自動的に格納され、狭いスペースも正確に掃除』と高精度マッピング＋狭所対応の具体情報の両方が明記。",
+            "value": "可動式LDS（狭所での自動格納＋100°後方視界）",
+            "sourceUrl": "https://jp.roborock.com/pages/roborock-saros-20-sonic",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-02"
+          }
+        ]
+      },
+      {
+        "axisKey": "price_value",
+        "normalizedScore": 56,
+        "rationale": "price_value rubricVersion 1.0（B方式）による正式採点。referencePrice＝285,780円（国内発売元の2026年5月18日付リリースによる国内発売時公表価格、税込。現在の実勢価格ではない）を基準に使用。product_price=0/30（150,000円超、zero帯）、cleaning_value=20/25（high、清掃性能は5項目すべてfullで今回比較した5商品の中でも最高水準だが、285,780円という高価格帯としては相応に期待される内容でもあり満点評価は置かない）、automation_value=20/25（high、主要項目・乾燥・自己清掃はfullだが毛絡み処理自動化が弱く、高価格帯として相応の充実度にとどまる）、fit_convenience_value=16/20（high、本体の薄さ・障害物回避・マッピングはfullだがステーション設置面積は絶対基準でlow）。合計56/100、evaluationCoverage100%。",
+        "publicRationale": "国内発売時の公表価格は285,780円（税込）です。清掃性能や自動化機能は非常に充実していますが、この価格まで含めて考えると、価格に対する価値としては突出して高い評価にはしていません。",
+        "scorerType": "編集部評価",
+        "scoredAt": "2026-09-03",
+        "criteria": [
+          {
+            "id": "product_price",
+            "label": "製品価格",
+            "weight": 30,
+            "score": 0,
+            "status": "verified",
+            "rationale": "referencePrice＝285,780円（国内発売元の2026年5月18日付リリースによる国内発売時公表価格、税抜259,800円／税込285,780円）。150,000円超のzero帯に該当し0/30。currentPriceは採点に使用していない。",
+            "value": "285,780円（税込・国内発売時公表価格）",
+            "sourceUrl": null,
+            "sourceType": "公開情報",
+            "verifiedAt": "2026-09-03"
+          },
+          {
+            "id": "cleaning_value",
+            "label": "清掃性能に対する価値",
+            "weight": 25,
+            "score": 20,
+            "status": "verified",
+            "rationale": "①referencePrice285,780円②価格アンカー：150,000円アンカーを大幅に超過しており、価格が高くなるほど、それを上回る強い価値根拠が求められる価格帯③この価格帯では、清掃に関わる全項目で最高水準の機能が揃っていることに加え、他に類を見ない突出した内容が求められる④cleaning_power内訳：suction=full(25,36,000Pa)、mopping=full(25)、edge=full(15)、carpet=full(15)、tangle=full(20)。5項目すべてがfullで、今回比較した5商品の中でも最も高い清掃性能評価。⑤5項目すべてがfullという内容は極めて高水準だが、285,780円という高価格帯ではこの水準の充実が相応に期待される内容でもあり、価格を明確に上回るとまでは言い切れない。highと判定。なぜfullでないか：285,780円という高価格帯としては、この清掃性能の充実度は期待される範囲内であり、価格を明確に超える突出した価値とまでは言えないため。なぜstandardでないか：5項目すべてがfullという、今回比較した5商品の中でも最高水準の清掃性能が確認できているため。",
+            "value": "5項目すべてfullだが高価格帯のためhigh",
+            "sourceUrl": "https://jp.roborock.com/pages/roborock-saros-20-sonic",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-03"
+          },
+          {
+            "id": "automation_value",
+            "label": "自動化機能に対する価値",
+            "weight": 25,
+            "score": 20,
+            "status": "verified",
+            "rationale": "①285,780円②150,000円アンカーを大幅に超過③主要項目（自動ゴミ収集・モップ自動洗浄）に加え、副次項目の充実度も価格に見合うだけでなく、突出した内容が求められる④主要項目=自動ゴミ収集full(最大65日間)・モップ自動洗浄full(100℃温水)。副次：モップ自動乾燥full(55℃)、ステーション自己清掃full(100℃温水セルフクリーニング)、毛絡み処理自動化low(防止効果の言及のみ、除去負担軽減への具体的言及なし)。⑤主要2項目・乾燥・自己清掃という4項目がfullで自動化機能は非常に充実しているが、285,780円という高価格帯ではこの充実度が相応に期待される内容でもあり、価格を明確に上回るとまでは言えない。highと判定。なぜfullでないか：285,780円という高価格帯としては、毛絡み処理自動化の弱さもあり、全項目が質的に最高水準で揃っているとまでは言えないため。なぜstandardでないか：主要2項目・乾燥・自己清掃という4項目がfullで、自動化機能として非常に充実した内容が確認できているため。",
+            "value": "主要項目+乾燥+自己清掃がfull、毛絡み処理のみ弱くhigh",
+            "sourceUrl": "https://jp.roborock.com/pages/roborock-saros-20-sonic",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-03"
+          },
+          {
+            "id": "fit_convenience_value",
+            "label": "住宅適合性・利便性",
+            "weight": 20,
+            "score": 16,
+            "status": "verified",
+            "rationale": "①285,780円②150,000円アンカーを大幅に超過③本体・ステーションのコンパクトさに加え、段差・障害物回避・マッピングの複数項目で突出した内容が求められる④space_fit内訳：body_height=full(79.8mm、今回確認した中でも特にコンパクト)、body_footprint=standard(353×350mm)、station_footprint=low(409×440mm、設置面積約179,960mm²とやや大きめ)、step_climbing=pending-review(二重段差の特殊測定条件)、obstacle_avoidance=full(構造光+RGBカメラ)、mapping=full(可動式LDS+狭所対応)。⑤最重要のbody_height(weight25)がfullで明確な価値、obstacle_avoidance・mappingもfullで障害物対応の充実が確認できる。一方station_footprintは絶対lowで明確な不足。highと判定。なぜfullでないか：station_footprintが絶対基準でlowという明確な不足があり、285,780円という高価格帯としてはこの点が価格に見合わない要素として残るため。なぜstandardでないか：最重要のbody_height、および障害物回避・マッピングという複数の重要項目がfullで、価格に対して高い利便価値が確認できるため。",
+            "value": "body_height/obstacle/mappingがfullだがstation_footprintは絶対lowでhigh",
+            "sourceUrl": "https://jp.roborock.com/pages/roborock-saros-20-sonic",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-03"
+          }
+        ]
+      }
+    ]
+  }
+]

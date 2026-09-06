@@ -1,0 +1,74 @@
+[
+  {
+    "id": "default",
+    "name": "総合スコア（単純平均）",
+    "description": "全軸を均等（各0.2）に重み付けした単純平均。ユーザーが重視タイプを選択していない初期状態で使う。",
+    "weights": {
+      "cleaning_power": 0.2,
+      "quietness": 0.2,
+      "maintainability": 0.2,
+      "space_fit": 0.2,
+      "price_value": 0.2
+    }
+  },
+  {
+    "id": "narrow-home",
+    "name": "狭い家で使いたい",
+    "description": "住宅適合性の重みを高くし、コンパクトさ・段差適性を優先的に評価する。",
+    "weights": {
+      "space_fit": 0.5,
+      "cleaning_power": 0.125,
+      "quietness": 0.125,
+      "maintainability": 0.125,
+      "price_value": 0.125
+    }
+  },
+  {
+    "id": "sleeping-kids",
+    "name": "子どもが寝ている間に使いたい",
+    "description": "静音性の重みを高くし、稼働音の小ささを優先的に評価する。",
+    "weights": {
+      "quietness": 0.5,
+      "cleaning_power": 0.125,
+      "maintainability": 0.125,
+      "space_fit": 0.125,
+      "price_value": 0.125
+    }
+  },
+  {
+    "id": "low-maintenance",
+    "name": "手入れをなるべくしたくない",
+    "description": "メンテナンス性の重みを高くし、自動ゴミ収集・自動洗浄など手間の少なさを優先的に評価する。",
+    "weights": {
+      "maintainability": 0.5,
+      "cleaning_power": 0.125,
+      "quietness": 0.125,
+      "space_fit": 0.125,
+      "price_value": 0.125
+    }
+  },
+  {
+    "id": "performance-first",
+    "name": "とにかく性能重視",
+    "description": "清掃性能の重みを高くし、吸引力・清掃力を優先的に評価する。",
+    "weights": {
+      "cleaning_power": 0.5,
+      "quietness": 0.125,
+      "maintainability": 0.125,
+      "space_fit": 0.125,
+      "price_value": 0.125
+    }
+  },
+  {
+    "id": "cost-value",
+    "name": "コスパ重視",
+    "description": "価格対効果の重みを高くし、価格に対する性能バランスを優先的に評価する。",
+    "weights": {
+      "price_value": 0.5,
+      "cleaning_power": 0.125,
+      "quietness": 0.125,
+      "maintainability": 0.125,
+      "space_fit": 0.125
+    }
+  }
+]
