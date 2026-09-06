@@ -18,6 +18,13 @@ export const SITE_URL_FOR_BUILD = SITE_URL ?? "http://localhost:3000";
 export const SITE_NAME = "えらぶ。";
 
 /**
+ * Google Analytics 4の測定ID。ソースコードにベタ書きせず、環境変数からのみ取得する。
+ * 未設定時はnull（layout.tsxはnullのときGA4タグ自体を描画しない）。
+ * ローカル：.env.local（Gitにはコミットしない）／本番：デプロイ先の環境変数に設定する。
+ */
+export const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || null;
+
+/**
  * 各ページのgenerateMetadata/metadataで繰り返す「title・description・canonical・
  * OpenGraph・Twitter Card」を1箇所にまとめるためのヘルパー。新しい文言は作らず、
  * 呼び出し側が既に持っているtitle/descriptionをそのまま反映するだけ。

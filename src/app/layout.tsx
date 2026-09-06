@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { Noto_Sans_JP, Zen_Kaku_Gothic_New } from "next/font/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
-import { SITE_NAME, SITE_URL } from "@/lib/site-config";
+import { GA_MEASUREMENT_ID, SITE_NAME, SITE_URL } from "@/lib/site-config";
 import "./globals.css";
 
 const notoSansJP = Noto_Sans_JP({
@@ -49,6 +50,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <SiteHeader />
         <main className="mx-auto max-w-5xl px-6 py-10">{children}</main>
         <SiteFooter />
+        {GA_MEASUREMENT_ID && <GoogleAnalytics gaId={GA_MEASUREMENT_ID} />}
       </body>
     </html>
   );
