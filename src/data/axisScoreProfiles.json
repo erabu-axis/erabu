@@ -82,5 +82,41 @@
       "quietness": 0.1,
       "price_value": 0.05
     }
+  },
+  {
+    "id": "step-climbing",
+    "name": "段差が多い家で使いたい",
+    "description": "住宅適合性の重みを高くし、特に段差への対応を含めた置きやすさを優先的に評価する。",
+    "weights": {
+      "space_fit": 0.4,
+      "cleaning_power": 0.2,
+      "price_value": 0.15,
+      "maintainability": 0.15,
+      "quietness": 0.1
+    }
+  },
+  {
+    "id": "solo-living",
+    "name": "一人暮らしで使いたい",
+    "description": "価格対効果とメンテナンス性の重みを高くし、コストと日々の手入れの手間のバランスを優先的に評価する。",
+    "weights": {
+      "price_value": 0.35,
+      "maintainability": 0.3,
+      "space_fit": 0.2,
+      "cleaning_power": 0.1,
+      "quietness": 0.05
+    }
+  },
+  {
+    "id": "mopping-focus",
+    "name": "水拭きを重視したい",
+    "description": "清掃性能とメンテナンス性の重みを高くし、水拭き性能とモップの自動洗浄・自動乾燥のしやすさを優先的に評価する。",
+    "weights": {
+      "cleaning_power": 0.4,
+      "maintainability": 0.3,
+      "space_fit": 0.1,
+      "quietness": 0.1,
+      "price_value": 0.1
+    }
   }
 ]

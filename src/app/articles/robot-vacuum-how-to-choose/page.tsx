@@ -109,11 +109,10 @@ export default function HowToChoosePage() {
           <li className="rounded-lg border border-brand-line bg-brand-card p-4">
             <p className="font-bold text-brand-ink">夜間や在宅ワーク中に使いたい → 静音性を重視</p>
             <p className="mt-1 text-sm text-brand-inkSoft">
-              まずは
-              <Link href="/robot-vacuums" className="mx-1 font-bold text-brand-accent underline">
-                比較表
+              <Link href="/articles/robot-vacuum-quietness" className="font-bold text-brand-accent underline">
+                静かなロボット掃除機を選ぶには
               </Link>
-              で、各商品の運転音の公表状況を確認してみましょう。
+              で、各商品の運転音の公表状況を整理しています。
             </p>
           </li>
           <li className="rounded-lg border border-brand-line bg-brand-card p-4">
@@ -146,10 +145,10 @@ export default function HowToChoosePage() {
           <li className="rounded-lg border border-brand-line bg-brand-card p-4">
             <p className="font-bold text-brand-ink">予算とのバランスを重視したい → 価格対効果を重視</p>
             <p className="mt-1 text-sm text-brand-inkSoft">
-              <Link href="/robot-vacuums" className="mx-1 font-bold text-brand-accent underline">
-                比較表
+              <Link href="/articles/robot-vacuum-cost-value" className="font-bold text-brand-accent underline">
+                コスパで選ぶロボット掃除機5選
               </Link>
-              の価格上限での絞り込みや、価格対効果の列を参考にしてください。
+              で詳しく比較しています。
             </p>
           </li>
         </ul>

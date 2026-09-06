@@ -14,7 +14,13 @@
       "eufy-robot-vacuum-omni-e25"
     ],
     "selectionCriteria": "実データ（dataType===\"real\"）としてAXIS SCORE™を採点済みの商品を対象とする。productIdsは本記事公開時点の対象商品の記録であり、実際の表示・ランキングはproducts.json（dataType===\"real\"）から動的に取得するため、対象商品が増えた場合も本文の手直しなしで反映される。",
-    "relatedSlugs": ["robot-vacuum-low-maintenance", "robot-vacuum-cleaning-performance", "robot-vacuum-how-to-choose"],
+    "relatedSlugs": [
+      "robot-vacuum-low-maintenance",
+      "robot-vacuum-cleaning-performance",
+      "robot-vacuum-how-to-choose",
+      "robot-vacuum-step-climbing",
+      "robot-vacuum-solo-living"
+    ],
     "status": "published",
     "updatedAt": "2026-09-03"
   },
@@ -33,7 +39,14 @@
       "eufy-robot-vacuum-omni-e25"
     ],
     "selectionCriteria": "実データ（dataType===\"real\"）としてAXIS SCORE™を採点済みの商品を対象とする。productIdsは本記事公開時点の対象商品の記録であり、実際の表示・ランキングはproducts.json（dataType===\"real\"）から動的に取得するため、対象商品が増えた場合も本文の手直しなしで反映される。",
-    "relatedSlugs": ["robot-vacuum-narrow-room", "robot-vacuum-cleaning-performance", "robot-vacuum-how-to-choose", "robot-vacuum-for-pets"],
+    "relatedSlugs": [
+      "robot-vacuum-narrow-room",
+      "robot-vacuum-cleaning-performance",
+      "robot-vacuum-how-to-choose",
+      "robot-vacuum-for-pets",
+      "robot-vacuum-mopping",
+      "robot-vacuum-solo-living"
+    ],
     "status": "published",
     "updatedAt": "2026-09-03"
   },
@@ -52,7 +65,13 @@
       "eufy-robot-vacuum-omni-e25"
     ],
     "selectionCriteria": "実データ（dataType===\"real\"）としてAXIS SCORE™を採点済みの商品を対象とする。productIdsは本記事公開時点の対象商品の記録であり、実際の表示・ランキングはproducts.json（dataType===\"real\"）から動的に取得するため、対象商品が増えた場合も本文の手直しなしで反映される。",
-    "relatedSlugs": ["robot-vacuum-narrow-room", "robot-vacuum-low-maintenance", "robot-vacuum-how-to-choose", "robot-vacuum-for-pets"],
+    "relatedSlugs": [
+      "robot-vacuum-narrow-room",
+      "robot-vacuum-low-maintenance",
+      "robot-vacuum-how-to-choose",
+      "robot-vacuum-for-pets",
+      "robot-vacuum-mopping"
+    ],
     "status": "published",
     "updatedAt": "2026-09-03"
   },
@@ -62,7 +81,17 @@
     "title": "ロボット掃除機で後悔しない選び方｜買う前に確認したい5つのポイント",
     "cluster": "robot_vacuum",
     "articleType": "guide",
-    "relatedSlugs": ["robot-vacuum-narrow-room", "robot-vacuum-low-maintenance", "robot-vacuum-cleaning-performance", "robot-vacuum-for-pets"],
+    "relatedSlugs": [
+      "robot-vacuum-narrow-room",
+      "robot-vacuum-low-maintenance",
+      "robot-vacuum-cleaning-performance",
+      "robot-vacuum-for-pets",
+      "robot-vacuum-step-climbing",
+      "robot-vacuum-solo-living",
+      "robot-vacuum-quietness",
+      "robot-vacuum-mopping",
+      "robot-vacuum-cost-value"
+    ],
     "status": "published",
     "updatedAt": "2026-09-06"
   },
@@ -82,6 +111,107 @@
     ],
     "selectionCriteria": "実データ（dataType===\"real\"）としてAXIS SCORE™を採点済みの商品を対象とする。productIdsは本記事公開時点の対象商品の記録であり、実際の表示・ランキングはproducts.json（dataType===\"real\"）から動的に取得するため、対象商品が増えた場合も本文の手直しなしで反映される。",
     "relatedSlugs": ["robot-vacuum-cleaning-performance", "robot-vacuum-low-maintenance", "robot-vacuum-how-to-choose"],
+    "status": "published",
+    "updatedAt": "2026-09-06"
+  },
+  {
+    "id": "robot-vacuum-step-climbing",
+    "slug": "robot-vacuum-step-climbing",
+    "title": "段差に強いロボット掃除機5選｜段差乗り越え性能を比較",
+    "cluster": "robot_vacuum",
+    "articleType": "ranking",
+    "personaProfileId": "step-climbing",
+    "productIds": [
+      "irobot-roomba-plus-515-combo",
+      "roborock-saros-20-sonic",
+      "ecovacs-deebot-t80s-omni",
+      "switchbot-s20",
+      "eufy-robot-vacuum-omni-e25"
+    ],
+    "selectionCriteria": "実データ（dataType===\"real\"）としてAXIS SCORE™を採点済みの商品を対象とする。productIdsは本記事公開時点の対象商品の記録であり、実際の表示・ランキングはproducts.json（dataType===\"real\"）から動的に取得するため、対象商品が増えた場合も本文の手直しなしで反映される。",
+    "relatedSlugs": ["robot-vacuum-narrow-room", "robot-vacuum-solo-living", "robot-vacuum-how-to-choose"],
+    "status": "published",
+    "updatedAt": "2026-09-06"
+  },
+  {
+    "id": "robot-vacuum-solo-living",
+    "slug": "robot-vacuum-solo-living",
+    "title": "一人暮らし向けロボット掃除機5選｜狭い部屋・価格・手入れで比較",
+    "cluster": "robot_vacuum",
+    "articleType": "ranking",
+    "personaProfileId": "solo-living",
+    "productIds": [
+      "irobot-roomba-plus-515-combo",
+      "roborock-saros-20-sonic",
+      "ecovacs-deebot-t80s-omni",
+      "switchbot-s20",
+      "eufy-robot-vacuum-omni-e25"
+    ],
+    "selectionCriteria": "実データ（dataType===\"real\"）としてAXIS SCORE™を採点済みの商品を対象とする。productIdsは本記事公開時点の対象商品の記録であり、実際の表示・ランキングはproducts.json（dataType===\"real\"）から動的に取得するため、対象商品が増えた場合も本文の手直しなしで反映される。",
+    "relatedSlugs": [
+      "robot-vacuum-narrow-room",
+      "robot-vacuum-low-maintenance",
+      "robot-vacuum-step-climbing",
+      "robot-vacuum-cost-value",
+      "robot-vacuum-how-to-choose"
+    ],
+    "status": "published",
+    "updatedAt": "2026-09-06"
+  },
+  {
+    "id": "robot-vacuum-quietness",
+    "slug": "robot-vacuum-quietness",
+    "title": "静かなロボット掃除機を選ぶには｜運転音データの公表状況で比較",
+    "cluster": "robot_vacuum",
+    "articleType": "ranking",
+    "personaProfileId": "sleeping-kids",
+    "productIds": [
+      "irobot-roomba-plus-515-combo",
+      "roborock-saros-20-sonic",
+      "ecovacs-deebot-t80s-omni",
+      "switchbot-s20",
+      "eufy-robot-vacuum-omni-e25"
+    ],
+    "selectionCriteria": "実データ（dataType===\"real\"）としてAXIS SCORE™を採点済みの商品を対象とする。productIdsは本記事公開時点の対象商品の記録であり、実際の表示・ランキングはproducts.json（dataType===\"real\"）から動的に取得するため、対象商品が増えた場合も本文の手直しなしで反映される。",
+    "relatedSlugs": ["robot-vacuum-how-to-choose"],
+    "status": "published",
+    "updatedAt": "2026-09-06"
+  },
+  {
+    "id": "robot-vacuum-mopping",
+    "slug": "robot-vacuum-mopping",
+    "title": "水拭きに強いロボット掃除機5選｜モップ洗浄・乾燥まで比較",
+    "cluster": "robot_vacuum",
+    "articleType": "ranking",
+    "personaProfileId": "mopping-focus",
+    "productIds": [
+      "irobot-roomba-plus-515-combo",
+      "roborock-saros-20-sonic",
+      "ecovacs-deebot-t80s-omni",
+      "switchbot-s20",
+      "eufy-robot-vacuum-omni-e25"
+    ],
+    "selectionCriteria": "実データ（dataType===\"real\"）としてAXIS SCORE™を採点済みの商品を対象とする。productIdsは本記事公開時点の対象商品の記録であり、実際の表示・ランキングはproducts.json（dataType===\"real\"）から動的に取得するため、対象商品が増えた場合も本文の手直しなしで反映される。",
+    "relatedSlugs": ["robot-vacuum-cleaning-performance", "robot-vacuum-low-maintenance", "robot-vacuum-how-to-choose"],
+    "status": "published",
+    "updatedAt": "2026-09-06"
+  },
+  {
+    "id": "robot-vacuum-cost-value",
+    "slug": "robot-vacuum-cost-value",
+    "title": "コスパで選ぶロボット掃除機5選｜価格と性能のバランスを比較",
+    "cluster": "robot_vacuum",
+    "articleType": "ranking",
+    "personaProfileId": "cost-value",
+    "productIds": [
+      "irobot-roomba-plus-515-combo",
+      "roborock-saros-20-sonic",
+      "ecovacs-deebot-t80s-omni",
+      "switchbot-s20",
+      "eufy-robot-vacuum-omni-e25"
+    ],
+    "selectionCriteria": "実データ（dataType===\"real\"）としてAXIS SCORE™を採点済みの商品を対象とする。productIdsは本記事公開時点の対象商品の記録であり、実際の表示・ランキングはproducts.json（dataType===\"real\"）から動的に取得するため、対象商品が増えた場合も本文の手直しなしで反映される。",
+    "relatedSlugs": ["robot-vacuum-solo-living", "robot-vacuum-how-to-choose"],
     "status": "published",
     "updatedAt": "2026-09-06"
   }

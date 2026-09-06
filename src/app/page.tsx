@@ -11,7 +11,11 @@ export const metadata: Metadata = { alternates: { canonical: "/" } };
 export default function HomePage() {
   // 「比較記事で選ぶ」の説明文は「AXIS SCORE™で商品を比較した記事」と明言しているため、
   // ranking記事のみを対象にする（guide記事はランキングを持たないため、この文言と矛盾してしまう）。
-  const articles = getPublishedComparisons().filter((c) => c.articleType === "ranking");
+  // ranking記事が9本まで増えたため、トップページはあくまで導線として先頭6件までに絞り、
+  // 全件は/articlesで見てもらう（表示件数のみの調整。グリッド自体のレイアウトは変更しない）。
+  const articles = getPublishedComparisons()
+    .filter((c) => c.articleType === "ranking")
+    .slice(0, 6);
 
   return (
     <div className="space-y-16">

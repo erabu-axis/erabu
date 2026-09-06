@@ -412,7 +412,10 @@
     "mappingType": "dToFレーザー",
     "stepClimbingMm": 20,
     "maxRuntimeMinutes": 250,
-    "noiseLevels": [{ "mode": "公表値", "decibel": 60 }],
+    "noiseLevels": [
+      { "mode": "本体運転音（静音性）", "decibel": 60 },
+      { "mode": "ステーションのモップ乾燥音（40dB以下）", "decibel": 40 }
+    ],
     "features": null,
     "pros": [],
     "cons": [],
@@ -420,10 +423,10 @@
     "affiliateLinks": [],
     "sourceUrl": "https://www.switchbot.jp/products/switchbot-robot-vacuum-cleaner-s20",
     "sourceType": "メーカー公式サイト",
-    "verifiedAt": "2026-09-03",
+    "verifiedAt": "2026-09-06",
     "dataConfirmationStatus": "一部確認",
     "reviewStatus": "情報のみ",
-    "notes": "実データ。メーカー公式サイトで確認できた項目のみ入力。モップ自動乾燥の有無は公式情報で未確認のためnull。AXIS SCORE™は5AXISとも採点済み。ただしquietnessは本体清掃音（body_noise）が未公表のため評価情報不足の扱いで、総合AXIS SCORE™は参考値として表示している。デュアル集塵ステーションの外形寸法（幅380mm×奥行223mm×高さ460mm）を公式サイトで確認し追記。"
+    "notes": "実データ。メーカー公式サイトで確認できた項目のみ入力。モップ自動乾燥の有無は公式情報で未確認のためnull。AXIS SCORE™は5AXISとも採点済み。quietnessの本体清掃音（body_noise）は、SwitchBot公式のロボット掃除機機能比較ページ（https://www.switchbot.jp/pages/s1-s1plus-functional-comparison）の「静音性」行に60dBと明記されているのを2026-09-06に確認し、verifiedへ更新（詳細はproductAxisScores.jsonのrationale参照）。ステーションのモップ乾燥音40dB以下とは別の数値として区別している。デュアル集塵ステーションの外形寸法（幅380mm×奥行223mm×高さ460mm）を公式サイトで確認し追記。"
   },
   {
     "id": "eufy-robot-vacuum-omni-e25",

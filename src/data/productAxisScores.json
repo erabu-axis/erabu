@@ -916,23 +916,23 @@
       },
       {
         "axisKey": "quietness",
-        "normalizedScore": 100,
-        "rationale": "body_noise・quiet_mode_controlともに公式情報から確認できずunpublished。station_noise_considerationのみverified（full）。evaluationCoverage=20%かつcritical criterion（body_noise）未検証のため、normalizedScore=100は内部値として保持するが、scoreDisplayStatusはinsufficientとなり総合スコアには混入しない。",
-        "publicRationale": "運転音の公式な数値を確認できていないため、静音性は総合評価に含めていません。ステーション動作音については、40dB以下という具体的な数値が公表されています。",
+        "normalizedScore": 47.5,
+        "rationale": "body_noiseはSwitchBot公式のロボット掃除機機能比較ページ（S20を含む全モデル横断の一覧表）の「静音性」行に60dBと明記されておりverified（60dB以上でlow、18/60）。station_noise_considerationは引き続きverified（full、20/20）。quiet_mode_controlのみ運転モード・吸引力段階調整に関する情報が確認できずunpublished。evaluationCoverage=(60+20)/100=80%かつcritical criterion（body_noise）がverifiedのため、scoreDisplayStatusはconfirmedとなる。normalizedScore=(18+20)/80*100=47.5。",
+        "publicRationale": "本体清掃音は60dBと公式に公表されており、確認した情報の範囲では静音性は高くありません。静音専用モードの有無については、情報が確認できていません。",
         "scorerType": "カタログ値換算",
-        "scoredAt": "2026-09-03",
+        "scoredAt": "2026-09-06",
         "criteria": [
           {
             "id": "body_noise",
             "label": "本体清掃音",
             "weight": 60,
-            "score": null,
-            "status": "unpublished",
-            "rationale": "本体清掃音のdB値は確認できなかった（唯一見つかったdB値はモップ乾燥時の騒音）。",
-            "value": null,
-            "sourceUrl": null,
-            "sourceType": null,
-            "verifiedAt": null
+            "score": 18,
+            "status": "verified",
+            "rationale": "SwitchBot公式のロボット掃除機機能比較ページ（https://www.switchbot.jp/pages/s1-s1plus-functional-comparison。URL・タイトルはK10+/S10/S1/S1PLUS向けだが、実際にはS20・K11+・K20+ Proを含む全モデル横断の一覧表として運用されている）に「静音性」行があり、S20の値は60dBと明記されている。この行は本体サイズ・最大吸引力・マッピング方式など本体仕様と並んで掲載されており、モップ自動乾燥や水交換ステーションなどステーション関連の仕様とは別の行として区切られているため、本体の運転音（清掃音）を指す値と判断した。単一モードのみの公表のためその値をそのまま採用。low条件『60dB以上』に該当し18/60。なお、商品ページに記載のある『モップ乾燥時の騒音40dB以下』はステーション（MultiClean Station）のモップ乾燥時の動作音であり、本項目とは別の数値として区別している。",
+            "value": "60dB",
+            "sourceUrl": "https://www.switchbot.jp/pages/s1-s1plus-functional-comparison",
+            "sourceType": "メーカー公式サイト",
+            "verifiedAt": "2026-09-06"
           },
           {
             "id": "quiet_mode_control",
