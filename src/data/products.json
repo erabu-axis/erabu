@@ -290,7 +290,18 @@
         "linkType": "affiliate",
         "price": null,
         "priceCheckedAt": null,
-        "enabled": true
+        "enabled": false
+      },
+      {
+        "id": "irobot-roomba-plus-515-combo-rakuten",
+        "provider": "rakuten",
+        "label": "",
+        "url": "https://hb.afl.rakuten.co.jp/ichiba/5741fae2.12550359.5741fae3.ba2f3c5e/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbiccamera%2F0885155054982%2F&link_type=text&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJ0ZXh0Iiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MSwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9",
+        "linkType": "affiliate",
+        "price": 99800,
+        "priceCheckedAt": "2026-09-07",
+        "enabled": true,
+        "rakutenHtml": "<a href=\"https://hb.afl.rakuten.co.jp/ichiba/5741fae2.12550359.5741fae3.ba2f3c5e/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbiccamera%2F0885155054982%2F&link_type=text&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJ0ZXh0Iiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MSwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9\" target=\"_blank\" rel=\"nofollow sponsored noopener\" style=\"word-wrap:break-word;\">【エントリーで最大全額ポイント還元｜9/11まで】 iRobot｜アイロボット ロボット掃除機 「ルンバ」Plus 515 Combo ロボット+AutoWash 充電ステーション N285060 [吸引＋拭くタイプ（水拭き）]</a>"
       }
     ],
     "sourceUrl": "https://store.irobot-jp.com/item/N285060.html",
