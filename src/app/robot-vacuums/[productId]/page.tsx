@@ -21,8 +21,10 @@ import { CompareWithOthers } from "@/components/product-detail/CompareWithOthers
 import { ProductSpecTable } from "@/components/product-detail/ProductSpecTable";
 import { PurchaseCTA } from "@/components/product-detail/PurchaseCTA";
 import { AxisScoreMethodologyTeaser } from "@/components/product-detail/AxisScoreMethodologyTeaser";
+import { AmazonAssociatesDisclosure } from "@/components/AmazonAssociatesDisclosure";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { buildPageMetadata } from "@/lib/site-config";
+import { hasEnabledAffiliateProvider } from "@/lib/affiliateStatus";
 
 /** 公開する商品詳細ページはdataType==="real"のみ。sample（開発・回帰テスト用データ）は
  *  products.json自体からは削除しないが、静的生成の対象外にする。 */
@@ -75,6 +77,7 @@ export default function ProductDetailPage({ params }: { params: { productId: str
           { label: product.name },
         ]}
       />
+      {hasEnabledAffiliateProvider(product, "amazon") && <AmazonAssociatesDisclosure />}
       <ProductHero
         product={product}
         score={score}

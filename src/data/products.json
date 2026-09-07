@@ -281,7 +281,18 @@
     "pros": [],
     "cons": [],
     "bestFor": [],
-    "affiliateLinks": [],
+    "affiliateLinks": [
+      {
+        "id": "irobot-roomba-plus-515-combo-amazon",
+        "provider": "amazon",
+        "label": "",
+        "url": "https://link.amazon/B0gOHpOEZ",
+        "linkType": "affiliate",
+        "price": null,
+        "priceCheckedAt": null,
+        "enabled": true
+      }
+    ],
     "sourceUrl": "https://store.irobot-jp.com/item/N285060.html",
     "sourceType": "メーカー公式サイト",
     "verifiedAt": "2026-09-07",

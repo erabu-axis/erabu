@@ -21,6 +21,9 @@ import { AxisScoreMethodologyTeaser } from "@/components/product-detail/AxisScor
 import { ArticleRelatedArticles } from "@/components/article/ArticleRelatedArticles";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { buildPageMetadata } from "@/lib/site-config";
+import { AmazonAssociatesDisclosure } from "@/components/AmazonAssociatesDisclosure";
+import { ArticleAffiliateFooterNote } from "@/components/article/ArticleAffiliateFooterNote";
+import { hasAnyEnabledAffiliateLink, hasAnyEnabledAffiliateProvider } from "@/lib/affiliateStatus";
 
 const SLUG = "robot-vacuum-narrow-room";
 
@@ -86,6 +89,7 @@ export default function NarrowRoomArticlePage() {
           { label: comparison?.title ?? "狭い家・マンション向けロボット掃除機5選" },
         ]}
       />
+      {hasAnyEnabledAffiliateProvider(items, "amazon") && <AmazonAssociatesDisclosure />}
       {/* ① ファーストビュー */}
       <p className="mb-2 text-xs font-bold uppercase tracking-widest text-brand-accent">比較記事</p>
       <h1 className="mb-4 text-3xl font-bold">{comparison?.title ?? "狭い家・マンション向けロボット掃除機5選｜置きやすさまで比較"}</h1>
@@ -180,7 +184,7 @@ export default function NarrowRoomArticlePage() {
         <p>最終確認日：{comparison?.updatedAt ?? "-"}（本記事の比較対象・本文の確認日）</p>
         <p className="mt-1">価格は各商品の確認日時点のものです。商品仕様はメーカー公式情報を優先して掲載しています。</p>
         <p className="mt-1">価格・仕様は今後変更される可能性があります。最新情報は各商品の詳細ページ、またはメーカー公式サイトでご確認ください。</p>
-        <p className="mt-1">現時点でアフィリエイトリンクは設定していません。購入先は各商品詳細ページのメーカー公式サイトリンクをご利用ください。</p>
+        <ArticleAffiliateFooterNote hasAffiliateLink={hasAnyEnabledAffiliateLink(items)} />
       </section>
     </article>
   );

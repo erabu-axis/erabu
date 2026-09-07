@@ -6,6 +6,8 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { ArticleAxisChecklist, type AxisChecklistItem } from "@/components/article/ArticleAxisChecklist";
 import { ArticleRelatedArticles } from "@/components/article/ArticleRelatedArticles";
 import { AxisScoreMethodologyTeaser } from "@/components/product-detail/AxisScoreMethodologyTeaser";
+import { ArticleAffiliateFooterNote } from "@/components/article/ArticleAffiliateFooterNote";
+import { hasAnySiteEnabledAffiliateLink } from "@/lib/affiliateStatus";
 
 const SLUG = "robot-vacuum-how-to-choose";
 
@@ -172,7 +174,7 @@ export default function HowToChoosePage() {
       <section className="mb-4 text-xs text-brand-inkSoft">
         <p>最終確認日：{comparison?.updatedAt ?? "-"}（本記事の内容の確認日）</p>
         <p className="mt-1">商品仕様はメーカー公式情報を優先して掲載しています。価格・仕様は今後変更される可能性があります。</p>
-        <p className="mt-1">現時点でアフィリエイトリンクは設定していません。購入先は各商品詳細ページのメーカー公式サイトリンクをご利用ください。</p>
+        <ArticleAffiliateFooterNote hasAffiliateLink={hasAnySiteEnabledAffiliateLink()} />
       </section>
     </article>
   );

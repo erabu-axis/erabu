@@ -23,6 +23,14 @@ export interface AffiliateLink {
   priceCheckedAt: string | null;
   /** 掲載可否。falseの場合、データを削除せずにボタン非表示にできる（一時停止用）。 */
   enabled: boolean;
+  /**
+   * 楽天アフィリエイト専用フィールド。楽天アフィリエイトツールが生成した「テキストのみ」の
+   * HTMLタグをそのまま保存する（公式ガイドライン: https://affiliate.rakuten.co.jp/guideline/rule/ ）。
+   * provider==="rakuten"の場合、表示にはこのHTMLをそのまま使い、rel・target・onClick等の
+   * 属性追加や文言の書き換えは行わない。urlフィールドは内部参照・照合用に保持するのみで、
+   * 表示（<a href>の生成）には使わない。未提供の場合はnull。
+   */
+  rakutenHtml?: string | null;
 }
 
 /** この商品情報をどこから得たか（実機検証のレビューフロー観点） */

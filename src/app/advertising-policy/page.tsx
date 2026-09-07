@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { buildPageMetadata } from "@/lib/site-config";
+import { hasAnySiteEnabledAffiliateLink, hasAnySiteEnabledAffiliateProvider } from "@/lib/affiliateStatus";
 
 export const metadata: Metadata = buildPageMetadata({
   title: "広告・アフィリエイトポリシー | えらぶ。",
@@ -11,6 +12,9 @@ export const metadata: Metadata = buildPageMetadata({
 });
 
 export default function AdvertisingPolicyPage() {
+  const hasAffiliateLink = hasAnySiteEnabledAffiliateLink();
+  const hasAmazonLink = hasAnySiteEnabledAffiliateProvider("amazon");
+
   return (
     <article className="max-w-3xl">
       <Breadcrumbs items={[{ label: "ホーム", href: "/" }, { label: "広告・アフィリエイトポリシー" }]} />
@@ -22,9 +26,18 @@ export default function AdvertisingPolicyPage() {
 
       <section className="mb-10">
         <h2 className="mb-3 text-lg font-bold">1. 広告・アフィリエイトリンクについて</h2>
-        <p className="text-brand-inkSoft">
-          当サイトは、記事内の購入先リンクを通じて、提携先（アフィリエイトプログラム等）から紹介料を受け取る形での収益化を行う場合があります。現時点で、当サイトの購入先リンクとして実際に掲載しているアフィリエイトリンクはありません（掲載を開始した場合は、そのリンクにアフィリエイトである旨がわかる表示を行います）。提携先が確定し、リンクの掲載を開始する場合は、その事実と提携先の種類をこのページに追記します。
-        </p>
+        {hasAffiliateLink ? (
+          <p className="text-brand-inkSoft">
+            当サイトは、記事内・商品ページ内の購入先リンクを通じて、提携先（アフィリエイトプログラム等）から紹介料を受け取る形での収益化を行っています。アフィリエイトリンクを含む購入先ボタンには、その旨がわかる表示（「PR」表記等）を付しています。
+          </p>
+        ) : (
+          <p className="text-brand-inkSoft">
+            当サイトは、記事内の購入先リンクを通じて、提携先（アフィリエイトプログラム等）から紹介料を受け取る形での収益化を行う場合があります。現時点で、当サイトの購入先リンクとして実際に掲載しているアフィリエイトリンクはありません（掲載を開始した場合は、そのリンクにアフィリエイトである旨がわかる表示を行います）。提携先が確定し、リンクの掲載を開始する場合は、その事実と提携先の種類をこのページに追記します。
+          </p>
+        )}
+        {hasAmazonLink && (
+          <p className="mt-3 text-brand-inkSoft">Amazonのアソシエイトとして、えらぶ。は適格販売により収入を得ています。</p>
+        )}
       </section>
 
       <section className="mb-10 rounded-lg border border-brand-line bg-brand-card p-5">
