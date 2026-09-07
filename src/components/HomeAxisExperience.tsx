@@ -7,26 +7,52 @@ import {
   axisDefinitions,
   axisScoreProfiles,
   getProductAxisScores,
+  getProductEditorial,
   getProductsWithScores,
   getProfile,
-  getSortableScore,
+  type ProductWithScore,
 } from "@/lib/data";
 import { getHighlightAxis } from "@/lib/axisScore";
+import { groupComparableRankings } from "@/lib/ranking";
 import type { AxisKey } from "@/types/axis";
-import { ProductCard } from "./ProductCard";
+import { ProductCard, type ReasonInfo } from "./ProductCard";
 
 const personaProfiles = axisScoreProfiles.filter((p) => p.id !== DEFAULT_PROFILE_ID);
 
 /**
- * 「あなたに合う理由」の1行説明。real商品はpublicRationale（ユーザー向け）を優先し、
- * 内部監査用のrationaleをそのまま公開UIに出さない。sample商品はpublicRationaleを持たないため
- * 従来どおりrationale（編集部が書いた説明文で、もともと内部用語を含まない）を使う。
+ * 選んだpersonaが最も重視するAXISについて、この商品の説明を「合う理由」だけに固定しない。
+ * 「他商品より相対的に高い」「0-100の正規化スコアが◯点以上」といった閾値では判定しない
+ * （新しい採点基準・合否ラインを増やすことになるため）。
+ * 代わりに、productEditorial.jsonに既にある「確認済みの理由」がそのAXISに対応しているかどうかだけを見る：
+ *   - そのAXISの評価情報が不足 → 「判断できない点」（AXISのpublicRationaleを表示）
+ *   - そのAXISにひもづくrecommendedForがある → 「この条件に合う点」
+ *   - そのAXISにひもづくconsiderAlternativesIfがある → 「注意点」
+ *   - 対応する確認済みの理由が無い → 何も表示しない（無関係な理由を代用しない）
  */
-function getReason(productId: string, axisKey: AxisKey | null): string | undefined {
+function getReasonInfo(item: ProductWithScore, axisKey: AxisKey | null): ReasonInfo | undefined {
   if (!axisKey) return undefined;
-  const scores = getProductAxisScores(productId);
-  const entry = scores?.scores.find((s) => s.axisKey === axisKey);
-  return entry?.publicRationale ?? entry?.rationale;
+
+  const breakdown = item.displayAwareResult?.breakdown.find((b) => b.axisKey === axisKey);
+  if (!breakdown || breakdown.scoreDisplayStatus === "insufficient" || breakdown.normalizedScore === null) {
+    const scores = getProductAxisScores(item.product.id);
+    const entry = scores?.scores.find((s) => s.axisKey === axisKey);
+    const text = entry?.publicRationale ?? entry?.rationale;
+    return text ? { kind: "unknown", text } : undefined;
+  }
+
+  const editorial = getProductEditorial(item.product.id);
+  const fit = editorial?.recommendedFor.find((r) => r.axisKey === axisKey);
+  if (fit) return { kind: "fit", text: fit.reason };
+  const caution = editorial?.considerAlternativesIf.find((c) => c.axisKey === axisKey);
+  if (caution) return { kind: "caution", text: caution.reason };
+  return undefined;
+}
+
+/** グループ見出し。除外AXISが無ければ「5軸すべて」、あれば「◯◯を除く参考評価」。 */
+function groupHeading(excludedAxisKeys: AxisKey[]): string {
+  if (excludedAxisKeys.length === 0) return "5つのAXISすべてにもとづく評価";
+  const labels = excludedAxisKeys.map((key) => axisDefinitions.find((d) => d.axisKey === key)?.label ?? key);
+  return `参考評価（${labels.join("・")}の評価情報が不足しているため、それ以外のAXISで算出）`;
 }
 
 export function HomeAxisExperience() {
@@ -40,11 +66,9 @@ export function HomeAxisExperience() {
     [selectedId, activeProfile]
   );
 
-  const items = useMemo(() => {
-    return [...getProductsWithScores(activeProfileId)].sort(
-      (a, b) => getSortableScore(b) - getSortableScore(a)
-    );
-  }, [activeProfileId]);
+  const items = useMemo(() => getProductsWithScores(activeProfileId), [activeProfileId]);
+  // confirmed・参考・評価情報不足をまたいだ通しの並び順にしない。除外AXISの集合が同じ商品同士だけをグループ化する。
+  const { groups, unranked } = useMemo(() => groupComparableRankings(items), [items]);
 
   return (
     <>
@@ -117,26 +141,50 @@ export function HomeAxisExperience() {
             全商品の比較表へ →
           </Link>
         </div>
-        <p className="mb-1 text-sm text-brand-inkSoft">
+        <p className="mb-4 text-sm text-brand-inkSoft">
           {selectedPersona
-            ? `「${selectedPersona.name}」を優先した重み付けで再計算しています。`
+            ? `「${selectedPersona.name}」を優先した重み付けで再計算しています。総合点の計算に使ったAXISの組み合わせが異なる商品同士は、同じ条件で比較できないためグループを分けています。`
             : "重視するポイントを選ぶと、あなた向けのランキングに切り替わります。"}
         </p>
-        {items.some((i) => i.displayAwareResult) && (
-          <p className="mb-4 text-xs text-brand-inkSoft">
-            「参考」がついたAXIS SCORE™は、確認できているAXISのみで算出しています。評価情報の充足度が商品ごとに異なるため、単純な比較にはご注意ください。
-          </p>
+
+        {groups.map((group) => {
+          const groupKey = group.excludedAxisKeys.join(",") || "all";
+          return (
+            <div key={groupKey} className="mb-6">
+              {groups.length > 1 && (
+                <p className="mb-2 text-xs font-bold text-brand-inkSoft">{groupHeading(group.excludedAxisKeys)}</p>
+              )}
+              <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+                {group.items.map((item) => (
+                  <ProductCard
+                    key={item.product.id}
+                    item={item}
+                    reasonInfo={getReasonInfo(item, highlightAxis)}
+                    highlightAxis={highlightAxis}
+                  />
+                ))}
+              </div>
+            </div>
+          );
+        })}
+
+        {unranked.length > 0 && (
+          <div>
+            {groups.length > 0 && (
+              <p className="mb-2 text-xs font-bold text-brand-inkSoft">評価情報不足の商品</p>
+            )}
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+              {unranked.map((item) => (
+                <ProductCard
+                  key={item.product.id}
+                  item={item}
+                  reasonInfo={getReasonInfo(item, highlightAxis)}
+                  highlightAxis={highlightAxis}
+                />
+              ))}
+            </div>
+          </div>
         )}
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {items.map((item) => (
-            <ProductCard
-              key={item.product.id}
-              item={item}
-              reason={getReason(item.product.id, highlightAxis)}
-              highlightAxis={highlightAxis}
-            />
-          ))}
-        </div>
       </section>
     </>
   );

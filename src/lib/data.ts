@@ -25,6 +25,9 @@ export const productEditorials = productEditorialData as ProductEditorial[];
 
 export const DEFAULT_PROFILE_ID = "default";
 
+/** AXISの表示順。複数コンポーネント（AxisMiniBreakdown・about-axis-score等）で並び順を揃えるための単一の定義元。 */
+export const AXIS_ORDER: AxisKey[] = ["cleaning_power", "quietness", "maintainability", "space_fit", "price_value"];
+
 export function getProfile(profileId: string = DEFAULT_PROFILE_ID): AxisScoreProfile {
   const profile = axisScoreProfiles.find((p) => p.id === profileId);
   if (!profile) {

@@ -10,10 +10,10 @@ import {
   getSortableScore,
 } from "@/lib/data";
 import { getHighlightAxis } from "@/lib/axisScore";
-import { formatWeightPct } from "@/lib/article";
+import { formatCriterionCell, formatWeightPct } from "@/lib/article";
 import type { AxisKey } from "@/types/axis";
 import { ComparisonTable } from "@/components/ComparisonTable";
-import { ArticleRankingList } from "@/components/article/ArticleRankingList";
+import { ArticleRankingGroups } from "@/components/article/ArticleRankingGroups";
 import { ArticleWhyThisRanking } from "@/components/article/ArticleWhyThisRanking";
 import { ArticleProductEvaluationCards } from "@/components/article/ArticleProductEvaluationCards";
 import { ArticleRelatedArticles } from "@/components/article/ArticleRelatedArticles";
@@ -95,7 +95,12 @@ export default function CostValueArticlePage() {
       </div>
 
       {/* ② 先に結論 */}
-      <ArticleRankingList items={items} heading="先に結論：コスパ重視の人向けランキング" personaName="コスパ重視" />
+      <ArticleRankingGroups
+        items={items}
+        heading="先に結論：コスパ重視の人向けランキング"
+        personaName="コスパ重視"
+        axisDefinitions={axisDefinitions}
+      />
 
       {/* ③ 比較表 */}
       <section className="mb-10">
@@ -140,10 +145,7 @@ export default function CostValueArticlePage() {
                       const scores = getProductAxisScores(item.product.id);
                       const axisEntry = scores?.scores.find((s) => s.axisKey === "price_value");
                       const criterion = axisEntry?.criteria.find((c) => c.id === target.id);
-                      const display =
-                        criterion && criterion.status === "verified" && criterion.score !== null
-                          ? `${criterion.score}/${criterion.weight}`
-                          : "未確認";
+                      const display = formatCriterionCell(criterion);
                       return (
                         <td key={item.product.id} className="px-4 py-3 tabular-nums text-brand-inkSoft">
                           {display}
@@ -162,7 +164,7 @@ export default function CostValueArticlePage() {
       </section>
 
       {/* ⑥ 商品別評価 */}
-      <ArticleProductEvaluationCards items={items} highlightAxis={highlightAxis} />
+      <ArticleProductEvaluationCards items={items} highlightAxis={highlightAxis} axisDefinitions={axisDefinitions} />
 
       {/* ⑦ 条件別に選ぶなら */}
       <CompareWithOthers

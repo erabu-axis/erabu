@@ -117,7 +117,7 @@
   {
     "id": "robot-vacuum-step-climbing",
     "slug": "robot-vacuum-step-climbing",
-    "title": "段差に強いロボット掃除機5選｜段差乗り越え性能を比較",
+    "title": "ロボット掃除機の段差対応を比較｜公表値と測定条件の違い",
     "cluster": "robot_vacuum",
     "articleType": "ranking",
     "personaProfileId": "step-climbing",
@@ -131,7 +131,7 @@
     "selectionCriteria": "実データ（dataType===\"real\"）としてAXIS SCORE™を採点済みの商品を対象とする。productIdsは本記事公開時点の対象商品の記録であり、実際の表示・ランキングはproducts.json（dataType===\"real\"）から動的に取得するため、対象商品が増えた場合も本文の手直しなしで反映される。",
     "relatedSlugs": ["robot-vacuum-narrow-room", "robot-vacuum-solo-living", "robot-vacuum-how-to-choose"],
     "status": "published",
-    "updatedAt": "2026-09-06"
+    "updatedAt": "2026-09-07"
   },
   {
     "id": "robot-vacuum-solo-living",

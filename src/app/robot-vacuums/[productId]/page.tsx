@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import type { ReviewStatus } from "@/types/product";
 import {
   axisDefinitions,
   axisScoreProfiles,
@@ -33,6 +34,13 @@ export function generateStaticParams() {
 export const dynamicParams = false;
 
 const COMPARE_AXES = ["cleaning_power", "maintainability", "price_value"] as const;
+
+/** reviewStatusの内部区分名をそのまま出さず、読者向けの自然な言い回しに置き換える。 */
+const REVIEW_STATUS_LABEL: Record<ReviewStatus, string> = {
+  未検証: "確認作業前",
+  実機検証済: "編集部による実機検証済み",
+  情報のみ: "メーカー公表情報の確認のみ（実機未検証）",
+};
 
 export function generateMetadata({ params }: { params: { productId: string } }): Metadata {
   const item = getProductWithScore(params.productId);
@@ -111,7 +119,7 @@ export default function ProductDetailPage({ params }: { params: { productId: str
 
       <section className="text-xs text-brand-inkSoft">
         <p>
-          検証状況：{product.reviewStatus} ／ 情報源：{product.sourceType} ／ 最終確認日：
+          検証方法：{REVIEW_STATUS_LABEL[product.reviewStatus]} ／ 情報源：{product.sourceType} ／ 最終確認日：
           {product.verifiedAt}
           {product.sourceUrl && (
             <>
@@ -123,7 +131,6 @@ export default function ProductDetailPage({ params }: { params: { productId: str
             </>
           )}
         </p>
-        {product.notes && <p className="mt-2">{product.notes}</p>}
       </section>
     </div>
   );

@@ -11,7 +11,7 @@ import { getHighlightAxis } from "@/lib/axisScore";
 import { formatWeightPct } from "@/lib/article";
 import type { AxisKey } from "@/types/axis";
 import { ComparisonTable } from "@/components/ComparisonTable";
-import { ArticleRankingList } from "@/components/article/ArticleRankingList";
+import { ArticleRankingGroups } from "@/components/article/ArticleRankingGroups";
 import { ArticleWhyThisRanking } from "@/components/article/ArticleWhyThisRanking";
 import { ArticleProductEvaluationCards } from "@/components/article/ArticleProductEvaluationCards";
 import { CompareWithOthers } from "@/components/product-detail/CompareWithOthers";
@@ -81,10 +81,11 @@ export default function LowMaintenanceArticlePage() {
       </div>
 
       {/* ② 先に結論 */}
-      <ArticleRankingList
+      <ArticleRankingGroups
         items={items}
         heading="先に結論：手入れが楽な順ランキング"
         personaName="手入れをなるべくしたくない"
+        axisDefinitions={axisDefinitions}
       />
 
       {/* ③ 比較表 */}
@@ -110,7 +111,7 @@ export default function LowMaintenanceArticlePage() {
       />
 
       {/* ⑤ 商品別評価 */}
-      <ArticleProductEvaluationCards items={items} highlightAxis={highlightAxis} />
+      <ArticleProductEvaluationCards items={items} highlightAxis={highlightAxis} axisDefinitions={axisDefinitions} />
 
       {/* ⑥ 条件別に選ぶなら */}
       <CompareWithOthers

@@ -1,5 +1,6 @@
 import type { DisplayAwareAxisScoreResult } from "@/lib/axisScore";
 import type { AxisDefinition, ProductAxisScores } from "@/types/axis";
+import { getAxisDisplayDescription } from "@/lib/article";
 import { AxisScoreValue } from "./AxisScoreValue";
 
 /**
@@ -25,7 +26,7 @@ export function DisplayAwareAxisScoreBreakdown({
             <div className="flex items-center justify-between gap-3">
               <div>
                 <span className="font-bold text-brand-ink">{def?.label ?? item.axisKey}</span>
-                {def && <p className="mt-0.5 text-xs text-brand-inkSoft">{def.description}</p>}
+                {def && <p className="mt-0.5 text-xs text-brand-inkSoft">{getAxisDisplayDescription(def)}</p>}
               </div>
               <AxisScoreValue normalizedScore={item.normalizedScore} scoreDisplayStatus={item.scoreDisplayStatus} />
             </div>

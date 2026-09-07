@@ -8,6 +8,8 @@ import { ProductImage } from "@/components/ProductImage";
 /**
  * 商品詳細ページのファーストビュー。「この商品は自分に関係ありそう」と
  * 一目で判断できることを目的とする。
+ * reviewStatusが「実機検証済」以外（今回対象の実在5商品はすべて「情報のみ」）の場合、
+ * 「メーカー公表情報の確認」と「編集部による実機検証」を混同されないよう、冒頭で明示する。
  */
 export function ProductHero({
   product,
@@ -35,6 +37,12 @@ export function ProductHero({
       <div>
         <p className="mb-2 text-xs font-bold uppercase tracking-widest text-brand-accent2">{product.brand}</p>
         <h1 className="mb-3 text-3xl font-bold">{product.name}</h1>
+
+        {product.reviewStatus !== "実機検証済" && (
+          <p className="mb-4 inline-block rounded-md border border-dashed border-brand-line px-3 py-2 text-xs text-brand-inkSoft">
+            メーカー公表情報に基づく評価です。編集部による実機検証は行っていません。
+          </p>
+        )}
 
         {oneLineConclusion && <p className="mb-4 text-lg font-bold text-brand-ink">{oneLineConclusion}</p>}
 

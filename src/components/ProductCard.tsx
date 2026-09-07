@@ -13,14 +13,35 @@ const LABEL_BY_STATUS: Record<"none" | "insufficient" | "provisional" | "confirm
   confirmed: "AXIS SCORE™",
 };
 
+/**
+ * 選んだpersonaが重視するAXISについて、この商品の評価情報がどちらの性質かを表す。
+ * - fit: 確認できていて、スコアも良好 → 「この条件に合う点」
+ * - caution: 確認できていて、スコアは芳しくない → 「注意点」
+ * - unknown: 確認情報自体が不足 → 「判断できない点」
+ * 「合う理由」に一律で寄せず、根拠のない適合を作らないための区別。
+ */
+export type ReasonInfo = { kind: "fit" | "caution" | "unknown"; text: string };
+
+const REASON_LABEL: Record<ReasonInfo["kind"], string> = {
+  fit: "この条件に合う点：",
+  caution: "注意点：",
+  unknown: "判断できない点：",
+};
+
+const REASON_STYLE: Record<ReasonInfo["kind"], string> = {
+  fit: "bg-brand-accentSoft text-brand-accent",
+  caution: "border border-dashed border-brand-line text-brand-inkSoft",
+  unknown: "border border-dashed border-brand-line text-brand-inkSoft",
+};
+
 export function ProductCard({
   item,
-  reason,
+  reasonInfo,
   highlightAxis,
 }: {
   item: ProductWithScore;
-  /** 「あなたに合う理由」の1行説明。ペルソナ未選択時は undefined。 */
-  reason?: string;
+  /** 選んだpersonaが重視するAXISについての1行説明。ペルソナ未選択時、または該当AXISの説明がない場合はundefined。 */
+  reasonInfo?: ReasonInfo;
   highlightAxis?: AxisKey | null;
 }) {
   const { product, axisScoreResult, displayAwareResult } = item;
@@ -66,10 +87,13 @@ export function ProductCard({
         </p>
       )}
 
-      {reason && (
-        <p className="mt-4 truncate rounded-md bg-brand-accentSoft px-3 py-2 text-xs text-brand-accent" title={reason}>
-          <span className="font-bold">あなたに合う理由：</span>
-          {reason}
+      {reasonInfo && (
+        <p
+          className={`mt-4 truncate rounded-md px-3 py-2 text-xs ${REASON_STYLE[reasonInfo.kind]}`}
+          title={reasonInfo.text}
+        >
+          <span className="font-bold">{REASON_LABEL[reasonInfo.kind]}</span>
+          {reasonInfo.text}
         </p>
       )}
 

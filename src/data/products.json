@@ -252,8 +252,8 @@
     "category": "robot_vacuum",
     "releaseYear": null,
     "referencePrice": 129800,
-    "currentPrice": null,
-    "priceCheckedAt": "2026-09-02",
+    "currentPrice": 99800,
+    "priceCheckedAt": "2026-09-07",
     "imageUrl": null,
     "imageAlt": null,
     "imageSourceType": null,
@@ -284,10 +284,10 @@
     "affiliateLinks": [],
     "sourceUrl": "https://store.irobot-jp.com/item/N285060.html",
     "sourceType": "メーカー公式サイト",
-    "verifiedAt": "2026-09-02",
+    "verifiedAt": "2026-09-07",
     "dataConfirmationStatus": "一部確認",
     "reviewStatus": "情報のみ",
-    "notes": "実データ。メーカー公式サイトで確認できた項目のみ入力。未確認項目はnull。AXIS SCORE™は5AXISとも採点済み。ただしquietnessは本体清掃音（body_noise）が未公表のため評価情報不足の扱いで、総合AXIS SCORE™は参考値として表示している。"
+    "notes": "実データ。メーカー公式サイトで確認できた項目のみ入力。未確認項目はnull。AXIS SCORE™は5AXISとも採点済み。ただしquietnessは本体清掃音（body_noise）が未公表のため評価情報不足の扱いで、総合AXIS SCORE™は参考値として表示している。2026-09-07再確認：本体寸法（298×303×84mm）・ステーション寸法（330×340×485mm、本体とは別）・自動ゴミ収集（最大3か月分）・モップ自動洗浄（75℃温水）・モップ自動乾燥（45℃温風）・ClearView LiDARは同ページで一致を確認。段差乗り越え・運転音（dB）・吸引力（Pa）は引き続き記載なし（非公表のまま、推測補完はしていない）。2026-09-07訂正：前回、ページ内の『2026/7/7–2026/8/27までのアイロボット公式オンライン価格』という注記を、30,000円引きキャンペーンの適用期間の終了と誤読し、現在価格として採用しなかった。再確認の結果、この注記は通常価格129,800円という参照値自体の登録時期を示す別の注記であり、実際に適用される30,000円引きキャンペーンは『期間限定！9/30(水)まで』とページ上部・ナビゲーションの複数箇所に明記されている（確認日2026-09-07時点で有効）。カート追加ボタン付近の実購入価格表示欄でも99,800円（税込）が実際の販売価格として明確に表示されていることを確認したため、currentPrice=99,800円として記録する。referencePrice（129,800円、通常価格）はAXIS SCORE™ price_valueの採点基準として維持し、変更していない。"
   },
   {
     "id": "roborock-saros-20-sonic",
@@ -312,12 +312,12 @@
     "stationHeightMm": 470,
     "suctionPowerPa": 36000,
     "moppingType": "VibraRise 5.0",
-    "autoEmptying": null,
-    "autoMopWashing": null,
-    "autoMopDrying": null,
-    "tangleReduction": null,
-    "obstacleAvoidance": null,
-    "mappingType": "StarSight 自律システム2.0",
+    "autoEmptying": true,
+    "autoMopWashing": true,
+    "autoMopDrying": true,
+    "tangleReduction": "DuoDivide メインブラシ＋FlexiArm サイドブラシ（デュアル毛絡み防止システム）",
+    "obstacleAvoidance": "Reactive AI 3.0（構造光測距＋RGBカメラ、300種類以上の物体認識）",
+    "mappingType": "RetractSense（可動式LDS、狭所での自動格納・100°後方視界）",
     "stepClimbingMm": null,
     "maxRuntimeMinutes": null,
     "noiseLevels": null,
@@ -330,10 +330,10 @@
     "affiliateLinks": [],
     "sourceUrl": "https://jp.roborock.com/pages/roborock-saros-20-sonic",
     "sourceType": "メーカー公式サイト",
-    "verifiedAt": "2026-09-03",
+    "verifiedAt": "2026-09-07",
     "dataConfirmationStatus": "一部確認",
     "reviewStatus": "情報のみ",
-    "notes": "実データ。メーカー公式サイトで確認できた項目のみ入力。未確認項目はnull。cleaning_power／quietness／maintainability／space_fitに加え、price_valueもverified済み。quietnessは本体清掃音未公表のため評価情報不足。本体・充電ドックの外形寸法は公式サイトの寸法図（幅×奥行×高さの表記が図中の測定線の向きから判断されるため、明示的なラベルはなし）から確認。ドックは幅409mm×奥行440mm×高さ470mm。referencePrice（285,780円）は国内発売元の2026年5月18日付リリースで確認された国内発売時公表価格（税抜259,800円／税込285,780円）を採用。現在の実勢価格（currentPrice）は今回確認できていないためnullのまま。priceCheckedAtは現行スキーマ上currentPriceの確認日を表すフィールドのため、referencePriceの確認日として流用せずnullのままとしている。"
+    "notes": "実データ。メーカー公式サイトで確認できた項目のみ入力。未確認項目はnull。cleaning_power／quietness／maintainability／space_fitに加え、price_valueもverified済み。quietnessは本体清掃音未公表のため評価情報不足。本体・充電ドックの外形寸法は公式サイトの寸法図（幅×奥行×高さの表記が図中の測定線の向きから判断されるため、明示的なラベルはなし）から確認。ドックは幅409mm×奥行440mm×高さ470mm。referencePrice（285,780円）は国内発売元の2026年5月18日付リリースで確認された国内発売時公表価格（税抜259,800円／税込285,780円）を採用。現在の実勢価格（currentPrice）は今回確認できていないためnullのまま。priceCheckedAtは現行スキーマ上currentPriceの確認日を表すフィールドのため、referencePriceの確認日として流用せずnullのままとしている。2026-09-07：autoEmptying/autoMopWashing/autoMopDrying/tangleReduction/obstacleAvoidanceがnullのまま放置され、productAxisScores.json側で既にverified済みの内容（自動ゴミ収集・100℃モップ洗浄・55℃モップ乾燥・毛絡み防止・Reactive AI 3.0）とスペック欄が矛盾していたため、同一の一次情報から値を補完。mappingTypeは誤って別モデルの機能名（StarSight）が入力されていたため、公式ページで実際に使われている名称（RetractSense／可動式LDS）に修正。"
   },
   {
     "id": "ecovacs-deebot-t80s-omni",
@@ -345,8 +345,8 @@
     "category": "robot_vacuum",
     "releaseYear": null,
     "referencePrice": 139800,
-    "currentPrice": 79800,
-    "priceCheckedAt": "2026-09-03",
+    "currentPrice": 139800,
+    "priceCheckedAt": "2026-09-07",
     "imageUrl": null,
     "imageAlt": null,
     "imageSourceType": null,
@@ -366,7 +366,7 @@
     "mappingType": "AINA 2.0",
     "stepClimbingMm": 20,
     "maxRuntimeMinutes": 187,
-    "noiseLevels": [{ "mode": "公表値", "decibel": 65 }],
+    "noiseLevels": [{ "mode": "本体清掃音", "decibel": 65 }],
     "features": [
       "モップ乾燥：63℃熱風乾燥"
     ],
@@ -376,10 +376,10 @@
     "affiliateLinks": [],
     "sourceUrl": "https://www.ecovacs.com/jp/shop/deebot-robotic-vacuum-cleaner/t80s-omni-black",
     "sourceType": "メーカー公式サイト",
-    "verifiedAt": "2026-09-02",
+    "verifiedAt": "2026-09-07",
     "dataConfirmationStatus": "一部確認",
     "reviewStatus": "情報のみ",
-    "notes": "実データ。メーカー公式サイトで確認できた項目のみ入力。未確認項目はnull。AXIS SCORE™は5AXISすべての評価情報が揃っている。2026-09-03確認：ECOVACS公式ショップで79,800円、139,800円が取り消し線付き旧価格として表示されていたため、79,800円をcurrentPriceとして採用。セール終了日は公式ページ上で確認できていないため未記録。referencePrice（139,800円）はAXIS SCORE™ price_valueの算出基準として維持し、変更していない。"
+    "notes": "実データ。メーカー公式サイトで確認できた項目のみ入力。未確認項目はnull。AXIS SCORE™は5AXISすべての評価情報が揃っている。referencePrice（139,800円）はAXIS SCORE™ price_valueの算出基準として維持し、変更していない。2026-09-03確認：ECOVACS公式ショップで79,800円、139,800円が取り消し線付き旧価格として表示されていたため、79,800円をcurrentPriceとして採用していた。2026-09-07再確認：同ページで79,800円の表示は無くなり、カート追加ボタン付近に139,800円（本体のみ、取り消し線・参考価格等の注記なし）が実際の購入価格として明確に表示されていることを確認したため、currentPrice=139,800円に修正（referencePriceと同額）。79,800円のセールが終了したのか一時的な表示だったのかは公式ページ上では判断できないため、その点は断定しない。本体寸法（353×351×98mm）・ステーション寸法（338×459×500mm）・自動ゴミ収集（最大90日間）・モップ自動洗浄（75℃熱水浸け洗い）・モップ自動乾燥（63℃・2時間）・OZMOローラー定圧式常時洗浄モップシステム2.0（毎分220回転）・ZeroTangle 3.0・AIVI 3D 3.0 Omni-Approach・AINA 2.0・段差20mm・清掃音65dB・吸引力24,800Paは2026-09-07に同ページで再確認し、既存データと一致することを確認済み。"
   },
   {
     "id": "switchbot-s20",
@@ -406,7 +406,7 @@
     "moppingType": "RinseSync ローラーモップ（走行中モップ洗浄）",
     "autoEmptying": true,
     "autoMopWashing": true,
-    "autoMopDrying": null,
+    "autoMopDrying": true,
     "tangleReduction": "純ゴム製メインブラシ＋絡み防止サイドブラシ",
     "obstacleAvoidance": "AIカメラ／dToFレーザー／PSDセンサー",
     "mappingType": "dToFレーザー",
@@ -423,10 +423,10 @@
     "affiliateLinks": [],
     "sourceUrl": "https://www.switchbot.jp/products/switchbot-robot-vacuum-cleaner-s20",
     "sourceType": "メーカー公式サイト",
-    "verifiedAt": "2026-09-06",
+    "verifiedAt": "2026-09-07",
     "dataConfirmationStatus": "一部確認",
     "reviewStatus": "情報のみ",
-    "notes": "実データ。メーカー公式サイトで確認できた項目のみ入力。モップ自動乾燥の有無は公式情報で未確認のためnull。AXIS SCORE™は5AXISとも採点済み。quietnessの本体清掃音（body_noise）は、SwitchBot公式のロボット掃除機機能比較ページ（https://www.switchbot.jp/pages/s1-s1plus-functional-comparison）の「静音性」行に60dBと明記されているのを2026-09-06に確認し、verifiedへ更新（詳細はproductAxisScores.jsonのrationale参照）。ステーションのモップ乾燥音40dB以下とは別の数値として区別している。デュアル集塵ステーションの外形寸法（幅380mm×奥行223mm×高さ460mm）を公式サイトで確認し追記。"
+    "notes": "実データ。メーカー公式サイトで確認できた項目のみ入力。AXIS SCORE™は5AXISとも採点済み。quietnessの本体清掃音（body_noise）は、SwitchBot公式のロボット掃除機機能比較ページ（https://www.switchbot.jp/pages/s1-s1plus-functional-comparison）の「静音性」行に60dBと明記されているのを2026-09-06に確認し、verifiedへ更新（詳細はproductAxisScores.jsonのrationale参照）。ステーションのモップ乾燥音40dB以下とは別の数値として区別している。デュアル集塵ステーションの外形寸法（幅380mm×奥行223mm×高さ460mm）を公式サイトで確認し追記。2026-09-07：autoMopDryingがnullのまま放置され、productAxisScores.json側で既にverified済みの内容（『50℃の熱風で自動乾燥』）とスペック欄が矛盾していたため、同一の一次情報からtrueに補完。"
   },
   {
     "id": "eufy-robot-vacuum-omni-e25",
@@ -467,9 +467,9 @@
     "affiliateLinks": [],
     "sourceUrl": "https://www.ankerjapan.com/products/t2353",
     "sourceType": "メーカー公式サイト",
-    "verifiedAt": "2026-09-02",
+    "verifiedAt": "2026-09-07",
     "dataConfirmationStatus": "一部確認",
     "reviewStatus": "情報のみ",
-    "notes": "実データ。メーカー公式サイトで確認できた項目のみ入力。未確認項目はnull。AXIS SCORE™は5AXISとも採点済み。ただしquietnessは本体清掃音（body_noise）が未公表のため評価情報不足の扱いで、総合AXIS SCORE™は参考値として表示している。2026-09-03確認：Anker Japan公式オンラインストアで149,900円→89,900円（40%OFF）の表示を確認したため、89,900円をcurrentPriceとして採用。referencePrice（149,900円）はAXIS SCORE™ price_valueの算出基準として維持し、変更していない。"
+    "notes": "実データ。メーカー公式サイトで確認できた項目のみ入力。未確認項目はnull。AXIS SCORE™は5AXISとも採点済み。ただしquietnessは本体清掃音（body_noise）が未公表のため評価情報不足の扱いで、総合AXIS SCORE™は参考値として表示している。2026-09-03確認：Anker Japan公式オンラインストアで149,900円→89,900円（40%OFF）の表示を確認したため、89,900円をcurrentPriceとして採用。referencePrice（149,900円）はAXIS SCORE™ price_valueの算出基準として維持し、変更していない。2026-09-07再確認：同ページで149,900円（取り消し線）→89,900円（40%OFF）の表示を継続確認。本体寸法（327×346×111mm）・ステーション寸法（370×462×437mm、本体とは別）・自動ゴミ収集・HydroJetシステムによるモップ自動洗浄・温風によるモップ自動乾燥・DuoSpiralブラシ・AI.See・iPathレーザーナビゲーション・吸引力20,000Paは同ページで一致を確認。段差乗り越え・運転音（dB）は引き続き記載なし（非公表のまま、推測補完はしていない）。"
   }
 ]

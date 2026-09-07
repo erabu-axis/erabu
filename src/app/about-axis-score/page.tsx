@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { axisDefinitions, axisScoreProfiles, DEFAULT_PROFILE_ID } from "@/lib/data";
-import { formatWeightPct } from "@/lib/article";
+import { AXIS_ORDER, axisDefinitions, axisScoreProfiles, DEFAULT_PROFILE_ID } from "@/lib/data";
+import { formatWeightPct, getAxisDisplayDescription } from "@/lib/article";
 import { AxisScoreBadge } from "@/components/AxisScoreBadge";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { buildPageMetadata } from "@/lib/site-config";
@@ -20,13 +20,6 @@ const defaultProfile = axisScoreProfiles.find((p) => p.id === DEFAULT_PROFILE_ID
 const axisWithCriticalCriteria = axisDefinitions.find(
   (d) => d.criticalCriteria && d.criticalCriteria.length > 0
 );
-
-// axisDefinitions.jsonのdescriptionは公開に適した短い説明が中心だが、price_valueのみ
-// 内部rubricの用語（criterion ID・tier名）を含む監査寄りの文章のため、このページでは表示しない。
-// 詳細は後段の「価格対効果（price_value）の特別なルール」セクションで一般向けに説明する。
-const AXIS_CARD_DESCRIPTION_OVERRIDES: Partial<Record<string, string>> = {
-  price_value: "支払う価格に対して、清掃性能・自動化機能・住宅適合性の面でどれだけ価値ある内容を得られるかを評価する（詳しくは後述）。",
-};
 
 export default function AboutAxisScorePage() {
   return (
@@ -58,9 +51,7 @@ export default function AboutAxisScorePage() {
                 <span className="font-bold text-brand-ink">{def.label}</span>
                 <span className="text-xs text-brand-inkSoft">rubric v{def.rubricVersion}</span>
               </div>
-              <p className="mb-2 text-sm text-brand-inkSoft">
-                {AXIS_CARD_DESCRIPTION_OVERRIDES[def.axisKey] ?? def.description}
-              </p>
+              <p className="mb-2 text-sm text-brand-inkSoft">{getAxisDisplayDescription(def)}</p>
               <p className="text-xs text-brand-inkSoft">
                 評価項目：{def.criteria.map((c) => c.label).join("・")}
               </p>
@@ -93,22 +84,36 @@ export default function AboutAxisScorePage() {
             </thead>
             <tbody>
               {axisScoreProfiles.map((profile) => {
-                const entries = Object.entries(profile.weights) as [string, number][];
+                // AXIS_ORDER：表示列や他コンポーネント（AxisMiniBreakdown等）と同じ並び順に揃える。
+                const entries = AXIS_ORDER.map(
+                  (key) => [key, profile.weights[key] ?? 0] as [string, number]
+                ).filter(([, w]) => w > 0);
+                const label = (key: string) => axisDefinitions.find((d) => d.axisKey === key)?.label ?? key;
+
                 const maxWeight = Math.max(...entries.map(([, w]) => w));
                 const topAxes = entries.filter(([, w]) => w === maxWeight);
                 const otherAxes = entries.filter(([, w]) => w !== maxWeight);
                 const isEqual = topAxes.length === entries.length;
-                const otherWeight = otherAxes[0]?.[1];
+                // 「その他は各◯%」という表現は、残りの軸がすべて同じ重みの場合だけ使う。
+                // 重みが軸ごとに異なるpersona（例：清掃35%・メンテ30%・住宅20%・静音10%・価格5%）で
+                // 一律に「その他4項目を各30%」と表示すると合計が100%を超えてしまうため、
+                // その場合は各軸の実際の重みをそのまま列挙する。
+                const otherAllEqual =
+                  otherAxes.length > 0 && otherAxes.every(([, w]) => w === otherAxes[0][1]);
+
+                let description: string;
+                if (isEqual) {
+                  description = `5つのAXISを均等（各${formatWeightPct(maxWeight)}%）に評価`;
+                } else if (topAxes.length === 1 && otherAllEqual) {
+                  description = `${label(topAxes[0][0])}を${formatWeightPct(maxWeight)}%、その他${otherAxes.length}項目を各${formatWeightPct(otherAxes[0][1])}%として評価`;
+                } else {
+                  description = entries.map(([key, w]) => `${label(key)}${formatWeightPct(w)}%`).join("・");
+                }
+
                 return (
                   <tr key={profile.id} className="border-t border-brand-line align-top">
                     <td className="px-4 py-3 font-bold text-brand-ink">{profile.name}</td>
-                    <td className="px-4 py-3 text-brand-inkSoft">
-                      {isEqual
-                        ? `5つのAXISを均等（各${formatWeightPct(maxWeight)}%）に評価`
-                        : `${topAxes
-                            .map(([key]) => axisDefinitions.find((d) => d.axisKey === key)?.label ?? key)
-                            .join("・")}を${formatWeightPct(maxWeight)}%、その他${otherAxes.length}項目を各${formatWeightPct(otherWeight)}%として評価`}
-                    </td>
+                    <td className="px-4 py-3 text-brand-inkSoft">{description}</td>
                   </tr>
                 );
               })}

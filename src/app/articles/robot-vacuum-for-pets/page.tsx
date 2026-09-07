@@ -10,10 +10,10 @@ import {
   getSortableScore,
 } from "@/lib/data";
 import { getHighlightAxis } from "@/lib/axisScore";
-import { formatWeightPct } from "@/lib/article";
+import { formatCriterionCell, formatWeightPct } from "@/lib/article";
 import type { AxisKey } from "@/types/axis";
 import { ComparisonTable } from "@/components/ComparisonTable";
-import { ArticleRankingList } from "@/components/article/ArticleRankingList";
+import { ArticleRankingGroups } from "@/components/article/ArticleRankingGroups";
 import { ArticleProductEvaluationCards } from "@/components/article/ArticleProductEvaluationCards";
 import { ArticleRelatedArticles } from "@/components/article/ArticleRelatedArticles";
 import { CompareWithOthers } from "@/components/product-detail/CompareWithOthers";
@@ -99,10 +99,11 @@ export default function ForPetsArticlePage() {
       </div>
 
       {/* ② 先に結論 */}
-      <ArticleRankingList
+      <ArticleRankingGroups
         items={items}
         heading="先に結論：ペットがいる家庭向けランキング"
         personaName="ペットがいる家庭で使いたい"
+        axisDefinitions={axisDefinitions}
       />
 
       {/* ③ 比較表 */}
@@ -156,10 +157,7 @@ export default function ForPetsArticlePage() {
                       const scores = getProductAxisScores(item.product.id);
                       const axisEntry = scores?.scores.find((s) => s.axisKey === target.axisKey);
                       const criterion = axisEntry?.criteria.find((c) => c.id === target.id);
-                      const display =
-                        criterion && criterion.status === "verified" && criterion.score !== null
-                          ? `${criterion.score}/${criterion.weight}`
-                          : "未確認";
+                      const display = formatCriterionCell(criterion);
                       return (
                         <td key={item.product.id} className="px-4 py-3 tabular-nums text-brand-inkSoft">
                           {display}
@@ -178,7 +176,7 @@ export default function ForPetsArticlePage() {
       </section>
 
       {/* ⑥ 商品別評価 */}
-      <ArticleProductEvaluationCards items={items} highlightAxis={highlightAxis} />
+      <ArticleProductEvaluationCards items={items} highlightAxis={highlightAxis} axisDefinitions={axisDefinitions} />
 
       {/* ⑦ 条件別に選ぶなら */}
       <CompareWithOthers

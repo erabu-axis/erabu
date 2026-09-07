@@ -1,4 +1,5 @@
 import type { AxisKey, ScoreDisplayStatus } from "@/types/axis";
+import { AXIS_ORDER } from "@/lib/data";
 
 const SHORT_LABELS: Record<AxisKey, string> = {
   cleaning_power: "清掃",
@@ -7,10 +8,6 @@ const SHORT_LABELS: Record<AxisKey, string> = {
   space_fit: "住宅",
   price_value: "価格",
 };
-
-/** 表示列の並び順を固定する。displayAwareResult.breakdownはpersona weightの定義順（Object.entries順）に
- *  依存するため、personaによって列順が入れ替わらないよう、常にこの並びに揃える。 */
-const AXIS_ORDER: AxisKey[] = ["cleaning_power", "quietness", "maintainability", "space_fit", "price_value"];
 
 export function AxisMiniBreakdown({
   breakdown,

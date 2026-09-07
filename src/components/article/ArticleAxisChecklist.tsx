@@ -1,14 +1,7 @@
 import Link from "next/link";
 import { axisDefinitions } from "@/lib/data";
+import { getAxisDisplayDescription } from "@/lib/article";
 import type { AxisKey } from "@/types/axis";
-
-// axisDefinitions.jsonのdescriptionは、price_valueのみ内部rubricの用語（criterion ID・tier名）を
-// 含む監査寄りの文章のため、一般公開向けにはこちらの短い説明に差し替える
-// （/about-axis-scoreページと同じ対応。他4軸のdescriptionはそのまま使える）。
-const AXIS_DESCRIPTION_OVERRIDES: Partial<Record<AxisKey, string>> = {
-  price_value:
-    "支払う価格に対して、清掃性能・自動化機能・住宅適合性の面でどれだけ価値ある内容を得られるか。",
-};
 
 export interface AxisChecklistItem {
   axisKey: AxisKey;
@@ -30,7 +23,7 @@ export function ArticleAxisChecklist({ items }: { items: AxisChecklistItem[] }) 
       {items.map((item, index) => {
         const def = axisDefinitions.find((d) => d.axisKey === item.axisKey);
         if (!def) return null;
-        const description = AXIS_DESCRIPTION_OVERRIDES[item.axisKey] ?? def.description;
+        const description = getAxisDisplayDescription(def);
 
         return (
           <div key={item.axisKey} className="rounded-lg border border-brand-line bg-brand-card p-5">

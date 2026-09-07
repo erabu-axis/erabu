@@ -1,12 +1,4 @@
-import type { Product } from "@/types/product";
 import type { ScoreDisplayStatus } from "@/types/axis";
-
-/** ソート・フィルタ用の比較可能な価格。両方nullの場合は Infinity を返す。 */
-export function comparablePrice(
-  product: Pick<Product, "currentPrice" | "referencePrice">
-): number {
-  return product.currentPrice ?? product.referencePrice ?? Infinity;
-}
 
 /**
  * normalizedScoreとscoreDisplayStatusから、ユーザー画面に出す表示文字列を組み立てる。

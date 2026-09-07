@@ -13,7 +13,7 @@ import { getHighlightAxis } from "@/lib/axisScore";
 import { formatWeightPct } from "@/lib/article";
 import type { AxisKey } from "@/types/axis";
 import { ComparisonTable } from "@/components/ComparisonTable";
-import { ArticleRankingList } from "@/components/article/ArticleRankingList";
+import { ArticleRankingGroups } from "@/components/article/ArticleRankingGroups";
 import { ArticleWhyThisRanking } from "@/components/article/ArticleWhyThisRanking";
 import { ArticleProductEvaluationCards } from "@/components/article/ArticleProductEvaluationCards";
 import { CompareWithOthers } from "@/components/product-detail/CompareWithOthers";
@@ -99,7 +99,12 @@ export default function NarrowRoomArticlePage() {
       </div>
 
       {/* ② 先に結論 */}
-      <ArticleRankingList items={items} heading="先に結論：狭い家で使いたい人向けランキング" personaName="狭い家で使いたい" />
+      <ArticleRankingGroups
+        items={items}
+        heading="先に結論：狭い家で使いたい人向けランキング"
+        personaName="狭い家で使いたい"
+        axisDefinitions={axisDefinitions}
+      />
 
       {/* ③ 比較表 */}
       <section className="mb-10">
@@ -119,7 +124,7 @@ export default function NarrowRoomArticlePage() {
       />
 
       {/* ⑤ 商品別評価 */}
-      <ArticleProductEvaluationCards items={items} highlightAxis={highlightAxis} />
+      <ArticleProductEvaluationCards items={items} highlightAxis={highlightAxis} axisDefinitions={axisDefinitions} />
 
       {/* ⑥ 条件別に選ぶなら */}
       <CompareWithOthers

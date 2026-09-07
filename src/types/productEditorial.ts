@@ -5,11 +5,20 @@
  * productAxisScores.json（publicRationale含む）であり、ここでは新しい商品事実を作らない。
  */
 
+import type { AxisKey } from "@/types/axis";
+
 export interface RecommendedForItem {
   /** 「こんな人におすすめ」の短いラベル（例："本体をとにかく小さくしたい人"） */
   label: string;
   /** そのラベルに至った根拠（1文程度、既存の確認済み事実のみ） */
   reason: string;
+  /**
+   * このラベル・reasonが主にどのAXISについての言及か（任意）。
+   * 記事側（ArticleProductEvaluationCards）が、記事のテーマAXISに対応する理由だけを
+   * 優先表示するために使う。文章のキーワード検索では判定せず、内容から明確に対応が
+   * わかるものにだけ付与する。複数AXISにまたがる場合や、AXISに紐づかない場合は未設定のままにする。
+   */
+  axisKey?: AxisKey;
 }
 
 export interface ConsiderAlternativeItem {
@@ -17,6 +26,8 @@ export interface ConsiderAlternativeItem {
   label: string;
   /** そのラベルに至った根拠（1文程度、既存の確認済み事実のみ） */
   reason: string;
+  /** RecommendedForItem.axisKeyと同じ考え方。 */
+  axisKey?: AxisKey;
 }
 
 export interface ProductEditorial {
