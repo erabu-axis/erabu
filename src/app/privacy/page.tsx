@@ -28,9 +28,9 @@ export default function PrivacyPage() {
       </section>
 
       <section className="mb-10">
-        <h2 className="mb-3 text-lg font-bold">2. お問い合わせ時に取得する可能性のある情報</h2>
+        <h2 className="mb-3 text-lg font-bold">2. お問い合わせ時に取得する情報</h2>
         <p className="text-brand-inkSoft">
-          お問い合わせ方法（メール等）を導入する際は、氏名・メールアドレスなど、お問い合わせ対応に必要な範囲の情報を取得する可能性があります。取得する情報の詳細は、お問い合わせ窓口の設置にあわせてこのページに明記します。
+          当サイトはお問い合わせ用にメールアドレスを掲載しています。メールでお問い合わせいただいた場合、氏名・メールアドレス・お問い合わせ内容など、送信者様がメールに記載した情報を、お問い合わせへの対応目的の範囲で保有します。これらの情報は、当サイトのシステムを通じて自動的に取得・保存されるものではありません。
         </p>
       </section>
 
@@ -54,7 +54,7 @@ export default function PrivacyPage() {
       <section className="mb-10">
         <h2 className="mb-3 text-lg font-bold">5. 外部サービス</h2>
         <p className="text-brand-inkSoft">
-          当サイトの掲載情報は、メーカー公式サイトなど外部の情報をもとに編集部が確認したものです。将来、購入先リンク（アフィリエイトリンク等）を設置する場合、リンク先の外部サイトにおける情報の取扱いは、各サービスのプライバシーポリシーに従います。広告・アフィリエイトとの関係については、
+          当サイトの掲載情報は、メーカー公式サイトなど外部の情報をもとに編集部が確認したものです。当サイトは購入先リンク（アフィリエイトリンク等）を設置しており、リンク先の外部サイトにおける情報の取扱いは、各サービスのプライバシーポリシーに従います。広告・アフィリエイトとの関係については、
           <Link href="/advertising-policy" className="mx-1 font-bold text-brand-accent underline">
             広告・アフィリエイトポリシー
           </Link>
@@ -71,7 +71,13 @@ export default function PrivacyPage() {
 
       <section className="mb-10">
         <h2 className="mb-3 text-lg font-bold">7. お問い合わせ</h2>
-        <p className="text-brand-inkSoft">本ポリシーに関するお問い合わせ方法は現在準備中です。</p>
+        <p className="text-brand-inkSoft">
+          本ポリシーに関するお問い合わせは、
+          <Link href="/about#contact" className="mx-1 font-bold text-brand-accent underline">
+            運営者情報・お問い合わせ
+          </Link>
+          に記載のメールアドレスまでお願いいたします。
+        </p>
       </section>
 
       <p className="text-xs text-brand-inkSoft">最終更新日：2026-09-07</p>

@@ -21,7 +21,7 @@ export default function AboutPage() {
       <section className="mb-10">
         <h2 className="mb-3 text-lg font-bold">「えらぶ。」とは</h2>
         <p className="text-brand-inkSoft">
-          「えらぶ。」は、感想やランキングの順位ではなく、比較の軸（AXIS）で「結局どっちを選べばいいか」に結論を出す比較サイトです。同じ商品でも、何を重視するかによって最適な選択は変わります。私たちは商品を単一の順位で並べるのではなく、清掃性能・静音性・メンテナンス性・住宅適合性・価格対効果という複数の軸に分けてスコア化することで、読者一人ひとりが自分の状況に合わせて商品を選べることを目指しています。現在はロボット掃除機クラスターを展開しています。
+          「えらぶ。」は、暮らしに合う家電を納得して選んでいただくために、個人で運営している比較メディアです。感想やランキングの順位ではなく、比較の軸（AXIS）で「結局どっちを選べばいいか」に結論を出す比較サイトです。同じ商品でも、何を重視するかによって最適な選択は変わります。私たちは商品を単一の順位で並べるのではなく、清掃性能・静音性・メンテナンス性・住宅適合性・価格対効果という複数の軸に分けてスコア化することで、読者一人ひとりが自分の状況に合わせて商品を選べることを目指しています。現在はロボット掃除機クラスターを展開しています。
         </p>
       </section>
 
@@ -32,6 +32,7 @@ export default function AboutPage() {
           <li>確認できていない仕様・数値は、推測や換算で補うことはしません。「非公表」「未確認」はそのまま「非公表」「未確認」として扱います。</li>
           <li>各商品ページには、情報源の種類（メーカー公式サイト等）と、最終確認日を明記しています。</li>
           <li>価格情報には確認日時点のものであることを明記し、比較の基準にする価格と、セール等で変動する現在の実勢価格を区別して扱います。</li>
+          <li>現時点では、編集部による実機検証は行っていません。掲載している評価は、メーカー公式サイト等で確認できた公表情報にもとづくものです。</li>
         </ul>
       </section>
 
@@ -48,7 +49,7 @@ export default function AboutPage() {
       <section className="mb-10">
         <h2 className="mb-3 text-lg font-bold">広告・アフィリエイトとの関係</h2>
         <p className="text-brand-inkSoft">
-          「えらぶ。」は将来、購入先リンク経由の紹介料（アフィリエイト）等による収益化を行う可能性がありますが、その場合も広告主・提携先との関係がAXIS
+          「えらぶ。」は、購入先リンク経由の紹介料（アフィリエイト）等による収益化を行っています。広告主・提携先との関係が、AXIS
           SCORE™の採点内容に影響を与えることはありません。評価と収益化の仕組みは分離して運営します。詳細は
           <Link href="/advertising-policy" className="mx-1 font-bold text-brand-accent underline">
             広告・アフィリエイトポリシー
@@ -57,20 +58,29 @@ export default function AboutPage() {
         </p>
       </section>
 
-      <section className="mb-10">
-        <h2 className="mb-3 text-lg font-bold">運営者情報</h2>
+      <section className="mb-10" id="contact">
+        <h2 className="mb-3 text-lg font-bold">運営者情報・お問い合わせ</h2>
         <dl className="space-y-3 text-brand-inkSoft">
           <div>
             <dt className="text-xs font-bold uppercase tracking-wide text-brand-inkSoft">運営者名</dt>
-            <dd className="mt-0.5">準備中</dd>
+            <dd className="mt-0.5">えらぶ。運営者</dd>
           </div>
           <div>
             <dt className="text-xs font-bold uppercase tracking-wide text-brand-inkSoft">運営形態</dt>
-            <dd className="mt-0.5">準備中</dd>
+            <dd className="mt-0.5">個人運営</dd>
           </div>
           <div>
             <dt className="text-xs font-bold uppercase tracking-wide text-brand-inkSoft">お問い合わせ</dt>
-            <dd className="mt-0.5">準備中</dd>
+            <dd className="mt-0.5">
+              商品情報の誤り・更新情報のご連絡、その他のお問い合わせは、以下のメールアドレスまでお願いいたします。
+              <br />
+              <a
+                href="mailto:erabu.axis.contact@gmail.com"
+                className="font-bold text-brand-accent underline"
+              >
+                erabu.axis.contact@gmail.com
+              </a>
+            </dd>
           </div>
         </dl>
       </section>
