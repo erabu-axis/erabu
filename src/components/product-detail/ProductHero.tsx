@@ -4,7 +4,9 @@ import type { RecommendedForItem } from "@/types/productEditorial";
 import { AxisScoreBadge } from "@/components/AxisScoreBadge";
 import { PriceDisplay } from "@/components/PriceDisplay";
 import { ProductImage } from "@/components/ProductImage";
+import { RakutenProductImageLink } from "@/components/RakutenProductImageLink";
 import { PurchaseButtons } from "@/components/PurchaseButtons";
+import { getValidRakutenImageHtml } from "@/lib/rakutenSnippet";
 
 /**
  * 商品詳細ページのファーストビュー。「この商品は自分に関係ありそう」と
@@ -25,15 +27,28 @@ export function ProductHero({
   oneLineConclusion?: string;
   recommendedFor: RecommendedForItem[];
 }) {
+  const rakutenImageHtml = getValidRakutenImageHtml(product);
+
   return (
     <section className="mb-10 grid grid-cols-1 gap-6 md:grid-cols-[280px_1fr] md:items-start">
-      <ProductImage
-        product={product}
-        aspect="aspect-square"
-        className="w-full max-w-xs md:max-w-none"
-        sizes="(min-width: 768px) 280px, 60vw"
-        priority
-      />
+      {rakutenImageHtml ? (
+        <RakutenProductImageLink
+          product={product}
+          html={rakutenImageHtml}
+          pageType="product_detail"
+          placement="hero_image"
+          aspect="aspect-square"
+          className="w-full max-w-xs md:max-w-none"
+        />
+      ) : (
+        <ProductImage
+          product={product}
+          aspect="aspect-square"
+          className="w-full max-w-xs md:max-w-none"
+          sizes="(min-width: 768px) 280px, 60vw"
+          priority
+        />
+      )}
 
       <div>
         <p className="mb-2 text-xs font-bold uppercase tracking-widest text-brand-accent2">{product.brand}</p>

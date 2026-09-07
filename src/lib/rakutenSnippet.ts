@@ -6,6 +6,8 @@
  * 呼び出し側でその理由を報告できるようにする。
  */
 
+import type { Product } from "@/types/product";
+
 const ALLOWED_TAGS = new Set(["a", "img"]);
 const DANGEROUS_PATTERN = /<script|<iframe|<object|<embed|<link|<meta|<style|javascript:|data:text\/html|on\w+\s*=/i;
 const MAX_LENGTH = 4000;
@@ -50,4 +52,17 @@ export function checkRakutenSnippet(html: string | null | undefined): RakutenSni
   }
 
   return { safe: true };
+}
+
+/**
+ * 商品の有効な楽天アフィリエイトリンクから、安全性チェックを通過した「画像のみ」リンクの
+ * HTMLを取得する。無効・未設定・検証失敗の場合はnullを返し、呼び出し側は既存の
+ * ProductImage等（プレースホルダーへのフォールバックを含む）へ自然にフォールバックできる。
+ */
+export function getValidRakutenImageHtml(product: Product): string | null {
+  const link = product.affiliateLinks.find(
+    (l) => l.enabled && l.provider === "rakuten" && !!l.rakutenImageHtml
+  );
+  if (!link?.rakutenImageHtml) return null;
+  return checkRakutenSnippet(link.rakutenImageHtml).safe ? link.rakutenImageHtml : null;
 }
