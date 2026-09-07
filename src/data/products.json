@@ -298,8 +298,8 @@
         "label": "",
         "url": "https://hb.afl.rakuten.co.jp/ichiba/5741fae2.12550359.5741fae3.ba2f3c5e/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbiccamera%2F0885155054982%2F&link_type=text&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJ0ZXh0Iiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MSwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9",
         "linkType": "affiliate",
-        "price": 99800,
-        "priceCheckedAt": "2026-09-07",
+        "price": null,
+        "priceCheckedAt": null,
         "enabled": true,
         "rakutenHtml": "<a href=\"https://hb.afl.rakuten.co.jp/ichiba/5741fae2.12550359.5741fae3.ba2f3c5e/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbiccamera%2F0885155054982%2F&link_type=text&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJ0ZXh0Iiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MSwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9\" target=\"_blank\" rel=\"nofollow sponsored noopener\" style=\"word-wrap:break-word;\">【エントリーで最大全額ポイント還元｜9/11まで】 iRobot｜アイロボット ロボット掃除機 「ルンバ」Plus 515 Combo ロボット+AutoWash 充電ステーション N285060 [吸引＋拭くタイプ（水拭き）]</a>"
       }
@@ -349,7 +349,29 @@
     "pros": [],
     "cons": [],
     "bestFor": [],
-    "affiliateLinks": [],
+    "affiliateLinks": [
+      {
+        "id": "roborock-saros-20-sonic-amazon",
+        "provider": "amazon",
+        "label": "",
+        "url": "https://link.amazon/A03XpVU6a",
+        "linkType": "affiliate",
+        "price": null,
+        "priceCheckedAt": null,
+        "enabled": false
+      },
+      {
+        "id": "roborock-saros-20-sonic-rakuten",
+        "provider": "rakuten",
+        "label": "",
+        "url": "https://hb.afl.rakuten.co.jp/ichiba/57429864.0cedbbef.57429865.844d6aad/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fyamada-denki%2F1386791018%2F&link_type=text&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJ0ZXh0Iiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9",
+        "linkType": "affiliate",
+        "price": null,
+        "priceCheckedAt": null,
+        "enabled": true,
+        "rakutenHtml": "<a href=\"https://hb.afl.rakuten.co.jp/ichiba/57429864.0cedbbef.57429865.844d6aad/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fyamada-denki%2F1386791018%2F&link_type=text&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJ0ZXh0Iiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9\" target=\"_blank\" rel=\"nofollow sponsored noopener\" style=\"word-wrap:break-word;\">Roborock S20S5204 ロボット掃除機 Saros20 Sonic S20S5204</a>"
+      }
+    ],
     "sourceUrl": "https://jp.roborock.com/pages/roborock-saros-20-sonic",
     "sourceType": "メーカー公式サイト",
     "verifiedAt": "2026-09-07",
@@ -395,7 +417,29 @@
     "pros": [],
     "cons": [],
     "bestFor": [],
-    "affiliateLinks": [],
+    "affiliateLinks": [
+      {
+        "id": "ecovacs-deebot-t80s-omni-amazon",
+        "provider": "amazon",
+        "label": "",
+        "url": "https://link.amazon/B0b8owyDR",
+        "linkType": "affiliate",
+        "price": null,
+        "priceCheckedAt": null,
+        "enabled": true
+      },
+      {
+        "id": "ecovacs-deebot-t80s-omni-rakuten",
+        "provider": "rakuten",
+        "label": "",
+        "url": "https://hb.afl.rakuten.co.jp/ichiba/5742520d.6688a6e3.5742520e.0b2e5181/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fstore-ecovacs-japan%2Fdex62-0402%2F&link_type=text&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJ0ZXh0Iiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9",
+        "linkType": "affiliate",
+        "price": null,
+        "priceCheckedAt": null,
+        "enabled": true,
+        "rakutenHtml": "<a href=\"https://hb.afl.rakuten.co.jp/ichiba/5742520d.6688a6e3.5742520e.0b2e5181/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fstore-ecovacs-japan%2Fdex62-0402%2F&link_type=text&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJ0ZXh0Iiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9\" target=\"_blank\" rel=\"nofollow sponsored noopener\" style=\"word-wrap:break-word;\">【60,000円OFF＆P10倍！9/3 20:00〜9/11 01:59】ロボット掃除機 DEEBOT T80S OMNI エコバックス 公式 ECOVACS お掃除ロボット 掃除機 自動掃除機 掃除ロボット 高性能 マッピング機能 自動ゴミ収集 水拭き お掃除 メーカー保証最大24ヶ月 2025 エコバッグス</a>"
+      }
+    ],
     "sourceUrl": "https://www.ecovacs.com/jp/shop/deebot-robotic-vacuum-cleaner/t80s-omni-black",
     "sourceType": "メーカー公式サイト",
     "verifiedAt": "2026-09-07",
@@ -442,7 +486,29 @@
     "pros": [],
     "cons": [],
     "bestFor": [],
-    "affiliateLinks": [],
+    "affiliateLinks": [
+      {
+        "id": "switchbot-s20-amazon",
+        "provider": "amazon",
+        "label": "",
+        "url": "https://link.amazon/B09oujGFk",
+        "linkType": "affiliate",
+        "price": null,
+        "priceCheckedAt": null,
+        "enabled": true
+      },
+      {
+        "id": "switchbot-s20-rakuten",
+        "provider": "rakuten",
+        "label": "",
+        "url": "https://hb.afl.rakuten.co.jp/ichiba/57425f3a.ec3fa8f8.57425f3b.f87132c8/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fswitchbot%2Fs20%2F&link_type=text&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJ0ZXh0Iiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9",
+        "linkType": "affiliate",
+        "price": null,
+        "priceCheckedAt": null,
+        "enabled": true,
+        "rakutenHtml": "<a href=\"https://hb.afl.rakuten.co.jp/ichiba/57425f3a.ec3fa8f8.57425f3b.f87132c8/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fswitchbot%2Fs20%2F&link_type=text&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJ0ZXh0Iiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9\" target=\"_blank\" rel=\"nofollow sponsored noopener\" style=\"word-wrap:break-word;\">【34％OFF期間限定！】【家電祭り最大5000円クーポン】SwitchBot スイッチボット お掃除ロボットS20 ロボット掃除機 掃除ロボット 掃除機 クリーナー 水拭き 自動ゴミ収集 自動充電 モップ乾燥 強力吸引 　AI障害物回避</a>"
+      }
+    ],
     "sourceUrl": "https://www.switchbot.jp/products/switchbot-robot-vacuum-cleaner-s20",
     "sourceType": "メーカー公式サイト",
     "verifiedAt": "2026-09-07",
@@ -486,7 +552,29 @@
     "pros": [],
     "cons": [],
     "bestFor": [],
-    "affiliateLinks": [],
+    "affiliateLinks": [
+      {
+        "id": "eufy-robot-vacuum-omni-e25-amazon",
+        "provider": "amazon",
+        "label": "",
+        "url": "https://link.amazon/B0bUGdWz9",
+        "linkType": "affiliate",
+        "price": null,
+        "priceCheckedAt": null,
+        "enabled": true
+      },
+      {
+        "id": "eufy-robot-vacuum-omni-e25-rakuten",
+        "provider": "rakuten",
+        "label": "",
+        "url": "https://hb.afl.rakuten.co.jp/ichiba/5742662e.9857fa48.5742662f.418c21b0/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fanker%2Ft2353%2F&link_type=text&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJ0ZXh0Iiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9",
+        "linkType": "affiliate",
+        "price": null,
+        "priceCheckedAt": null,
+        "enabled": true,
+        "rakutenHtml": "<a href=\"https://hb.afl.rakuten.co.jp/ichiba/5742662e.9857fa48.5742662f.418c21b0/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fanker%2Ft2353%2F&link_type=text&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJ0ZXh0Iiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9\" target=\"_blank\" rel=\"nofollow sponsored noopener\" style=\"word-wrap:break-word;\">【プレゼント付き 60,000円OFFクーポン &amp; P10倍 9/11まで】Anker Eufy (ユーフィ) Robot Vacuum Omni E25 (ロボット掃除機) ローラーモップ 全自動クリーニングステーション 自動ゴミ収集 モップ洗浄 乾燥 20000Pa 水拭き兼用 高性能 時短家電 共働き ペット</a>"
+      }
+    ],
     "sourceUrl": "https://www.ankerjapan.com/products/t2353",
     "sourceType": "メーカー公式サイト",
     "verifiedAt": "2026-09-07",
