@@ -37,7 +37,7 @@ export function ProductHero({
           html={rakutenImageHtml}
           pageType="product_detail"
           placement="hero_image"
-          aspect="aspect-square"
+          aspect="aspect-[4/3] md:aspect-square"
           className="w-full max-w-xs md:max-w-none"
         />
       ) : (
