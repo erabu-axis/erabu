@@ -9,6 +9,7 @@ import {
 } from "@/lib/data";
 import { AxisScoreValue } from "@/components/AxisScoreValue";
 import { ProductImage } from "@/components/ProductImage";
+import { PurchaseButtons } from "@/components/PurchaseButtons";
 import type { AxisKey } from "@/types/axis";
 import { ComparisonTable } from "@/components/ComparisonTable";
 import { ArticleRelatedArticles } from "@/components/article/ArticleRelatedArticles";
@@ -50,6 +51,9 @@ function QuietnessProductCard({ item }: { item: ReturnType<typeof getProductsWit
           <AxisScoreValue normalizedScore={breakdown.normalizedScore} scoreDisplayStatus={breakdown.scoreDisplayStatus} />
         </div>
         {quietnessEntry.publicRationale && <p className="text-sm text-brand-inkSoft">{quietnessEntry.publicRationale}</p>}
+        <div className="mt-3">
+          <PurchaseButtons product={item.product} pageType="article" articleId={SLUG} placement="article_card" />
+        </div>
       </div>
     </div>
   );

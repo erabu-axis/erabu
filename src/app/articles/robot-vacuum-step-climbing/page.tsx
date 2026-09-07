@@ -167,7 +167,7 @@ export default function StepClimbingArticlePage() {
       </section>
 
       {/* ④ 商品別評価（住宅適合性総合評価の並び順を「N位」として見せない） */}
-      <ArticleProductEvaluationCards items={items} highlightAxis={highlightAxis} />
+      <ArticleProductEvaluationCards items={items} highlightAxis={highlightAxis} articleId={SLUG} />
 
       {/* ⑤ 条件別に選ぶなら */}
       <CompareWithOthers

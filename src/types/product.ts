@@ -1,11 +1,28 @@
 export type AffiliateProvider = "amazon" | "rakuten" | "yahoo" | "official" | "other";
 
+/**
+ * affiliate: ASP経由の紹介料が発生するリンク（rel="sponsored"を付与する）。
+ * official: メーカー公式サイト等、紹介料が発生しない通常リンク。
+ * アフィリエイトID・URLは推測で生成せず、ユーザーから提供された／既存設定で確認できた正規のものだけを登録する。
+ */
+export type PurchaseLinkType = "affiliate" | "official";
+
 export interface AffiliateLink {
   id: string;
   provider: AffiliateProvider;
   /** "その他ASP" の場合など、リンクの見出しに使う表示名 */
   label: string;
   url: string;
+  linkType: PurchaseLinkType;
+  /**
+   * この販売店で実際に確認できた価格。その販売店の価格として確認できた場合のみ設定する。
+   * メーカー公式で確認した価格（referencePrice/currentPrice）をここに転用しない。未確認はnull。
+   */
+  price: number | null;
+  /** priceを確認した日付。price同様、未確認・未設定の場合はnull */
+  priceCheckedAt: string | null;
+  /** 掲載可否。falseの場合、データを削除せずにボタン非表示にできる（一時停止用）。 */
+  enabled: boolean;
 }
 
 /** この商品情報をどこから得たか（実機検証のレビューフロー観点） */

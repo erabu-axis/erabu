@@ -6,16 +6,20 @@ import { AxisMiniBreakdown } from "@/components/AxisMiniBreakdown";
 import { AxisScoreBadge } from "@/components/AxisScoreBadge";
 import { PriceDisplay } from "@/components/PriceDisplay";
 import { ProductImage } from "@/components/ProductImage";
+import { PurchaseButtons } from "@/components/PurchaseButtons";
 
 function EvaluationCard({
   item,
   highlightAxis,
   rank,
+  articleId,
 }: {
   item: ProductWithScore;
   highlightAxis?: AxisKey | null;
   /** 表示する順位。undefinedなら「N位」を表示しない（グループ化できない・順位を付けない場合）。 */
   rank?: number;
+  /** クリック計測用の記事slug */
+  articleId: string;
 }) {
   const { score, status } = getOverallScoreInfo(item);
   const editorial = getProductEditorial(item.product.id);
@@ -75,6 +79,15 @@ function EvaluationCard({
           商品詳細を見る →
         </Link>
       </div>
+
+      <div className="mt-3">
+        <PurchaseButtons
+          product={item.product}
+          pageType="article"
+          articleId={articleId}
+          placement="article_card"
+        />
+      </div>
     </div>
   );
 }
@@ -94,10 +107,13 @@ export function ArticleProductEvaluationCards({
   items,
   highlightAxis,
   axisDefinitions,
+  articleId,
 }: {
   items: ProductWithScore[];
   highlightAxis?: AxisKey | null;
   axisDefinitions?: AxisDefinition[];
+  /** クリック計測（purchase_link_click）のarticle_idに使う記事slug */
+  articleId: string;
 }) {
   if (!axisDefinitions) {
     return (
@@ -105,7 +121,7 @@ export function ArticleProductEvaluationCards({
         <h2 className="mb-4 text-lg font-bold">商品別評価</h2>
         <div className="space-y-5">
           {items.map((item) => (
-            <EvaluationCard key={item.product.id} item={item} highlightAxis={highlightAxis} />
+            <EvaluationCard key={item.product.id} item={item} highlightAxis={highlightAxis} articleId={articleId} />
           ))}
         </div>
       </section>
@@ -133,7 +149,13 @@ export function ArticleProductEvaluationCards({
             )}
             <div className="space-y-5">
               {group.items.map((item, index) => (
-                <EvaluationCard key={item.product.id} item={item} highlightAxis={highlightAxis} rank={index + 1} />
+                <EvaluationCard
+                  key={item.product.id}
+                  item={item}
+                  highlightAxis={highlightAxis}
+                  rank={index + 1}
+                  articleId={articleId}
+                />
               ))}
             </div>
           </div>
@@ -147,7 +169,7 @@ export function ArticleProductEvaluationCards({
           )}
           <div className="space-y-5">
             {unranked.map((item) => (
-              <EvaluationCard key={item.product.id} item={item} highlightAxis={highlightAxis} />
+              <EvaluationCard key={item.product.id} item={item} highlightAxis={highlightAxis} articleId={articleId} />
             ))}
           </div>
         </div>

@@ -4,6 +4,7 @@ import type { RecommendedForItem } from "@/types/productEditorial";
 import { AxisScoreBadge } from "@/components/AxisScoreBadge";
 import { PriceDisplay } from "@/components/PriceDisplay";
 import { ProductImage } from "@/components/ProductImage";
+import { PurchaseButtons } from "@/components/PurchaseButtons";
 
 /**
  * 商品詳細ページのファーストビュー。「この商品は自分に関係ありそう」と
@@ -67,11 +68,12 @@ export function ProductHero({
           </div>
         )}
 
+        <PurchaseButtons product={product} pageType="product_detail" placement="hero" />
         <a
           href="#purchase"
-          className="inline-block rounded-full bg-brand-accent px-6 py-3 text-sm font-bold text-brand-bgRaised hover:opacity-90"
+          className="mt-3 inline-block text-sm font-bold text-brand-accent underline"
         >
-          価格・購入先を見る
+          価格・購入先の詳細を見る →
         </a>
       </div>
     </section>

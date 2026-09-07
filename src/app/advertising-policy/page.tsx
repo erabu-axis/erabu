@@ -23,7 +23,7 @@ export default function AdvertisingPolicyPage() {
       <section className="mb-10">
         <h2 className="mb-3 text-lg font-bold">1. 広告・アフィリエイトリンクについて</h2>
         <p className="text-brand-inkSoft">
-          当サイトは、記事内の購入先リンクを通じて、提携先（アフィリエイトプログラム等）から紹介料を受け取る形での収益化を将来的に行う可能性があります。現時点で、当サイトはいずれのアフィリエイトプログラム・広告配信サービスにも参加していません。導入する場合は、その事実と提携先の種類をこのページに追記します。
+          当サイトは、記事内の購入先リンクを通じて、提携先（アフィリエイトプログラム等）から紹介料を受け取る形での収益化を行う場合があります。現時点で、当サイトの購入先リンクとして実際に掲載しているアフィリエイトリンクはありません（掲載を開始した場合は、そのリンクにアフィリエイトである旨がわかる表示を行います）。提携先が確定し、リンクの掲載を開始する場合は、その事実と提携先の種類をこのページに追記します。
         </p>
       </section>
 
@@ -59,7 +59,7 @@ export default function AdvertisingPolicyPage() {
         </p>
       </section>
 
-      <p className="text-xs text-brand-inkSoft">最終更新日：2026-09-03</p>
+      <p className="text-xs text-brand-inkSoft">最終更新日：2026-09-07</p>
     </article>
   );
 }

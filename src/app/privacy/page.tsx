@@ -37,14 +37,14 @@ export default function PrivacyPage() {
       <section className="mb-10">
         <h2 className="mb-3 text-lg font-bold">3. アクセス解析</h2>
         <p className="text-brand-inkSoft">
-          当サイトは現時点でアクセス解析ツールを導入していません。将来、サイトの利用状況を把握する目的でアクセス解析サービスを導入する場合は、使用するサービス名と取得する情報の範囲をこのページに追記します。
+          当サイトは、サイトの利用状況を把握する目的でGoogleアナリティクス4（GA4）を導入しています。GA4により、ページの閲覧状況や、商品ページ・比較記事内の購入先リンクのクリック状況（どの商品・どの販売店へのリンクがクリックされたか）を計測します。取得するのは個人を特定できない形式の閲覧・操作データです。このクリック計測は、リンク先での購入や成果の発生を示すものではありません。GA4の利用にともない、データはGoogleに送信されます。取り扱いの詳細はGoogleのプライバシーポリシーをご確認ください。
         </p>
       </section>
 
       <section className="mb-10">
         <h2 className="mb-3 text-lg font-bold">4. Cookie（クッキー）</h2>
         <p className="text-brand-inkSoft">
-          当サイトは現時点でCookieを利用した個人の識別・追跡を行っていません。アクセス解析や広告配信のためにCookieを利用するサービスを導入する場合は、その内容をこのページに追記し、必要に応じて同意取得の方法もあわせて整備します。
+          上記のGA4は、アクセス解析のためにCookie等の技術を利用してブラウザを識別します。当サイトはこれ以外の目的でCookieを利用した個人の識別・追跡を行っていません。広告配信のためにCookieを利用するサービスを導入する場合は、その内容をこのページに追記し、必要に応じて同意取得の方法もあわせて整備します。
         </p>
       </section>
 
@@ -71,7 +71,7 @@ export default function PrivacyPage() {
         <p className="text-brand-inkSoft">本ポリシーに関するお問い合わせ方法は現在準備中です。</p>
       </section>
 
-      <p className="text-xs text-brand-inkSoft">最終更新日：2026-09-03</p>
+      <p className="text-xs text-brand-inkSoft">最終更新日：2026-09-07</p>
     </article>
   );
 }

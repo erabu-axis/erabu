@@ -164,7 +164,7 @@ export default function CostValueArticlePage() {
       </section>
 
       {/* ⑥ 商品別評価 */}
-      <ArticleProductEvaluationCards items={items} highlightAxis={highlightAxis} axisDefinitions={axisDefinitions} />
+      <ArticleProductEvaluationCards items={items} highlightAxis={highlightAxis} axisDefinitions={axisDefinitions} articleId={SLUG} />
 
       {/* ⑦ 条件別に選ぶなら */}
       <CompareWithOthers
