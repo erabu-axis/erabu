@@ -9,16 +9,16 @@ export function SiteHeader() {
         </Link>
         <nav className="flex flex-wrap gap-x-5 gap-y-1 text-sm text-brand-inkSoft">
           <Link href="/robot-vacuums" className="hover:text-brand-accent">
-            商品を比較
+            ロボット掃除機
           </Link>
-          <Link href="/articles" className="hover:text-brand-accent">
-            比較記事
+          <Link href="/articles/robot-vacuum-how-to-choose" className="hover:text-brand-accent">
+            選び方
           </Link>
           <Link href="/about-axis-score" className="hover:text-brand-accent">
-            AXIS SCORE™とは
+            評価方法
           </Link>
           <Link href="/about" className="hover:text-brand-accent">
-            えらぶ。について
+            運営情報
           </Link>
         </nav>
       </div>

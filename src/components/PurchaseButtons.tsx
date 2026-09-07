@@ -33,7 +33,7 @@ interface RakutenResolvedLink {
   priceCheckedAt: string | null;
 }
 
-type ResolvedLink = StandardResolvedLink | RakutenResolvedLink;
+export type ResolvedLink = StandardResolvedLink | RakutenResolvedLink;
 
 /**
  * 表示するリンク一覧を組み立てる。
@@ -46,7 +46,7 @@ type ResolvedLink = StandardResolvedLink | RakutenResolvedLink;
  *   通常リンクとして補う（アフィリエイトリンクが無くても公式リンクは出してよい、という既存方針）。
  * - アフィリエイトIDやURLを推測で生成することはしない。
  */
-function resolveLinks(product: Product): ResolvedLink[] {
+export function resolveLinks(product: Product): ResolvedLink[] {
   const enabled = product.affiliateLinks.filter((l): l is AffiliateLink => l.enabled);
   const hasOfficial = enabled.some((l) => l.provider === "official");
 

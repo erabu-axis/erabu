@@ -25,6 +25,14 @@ import { AmazonAssociatesDisclosure } from "@/components/AmazonAssociatesDisclos
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { buildPageMetadata } from "@/lib/site-config";
 import { hasEnabledAffiliateProvider } from "@/lib/affiliateStatus";
+import { RoombaDetailPage } from "@/components/product-proto/RoombaDetailPage";
+
+/**
+ * デザイン試作の対象はRoomba（irobot-roomba-plus-515-combo）のみ。この商品IDのときだけ
+ * 新しいレイアウト（RoombaDetailPage）に分岐し、他4商品は以下の既存JSXをそのまま使う
+ * （共通テンプレートの変更が他商品の表示に影響しないようにするため）。
+ */
+const DESIGN_PROTOTYPE_PRODUCT_ID = "irobot-roomba-plus-515-combo";
 
 /** 公開する商品詳細ページはdataType==="real"のみ。sample（開発・回帰テスト用データ）は
  *  products.json自体からは削除しないが、静的生成の対象外にする。 */
@@ -67,6 +75,20 @@ export default function ProductDetailPage({ params }: { params: { productId: str
   const { score, status } = getOverallScoreInfo(item);
   const editorial = getProductEditorial(product.id);
   const axisLeaders = getAxisLeaders(product.id, [...COMPARE_AXES]);
+
+  if (product.id === DESIGN_PROTOTYPE_PRODUCT_ID) {
+    return (
+      <RoombaDetailPage
+        product={product}
+        score={score}
+        status={status}
+        editorial={editorial}
+        scores={scores}
+        displayAwareResult={displayAwareResult}
+        axisLeaders={axisLeaders}
+      />
+    );
+  }
 
   return (
     <div className="max-w-3xl">

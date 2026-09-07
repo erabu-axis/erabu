@@ -1,7 +1,9 @@
 import Link from "next/link";
+import type { ReactNode } from "react";
 
 export interface BreadcrumbItem {
-  label: string;
+  /** 通常はstring。画面幅で表示テキストを出し分けたい場合のみReactNodeを渡せる（既存呼び出し箇所は全てstringのまま動作する）。 */
+  label: ReactNode;
   /** 現在のページの場合はhrefを省略する（リンクにせず、太字テキストで表示する） */
   href?: string;
 }
